@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+	<head>
+		<title>长治影讯 {$crow['cinema_name']}</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/header.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/cinemadetail.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/footer.css">
+		<script src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+		<script src="__PUBLIC__/Home/js/header.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.SuperSlide.2.1.1.js"></script>
+		<style>
+			
+		</style>
+		<block name="css"></block>
+	</head>
+	<body>
+		<div class="container">
+			<include file="Public/header" />
+			
+			<div class="cinema">
+				<div class="cinema_bg">&nbsp;</div>
+				<div class="cinema_box">
+					<div class="bg_cinema">
+						<div class="cinema_con">
+							<div class="cinema_mid clearfix">
+								<div class="aside fl">
+									<div class="cinemabg">
+										<dl class="cinema_info">
+											<dt class="cinema_logo">
+												<a href="__CONTROLLER__/cinemamember/cid/{$crow['cinema_id']}" title="{$crow['cinema_name']}">
+													<img src="__PUBLIC__/{$crow['cinema_logo']}" alt="{$crow['cinema_name']}">
+												</a>
+											</dt>
+											<dd class="cinema_tool">
+												<ul class="lovetool clearfix">
+													<li class="label">
+														喜爱度：
+													</li>
+													<li class="lovepic">
+														<div class="per_gradeboxer">
+															<empty name="crow['cinema_like']">
+																<div class="per_totalarea"></div>
+															<else />
+																<div class="per_totalarea per_grade">
+																	<i>
+																		{$crow['cinema_like']}
+																		<em style="font-size:13px;">%</em>
+																	</i>
+																</div>
+															</empty>
+														</div>
+													</li>
+													<li>
+														<div class="lovetable">
+															<div class="lovetxt">
+																<b style="font-size:24px;">{$crow['cinema_num']}</b>
+																个影厅
+															</div>
+														</div>
+													</li>
+												</ul>
+												<div class="filminfo">
+													<p>
+														<if condition="$crow['cinema_3d'] eq 1">
+															<i class="ico_c_f02">&nbsp;</i>
+														</if>
+														<if condition="$crow['cinema_vip'] eq 1">
+															<i class="ico_c_f03">&nbsp;</i>
+														</if>
+														<if condition="$crow['cinema_qlz'] eq 1">
+															<i class="ico_c_f15">&nbsp;</i>
+														</if>													
+													</p>
+												
+													<ul class="clearfix">
+														<if condition="$crow['cinema_myj'] eq 1">
+															<li>
+																<i class="ico_c_f09">&nbsp;</i>
+																免押金
+															</li>
+														</if>
+														<if condition="$crow['cinema_qpj'] eq 1">
+															<li>
+																<i class="ico_c_f25" title="影院大堂内时光网取票机">&nbsp;</i>
+																取票机
+															</li>
+														</if>
+														<if condition="$crow['cinema_stop'] eq 1">
+															<li>
+																<i class="ico_c_f14">&nbsp;</i>
+																停车
+															</li>
+														</if>
+														<if condition="$crow['cinema_sk'] eq 1">
+															<li>
+																<i class="ico_c_f12">&nbsp;</i>
+																刷卡
+															</li>
+														</if>
+														<if condition="$crow['cinema_wifi'] eq 1">
+															<li>
+																<i class="ico_c_f13">&nbsp;</i>
+																Wifi
+															</li>
+														</if>				
+														<li>
+															<i class="ico_c_f26">&nbsp;</i>
+															无障碍
+														</li>
+													</ul>
+												</div>
+												<div style="clear:both;"></div>
+												<ul class="ci_address ci_other clearfix"></ul>										
+											</dd>
+											
+										</dl>
+									</div>
+									<div class="upcoming">
+										<div class="upbg">&nbsp;</div>
+										<div class="uptitle">
+											<h2>即将上映：</h2>
+										</div>
+										<volist name="mrows" id="mrow">
+										<div class="upmovie">
+											<dl class="uptime">
+												<dt>{$mrow['movie_start']|date="m",###}月</dt>
+												<dd>
+													{$mrow['movie_start']|date="d",###}
+													<i class="ico_c_uptip">&nbsp;</i>
+												</dd>
+											</dl>
+											<ul class="uppic">
+												<li class="clearfix">
+													<div class="picmid">
+														<a href="{$mrow['video'][0]['video_address']}">
+															<img src="__PUBLIC__/{$mrow['movie_pic']}" width="75" height="100" title="{$mrow['movie_name']} {$mrow['movie_ename']}({$mrow['movie_start']|date='Y',###})">
+															<i class="ico_c_video" title="{$mrow['movie_name']} {$mrow['movie_ename']}({$mrow['movie_start']|date='Y',###})">&nbsp;</i>
+														</a>
+													</div>
+													<div class="txtmid">
+														<h2>
+															<a href="__MODULE__/Movie/movieindex/id/{$mrow['movie_id']}" target="_blank">
+																{$mrow['movie_name']}
+															</a>
+														</h2>
+														<p>4812人想看</p>
+														<p class="dh">
+															<foreach name="mrow['type']" item="mtrow">
+																{$mtrow['type_name']}
+																<span>、</span>
+															</foreach>
+														</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+										</volist>
+									</div>
+								</div>
+								<div class="main fr">
+									<div class="ci_title">
+										<h2>{$crow['cinema_name']} </h2>
+										<p>{$crow['cinema_address']}</p>
+										<p>电话：{$crow['cinema_tel']} <span>营业时间：{$crow['cinema_time']}</span></p>
+									</div>
+									<div class="ci_menu">
+										<ul class="clearfix navlb">
+											<li>
+												<a href="__CONTROLLER__/index/cid/{$crow['cinema_id']}">
+													选座购票
+													<i class="ico_c_jiao01">&nbsp;</i>
+												</a>
+											</li>
+											<li>
+												<a href="__CONTROLLER__/cinemaabstract/cid/{$crow['cinema_id']}">
+													影院介绍
+													<i class="ico_c_jiao01">&nbsp;</i>
+												</a>
+											</li>
+											<li>
+												<a href="__CONTROLLER__/cinemamember/cid/{$crow['cinema_id']}">
+													会员服务
+													<i class="ico_c_jiao01">&nbsp;</i>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													优惠活动
+													<i class="ico_c_jiao01">&nbsp;</i>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div id="M14_A_Cinema_Nav">
+										<div class="mt15 tr pr20">
+											<a href="#">
+												<img src="__PUBLIC__/Home/images/guanggao.jpg">
+											</a>
+										</div>
+									</div>
+									<block name="ci_mon"></block>
+								</div>
+							</div>
+							<if condition="$cpicnum eq 0">
+							<else/>
+							<div class="cinama_pic">
+								<div class="ci_pic_title">
+									<h2>
+										<b>{$cpicnum}</b>
+										张影院图片
+									</h2>
+								</div>
+								<div class="ci_pic_box">
+									<a class="ico_c_prev prev" href="javascript:;"></a>
+									<div class="ci_srcllpic">
+											<ul id="mr_fu">
+												<volist name="cpic" id="pic">
+													<li>
+														<img src="__PUBLIC__/{$pic['cinemapic_address']}" />
+													</li>
+												</volist>
+											</ul>
+									</div>
+									<a class="ico_c_next next" href="javascript:;"></a>
+								</div>
+							</div>
+							</if>
+						</div>
+					</div>
+					
+					<a href="http://feature.mtime.com/mobile/" target="_blank">
+						<img src="__PUBLIC__/Home/images/appdown.jpg" style="margin:0 auto;">
+					</a>
+					
+				</div>
+			</div>
+
+			<include file="Public/footer" />
+		</div>
+	
+	</body>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			
+			/* 图片滚动效果 */
+			$(".ci_pic_box").slide({
+				titCell: "",
+				mainCell: ".ci_srcllpic ul",
+				autoPage: true,
+				effect: "left",
+				autoPlay: false,
+				pnLoop:"false",
+				scroll:"2",
+				vis: 3
+				
+			});
+		});
+		
+		$(".dh").each(function(){
+			$(this).children("span:last").hide();
+		});
+	</script>
+<block name="js"></block>
+
+</html>

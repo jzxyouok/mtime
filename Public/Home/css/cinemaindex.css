@@ -1,0 +1,337 @@
+.thefilm{
+	font-size: 20px;
+    line-height: 1;
+    margin: 30px 0 21px 40px;
+}
+
+.thefilm b{
+	padding: 0 5px;
+}
+
+.scroll_time{
+	position: relative;
+    zoom: 1;
+    height: 40px;
+    z-index: 0;
+}
+
+.timemid{
+	width: 654px;
+    height: 40px;
+    overflow: hidden;
+    margin-left: 40px;
+    position: relative;
+    zoom: 1;
+}
+
+.timemid ul{
+	position: absolute;
+	left: 0;
+    top: 0;
+}
+
+.timemid .curr, .timemid .curr b{
+	font-weight: bold;
+}
+
+.timemid li{
+	display: inline;
+    height: 40px;
+    line-height: 40px;
+}
+
+.timemid a{
+	display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    background: #f3f3f3;
+    border: 1px solid #cbcbcb;
+    border-radius: 20px;
+    color: #7b7b7b;
+    line-height: 27px;
+    padding: 0 20px;
+    margin: 0 10px 0 0;
+    position: relative;
+    zoom: 1;
+	text-decoration: none;
+}
+
+.timemid .curr a{
+	color: #343434;
+    line-height: 35px;
+}
+
+.timemid .ico_c_jiao02{
+	position: absolute;
+    left: 50%;
+    margin-left: -6px;
+    bottom: -1px;
+}
+
+.ico_c_jiao02{
+	width: 15px;
+    height: 8px;
+	background: url(../images/cinema_png.png) no-repeat;
+    background-position: -98px -126px;
+	display:none;
+}
+
+.timemid .curr .ico_c_jiao02{
+	display:block;
+}
+
+.scroll_film{
+	position: relative;
+    zoom: 1;
+    z-index: 0;
+}
+
+.filmbox{
+	padding-top:12px;
+}
+
+.frul{
+	width: 654px;
+    margin: 0 0 0 40px;
+    height: 290px;
+    position: relative;
+	overflow:hidden;
+    zoom: 1;
+	border-bottom:1px solid #ccc;
+}
+
+.filmbox li{
+	width: 152px;
+    height: 202px;
+    overflow: hidden;
+	display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    line-height: 0;
+	margin:auto; 
+    margin-right: 10px;
+	margin-top:15px;
+    position: relative;
+}
+
+.filmbox li a{
+	float: left;
+    display: inline;
+}
+
+.filmbox li.oncurr{
+	float: left;
+    width: 182px!important;
+    height: 242px!important;
+	margin-top:0px;
+}	
+
+.filmbox li.oncurr a{
+	cursor:default;
+}
+
+.scroll_film .film_prev{
+	background: url(../images/cinema_public.png) no-repeat;
+	background-position: 0 -29px;
+	width: 24px;
+    height: 60px;
+    position: absolute;
+	left: 10px;
+    top: 50%;
+    margin-top: -30px;
+}
+
+.scroll_film .film_prev:hover{
+	background-position: -52px -29px;
+}
+
+.scroll_film .film_next{
+	background: url(../images/cinema_public.png) no-repeat;
+    background-position: -26px -29px;
+	width: 24px;
+    height: 60px;
+    position: absolute;
+	right: -30px;
+    top: 50%;
+    margin-top: -30px;
+}
+
+.scroll_film .film_next:hover{
+	background-position: -77px -29px;
+}
+
+.ci_filmbox{
+	padding: 20px 0 0 40px;
+}
+
+.ci_filmbox .filmtxt{
+	float: none;
+    display: block;
+}
+
+.filmtxt{
+	font-size: 14px;
+    line-height: 22px;
+	margin-top: 10px;
+	padding: 0 120px 20px 0;
+    position: relative;
+    zoom: 1;
+}
+
+.filmtxt h2{
+	font-size: 24px;
+    line-height: 40px;
+}
+
+.filmtxt h2 a{
+	color: #333;
+}
+
+.filmtxt h2 a:hover{
+	color: #08c;
+    text-decoration: none;
+}
+
+.filmtxt .db_point{
+	margin-left: 15px;
+    vertical-align: middle;
+    font-size: 20px;
+    padding: 5px;
+}
+.db_point{
+	background: #679c21;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+	line-height: 14px;
+    font-weight: bold;
+    color: #fff;
+	overflow: hidden;
+}
+
+.filmtxt p{
+	color: #757575;
+}
+
+.filmtxt p span{
+	display: inline-block;
+    vertical-align: top;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.playfilm{
+	background: url(../images/cinema_png.png) no-repeat;
+	 background-position: -205px -38px;
+	width: 44px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    margin-top: -20px;
+    padding: 0 0 0 50px;
+    color: #828282;
+	display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.playfilm:hover{
+	background-position: -205px -83px;
+    text-decoration: none;
+}
+
+.playtime{
+	width: 100%;
+    background: url(../images/playtime.jpg) no-repeat left top;
+}
+
+table{
+	border-collapse: collapse;
+    border-spacing: 0;
+	display: table;
+	border-color: grey;
+}
+
+tbody{
+	display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr{
+	display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.playtime td{
+	width: 20%;
+    text-align: center;
+    font-size: 14px;
+    color: #757575;
+    vertical-align: middle;
+    border: 1px dashed #cdcdcd;
+    border-left: none;
+    border-right: 0;
+    padding: 15px 0;
+}
+
+.playtime td.tl{
+	width: 16%;
+}
+
+.playtime tr.first td{
+	border-top: 0;
+}
+
+.p_r{
+	position: relative;
+}
+
+.playtime p{
+	padding: 2px 0;
+}
+
+
+.playtime td.tl p{
+	text-align: left;
+}
+
+.ci_p_time{
+	font-size: 28px;
+    line-height: 1;
+    color: #454545;
+    font-weight: bold;
+}
+
+.px12{
+	font-size: 12px;
+}
+
+.tr{
+	text-align:right;
+}
+
+.c_666{
+	color: #666;
+}
+.pt25{
+	padding-top: 25px;
+}
+
+.pb30{
+	padding-bottom: 30px;
+}
+
+.tc{
+	text-align: center;
+}
+
+.nomovie{
+	background: url(../images/nomovie.jpg) no-repeat center center;
+    height: 600px;
+    position: relative;
+    zoom: 1;
+}

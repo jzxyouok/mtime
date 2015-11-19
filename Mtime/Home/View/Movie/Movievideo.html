@@ -1,0 +1,100 @@
+<html>
+	<head>
+		<title>{$row['movie_name']} {$row['video_name']} - Mtime时光网</title>
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/header.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/movievideo.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/footer.css">
+		<script src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+		<script src="__PUBLIC__/Home/js/header.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<include file="Public/header" />
+			
+			<div class="db_convideo">
+				<div class="db_picposition">
+					<p class="px18">
+						<a href="__CONTROLLER__/movieindex/id/{$row['movie_id']}">{$row['movie_name']}</a>
+						 > 
+						<a href="#">预告片</a>
+						 > 
+						<span>{$row['video_name']}</span>
+					</p>
+					<span class="pt3 morevideo">
+						<i class="icon_piclist"></i>
+						<a href="#">查看全部视频</a>
+					</span>
+				</div>
+				
+				<div class="db_conpicinner" id="playContent">
+					<video src="__PUBLIC__/{$row['video_address']}" preload width="1000px" height="563px" id="video"></video>
+					<div class="playvideo">
+						<div class="play"></div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<include file="Public/footer" />
+	
+		</div>
+	</body>
+	<script>
+		$("#video").data("index","0");
+		$(".playvideo").click(function(){
+			var video = document.getElementById("video");
+			var index = $("#video").data("index");
+			if(index%2==0){
+				video.play();
+				$(".play").addClass("pause");
+				index++;
+				$("#video").data("index",index);
+				return false;
+			}else{
+				video.pause();
+				$(".play").removeClass("pause");
+				index++;
+				$("#video").data("index",index);
+				return false;
+			}
+		});
+		$("#playContent").click(function(){
+			var video = document.getElementById("video");
+			var index = $("#video").data("index");
+			if(index%2==0){
+				video.play();
+				$(".play").addClass("pause");
+				index++;
+				$("#video").data("index",index);
+			}else{
+				video.pause();
+				$(".play").removeClass("pause");
+				index++;
+				$("#video").data("index",index);
+			}
+		});
+		
+		$(".playvideo").hover(
+			function(){
+				$(this).addClass("on");
+				$(".play").addClass("playon");
+			},
+			function(){
+				$(this).removeClass("on");
+				$(".play").removeClass("playon");
+			}
+		);
+		
+	
+		$("#playContent").hover(
+			function(){
+				$(".playvideo").show();
+			},
+			function(){
+				$(".playvideo").hide();
+			}
+		);
+			
+	
+	</script>
+</html>

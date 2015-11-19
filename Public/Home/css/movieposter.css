@@ -1,0 +1,122 @@
+ul{
+	list-style: none;
+}
+
+.db_contout{
+	background: #fff;
+    position: relative;
+    zoom: 1;
+    padding-bottom: 15px;
+    font-size: 14px;
+    padding-top: 15px;
+    z-index: 0;
+}
+
+.db_cont{
+	width: 1000px;
+    margin: 0 auto;
+}
+
+.details_nav{
+	background: url(../images/info.png) no-repeat 0 -9px;
+    width: 1000px;
+    height: 83px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+    overflow: hidden;
+    clear: both;
+    zoom: 1;
+}
+
+.details_nav ul{
+	overflow: hidden;
+    height: 83px;
+    margin-left: -10px;
+    width: 100%;
+}
+
+.details_nav li{
+	float: left;
+    display: inline;
+    height: 20px;
+    border-left: 1px solid #cacaca;
+    margin-left: -1px;
+    position: relative;
+    margin-top: 26px;
+}
+
+.details_nav li a{
+	display: block;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 25px;
+    color: #838383;
+    font-size: 14px;
+    text-align: center;
+    float: left;
+}
+
+.details_nav li a:hover{
+	color: #000;
+    text-decoration: none;
+}
+
+.details_nav li.false a{
+	color: #c8c8c8;
+    cursor: default;
+    font-weight: normal;
+}
+
+.details_nav li.on a{
+    color: #000;
+    text-decoration: none;
+	font-weight: bold;
+}
+
+.details_nav li i{
+	background: url(../images/icon.gif) no-repeat 0 -60px;
+    height: 13px;
+    width: 22px;
+    position: absolute;
+    left: 50%;
+    margin-left: -11px;
+    top: 44px;
+    display: none;
+}
+
+.details_nav li.on i{
+	display:block;
+}
+
+
+.db_pictypeout{
+	padding: 20px 20px 70px;
+}
+
+.fl{
+	float:left;
+}
+
+.mt3{
+	margin-top: 3px;
+}
+
+.pictypenav li{
+	float: left;
+    display: inline;
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.pictypenav li.on a{
+	color: #282828;
+    text-decoration: none;
+}
+
+.db_pictypelist{
+	padding-bottom: 40px;
+    margin-top: 15px;
+	width:960px;
+	float:left;
+}

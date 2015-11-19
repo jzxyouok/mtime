@@ -1,0 +1,318 @@
+[ 2015-10-22T00:14:52+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=8&comment_text=aaaa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0075s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('8','aaaa','9','1','1445444092','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2015-10-22T00:16:56+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=6&comment_text=aaa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0075s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('6','aaa','9','1','1445444216','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2015-10-22T00:34:54+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=&comment_text=aaa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0080s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('0','aaa','9','1','1445445294','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-22T00:45:54+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=&comment_text=k&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0070s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('0','k','9','1','1445445954','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-22T00:47:22+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=&comment_text=a&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0120s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('0','a','9','1','1445446042','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-22T00:55:12+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=10&comment_text=aaa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0130s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('10','aaa','9','1','1445446512','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-22T00:56:51+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=4&comment_text=ggg&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0070s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('4','ggg','9','1','1445446611','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-22T00:57:41+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=4&comment_text=aa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0090s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('4','aa','9','1','1445446661','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-22T00:58:47+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=8&comment_text=aaa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0090s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('8','aaa','9','1','1445446727','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-22T01:02:58+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=&comment_text=AAA&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0080s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('0','AAA','9','1','1445446978','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-22T01:03:59+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=&comment_text=aaa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0080s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('0','aaa','9','1','1445447039','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-22T01:05:30+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=&comment_text=ll&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0070s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('0','ll','9','1','1445447130','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-22T01:13:01+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=&comment_text=aa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0080s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('0','aa','9','1','1445447581','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-22T01:14:41+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=&comment_text=a&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0320s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('0','a','9','1','1445447681','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-22T01:19:42+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=6&comment_text=aaa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0070s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('6','aaa','9','1','1445447982','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-22T01:20:42+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=aa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0130s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('7','aa','9','1','1445448042','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-22T01:25:37+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=4&comment_text=aa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0110s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('4','aa','9','1','1445448337','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-10-22T15:01:08+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=6&comment_text=aaa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member_id D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'comment_uid' cannot be null
+
+[ 2015-10-22T15:01:45+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=10&comment_text=aaa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member_id D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'comment_uid' cannot be null
+
+[ 2015-10-22T15:03:10+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=aaa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member_id D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'comment_uid' cannot be null
+
+[ 2015-10-22T15:04:55+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=6&comment_text=aaa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('6','aaa','9','1','1445497495','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-22T15:16:20+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=aa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('7','aa','9','1','1445498180','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-22T15:17:12+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=8&comment_text=aa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('8','aa','9','1','1445498232','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-22T15:17:12+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=8&comment_text=aa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('8','aa','9','1','1445498232','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-22T15:18:04+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=9&comment_text=aa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('9','aa','9','1','1445498284','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-22T15:18:37+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=9&comment_text=aaa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('9','aaa','9','1','1445498317','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-22T15:46:50+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=8&comment_text=%E6%8C%BA%E6%90%9E%E7%AC%91%E7%9A%84%EF%BC%8C%E6%84%9F%E8%A7%A6%E4%B9%9F%E9%A2%87%E6%B7%B1&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('8','挺搞笑的，感触也颇深','9','1','1445500010','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-22T16:35:25+08:00 ] ::1 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+
+[ 2015-10-22T16:35:26+08:00 ] ::1 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-10-22T16:46:15+08:00 ] ::1 /mtime/Moviedetail/movielongcomment
+ERR: 无法加载控制器:Moviedetail
+
+[ 2015-10-22T21:41:01+08:00 ] ::1 /mtime/Moviedetial/movielongcomment
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2015-10-22T21:42:08+08:00 ] ::1 /mtime/Moviedetial/movielongcomment
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2015-10-22T22:13:13+08:00 ] ::1 /mtime/index.php/Home/Movie/movieindex/id/9
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2015-10-22T22:14:02+08:00 ] ::1 /mtime/index.php/Home/Movie/movieindex/id/9
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2015-10-22T22:14:16+08:00 ] ::1 /mtime/index.php/Home/Movie/movieindex/id/9
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2015-10-22T22:14:18+08:00 ] ::1 /mtime/index.php/Home/Movie/movieindex/id/9
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2015-10-22T22:14:18+08:00 ] ::1 /mtime/index.php/Home/Movie/movieindex/id/9
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2015-10-22T22:14:19+08:00 ] ::1 /mtime/index.php/Home/Movie/movieindex/id/9
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2015-10-22T22:14:19+08:00 ] ::1 /mtime/index.php/Home/Movie/movieindex/id/9
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2015-10-22T22:14:19+08:00 ] ::1 /mtime/index.php/Home/Movie/movieindex/id/9
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2015-10-22T22:15:45+08:00 ] ::1 /mtime/index.php/Home/Movie/movieindex/id/9
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2015-10-22T22:16:47+08:00 ] ::1 /mtime/index.php/Home/Movie/movieindex/id/9
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2015-10-22T22:16:55+08:00 ] ::1 /mtime/index.php/Home/Movie/movieindex/id/9
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'
+
+[ 2015-10-22T22:43:00+08:00 ] ::1 /mtime/index.php/Home/Movie/movieindex/id/9
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2015-10-22T23:57:39+08:00 ] ::1 /mtime/index.php/Home/Comment/longcommentdetail/comid/7
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 5' at line 1
+

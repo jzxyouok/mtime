@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*****************************************************
+' 作者：夏末、夜微凉
+' Email:290990099@qq.com . QQ:290990099
+' 2014/6/20
+'****************************************************/
+
+/* css 重置 */
+body,div,ul,li,dl,dt,dd,h2,p{padding:0;margin:0; font-family:"微软雅黑";}
+ul{list-style:none ;}
+img{border:none;}
+a{blr:expression(this.onFocus=this.blur());outline:none;}
+
+
+
+.mtime-box { min-width: 1000px; height: 390px; position: relative; overflow: hidden; }
+.mtime-box .bd{ width:100% !important; }
+.mtime-box .bd li .m-width {width: 1000px;padding-top:0px; margin:0 auto; overflow: hidden; }
+.mtime-box .bd li { width:100% !important; height: 390px; }
+.mtime-box .bd li a { display: block; background: url(../images/hdp/index_shadow.png) no-repeat 0 0; background-size: auto; padding: 0px 11px 0 11px; }
+
+.mtime-btn { width: 1000px; position: absolute; top: 150px; left: 50%; margin-left: -500px; }
+.mtime-btn a { display: block; width: 49px; height: 104px; position: absolute; top: 0; filter: alpha(opacity=40); -moz-opacity: 0.4; -khtml-opacity: 0.4; opacity: 0.4; }
+.mtime-btn a.prev { left: -36px; background: url(../images/hdp/foot.png) no-repeat -1822px -9px; } 
+.mtime-btn a.next { right: -46px; background: url(../images/hdp/foot.png) no-repeat right -9px; }
+
+.mtime-box .hd {position: absolute; top: 200px; right: 10px; }
+.mtime-box .hd ul li { width: 12px; height: 12px; border-radius :50%; text-indent: -9999px; margin-right: 20px; background: #A0A1A4; border: 1px #A0A1A4 solid; float: left; cursor: pointer; }
+.mtime-box .hd ul li.on { background:  #FFFFFF; }

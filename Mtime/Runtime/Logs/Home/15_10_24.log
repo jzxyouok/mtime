@@ -1,0 +1,383 @@
+[ 2015-10-24T00:10:59+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment?recomment_text=aaaa&recomment_cid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2015-10-24T00:11:33+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment?recomment_text=aaaa&recomment_cid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2015-10-24T00:11:47+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment?recomment_text=aaaa&recomment_cid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-24T00:15:07+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment?recomment_text=zzzz&recomment_cid=9&plcode=AAAA
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2015-10-24T00:15:16+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment?recomment_text=zzzz&recomment_cid=9&plcode=FR8S
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2015-10-24T00:15:26+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment?recomment_text=zzzz&recomment_cid=9&plcode=CX3P
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0075s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('9','zzzz','1','1445616926','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2015-10-24T00:18:47+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment?recomment_text=aa&recomment_cid=9&plcode=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-24T00:21:08+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment?recomment_text=aaaaaaa&recomment_cid=9&plcode=YDHK
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0100s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('9','aaaaaaa','1','1445617267','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-24T00:30:32+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment?recomment_text=a&recomment_cid=9&plcode=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-24T00:32:37+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment?recomment_text=aa&recomment_cid=5&plcode=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2015-10-24T00:33:17+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment?recomment_text=aaaaaa&recomment_cid=5&plcode=VHA5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-24T00:33:28+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment?recomment_text=aaaaaa&recomment_cid=5&plcode=NXBX
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0075s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('5','aaaaaa','1','1445618008','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-24T17:41:33+08:00 ] 172.31.2.130 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+
+[ 2015-10-24T17:41:33+08:00 ] 172.31.2.130 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-10-24T17:41:42+08:00 ] 172.31.2.130 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+
+[ 2015-10-24T17:41:42+08:00 ] 172.31.2.130 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-10-24T17:42:05+08:00 ] 172.31.2.130 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-10-24T17:42:05+08:00 ] 172.31.2.130 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+
+[ 2015-10-24T17:42:05+08:00 ] 172.31.2.130 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-10-24T17:43:11+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=33&comment_id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0156s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='33' WHERE ( comment_id = 5 ) [ RunTime:0.0498s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-24T17:43:12+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=34&comment_id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0156s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='34' WHERE ( comment_id = 5 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-24T17:43:12+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=35&comment_id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0000s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='35' WHERE ( comment_id = 5 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-24T17:43:12+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=36&comment_id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0000s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='36' WHERE ( comment_id = 5 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-24T17:43:13+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=37&comment_id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0156s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='37' WHERE ( comment_id = 5 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-24T17:43:13+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=38&comment_id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0000s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='38' WHERE ( comment_id = 5 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2015-10-24T17:43:14+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=39&comment_id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0156s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='39' WHERE ( comment_id = 5 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-24T17:43:14+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=40&comment_id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0000s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='40' WHERE ( comment_id = 5 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-24T17:43:15+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=41&comment_id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0156s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='41' WHERE ( comment_id = 5 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-24T17:43:15+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=42&comment_id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0156s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='42' WHERE ( comment_id = 5 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-24T17:43:16+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=43&comment_id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0000s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='43' WHERE ( comment_id = 5 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-24T17:43:16+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=44&comment_id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0000s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='44' WHERE ( comment_id = 5 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-24T17:43:17+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=45&comment_id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0000s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='45' WHERE ( comment_id = 5 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-24T21:01:06+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment_replay?recomment_text=11111111111111&recomment_pid=14&plcode=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-24T21:01:13+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment_replay?recomment_text=11111111111111&recomment_pid=14&plcode=AAAA
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-24T21:01:19+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment_replay?recomment_text=11111111111111&recomment_pid=14&plcode=AAAA
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-24T21:02:18+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment_replay?recomment_text=aaaaaaa&recomment_pid=14&plcode=0M6G
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-24T21:02:25+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment_replay?recomment_text=aaaaaaa&recomment_pid=14&plcode=XGBW
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-24T21:04:05+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment_replay?recomment_text=aaaaaaa&recomment_pid=14&plcode=TD2M
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-24T21:05:59+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment_replay?recomment_text=aaa&recomment_pid=14&plcode=KDQ5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-24T21:07:09+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment_replay?recomment_text=AAAAAA&recomment_pid=14&dplcode=UFCF
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_recomment` (`recomment_pid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('14','AAAAAA','1','1445692029','17') [ RunTime:0.0410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-24T21:08:14+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaaaaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0000s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('37','aaaaaa','1','1445692094','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-24T21:32:55+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment_replay?recomment_text=AAAA&recomment_pid=14&dplcode=PDVK
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-24T21:33:06+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment_replay?recomment_text=AAAA&recomment_pid=14&dplcode=QAWR
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_recomment` (`recomment_pid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('14','AAAA','1','1445693586','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-24T21:35:19+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment_replay?recomment_text=aaaa&recomment_pid=14&dplcode=YHEH
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-24T21:35:25+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment_replay?recomment_text=aaaa&recomment_pid=14&dplcode=YD3K
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_recomment` (`recomment_pid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('14','aaaa','1','1445693725','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-24T22:07:22+08:00 ] ::1 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-10-24T22:07:22+08:00 ] ::1 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+
+[ 2015-10-24T22:07:46+08:00 ] ::1 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+
+[ 2015-10-24T22:07:46+08:00 ] ::1 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-10-24T22:07:51+08:00 ] ::1 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-10-24T22:07:51+08:00 ] ::1 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+

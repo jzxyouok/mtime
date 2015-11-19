@@ -1,0 +1,214 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+a{
+	text-decoration:none;
+}
+
+body{
+	font: 12px/150% helvetica,"微软雅黑","microsoft yahei",verdana,lucida,arial,sans-serif,"黑体";
+    color: #333;
+    min-width: 1100px;
+    zoom: 1;
+    padding-bottom: 0;
+}
+
+#db_sechead{
+	position: relative;
+    zoom: 1;
+    z-index: 6;
+	background: #127bab;
+    padding-top: 50px;
+}
+
+#db_sechead .db_head, #db_sechead .db_head a, #db_sechead .db_year{
+	color:#fff;
+}
+
+.db_head .db_enname, .db_head .db_enname2{
+	display: block;
+    margin-top: 8px;
+    margin-left: 0;
+}
+
+.db_head{
+	width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    zoom: 1;
+    z-index: 5;
+}
+
+.db_head a:hover{
+	text-decoration:underline;
+}
+
+.db_head h1{
+	display: inline;
+	position: relative;
+    zoom: 1;
+	font-size: 35px;
+    line-height: 1.2em;
+    color: #333;
+}
+
+.db_year{
+	font-weight: normal;
+    font-size: 25px;
+	line-height: 1em;
+	display: inline-block;
+    position: relative;
+    zoom: 1;
+}
+
+.db_enname{
+	color: #333;
+    font-size: 25px;
+    line-height: 1.2em;
+	position: relative;
+}
+
+.db_nav{
+	z-index: 5;
+	height: 45px;
+	position: relative;
+}
+
+.db_secnav{
+	background: #fff;
+    border-bottom: 1px solid #d3d3d3;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 1px 3px #d3d3d3;
+}
+
+.db_secnav dl{
+	width:1000px;
+	margin:0 auto;
+}
+
+.db_nav dd{
+	position: relative;
+    zoom: 1;
+    float: left;
+    display: inline;
+    height: 45px;
+    text-align: center;
+    z-index: 2;
+}
+
+.db_secnav dd a{
+	color: #333;
+    padding: 0 15px;
+	display: inline-block;
+    height: 45px;
+	white-space: nowrap;
+    font-size: 14px;
+    line-height: 49px;
+	text-decoration: none;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+}
+
+.db_secnav dd a:hover{
+	padding: 0 15px;
+	background: #004c7f;
+    color: #fff;
+	display: inline-block;
+    height: 45px;
+	white-space: nowrap;
+    font-size: 14px;
+    line-height: 49px;
+	text-decoration: none;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+}
+
+.db_secnav dd  span{
+	font-size: 20px;
+    line-height: 32px;
+}
+
+.db_nav dt.more{
+	width: 74px;
+    height: 37px;
+    float: left;
+    display: inline;
+    position: relative;
+    zoom: 1;
+    margin-top: 6px;
+    line-height: 37px;
+    z-index: 1;
+}
+
+.db_nav dt.more a{
+	color: #333;
+	padding: 0 11px;
+	font-size: 14px;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+.db_nav dt.more em{
+	overflow: hidden;
+    zoom: 1;
+	background: url(../images/icon24.png) no-repeat;
+	background-position: -68px -15px;
+    height: 32px;
+    width: 9px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.db_nav_sel{
+	background: url(../images/icon24.png) no-repeat -150px -81px;
+	width: 114px !important;
+    position: absolute;
+    top: 37px;
+    right: 0;
+    padding: 4px 4px;
+    overflow: hidden;
+	height: 187px;
+	display:none;
+	z-index: 5;
+}
+
+.db_nav_sel dd{
+	height: 35px;
+    position: relative;
+    z-index: 2;
+    float: none;
+    display: block;
+    border: 0;
+    margin-top: 0;
+	text-align: center;
+}
+.db_nav .db_nav_sel dd a{
+	display: block;
+    padding: 0 30px;
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
+    color: #666;
+    zoom: 1;
+    text-align: right;
+}
+
+.db_nav .db_nav_sel dd a:hover{
+	background: #e5f2fb;
+    color: #343434;
+    text-decoration: none;
+}
+
+.db_secnav dd.on a{
+	background: #004c7f;
+    color: #fff !important;
+}

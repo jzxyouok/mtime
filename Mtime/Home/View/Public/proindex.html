@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+	<head>
+		<title><block name="title"></block></title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/header.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/proindex.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/footer.css">
+		<script src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+		<script src="__PUBLIC__/Home/js/header.js"></script>
+		<block name="css"></block>
+	</head>
+	<body>
+		<div class="container">
+			<include file="Public/header" />
+			
+			<div class="my_head">
+				<div id="welcomeRegion">
+					<h2>
+						<a href="#">个人设置</a>
+						<span class="px18 bold">
+							<b class="hei">.</b>
+							<span><block name="tit"></block></span>
+						</span>
+					</h2>
+				</div>
+			</div>
+		
+			<div class="my_out">
+				<div class="my_nav">
+					<ul id="nav">
+						<li>
+							<a href="__URL__/basic">
+								<span>基本资料</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>通知设置</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>绑定手机</span>
+							</a>
+						</li>
+						<li>
+							<a href="__URL__/security">
+								<span>安全隐私</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>勋章</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>标签</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>同步</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>微评设置</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			
+				<div class="t_blogout">
+					<div class="o_h">
+						<div class="t_setleft">
+							<ul class="setsider" id="setsider">
+								<block name="setsider"></block>
+							</ul>
+						</div>
+						
+						<block name="content"></block>
+						
+						
+					</div>
+				</div>
+			
+			
+			</div>
+				
+			<include file="Public/footer" />
+				
+		</div>
+	
+	</body>
+	<block name="js"></block>
+	
+</html>

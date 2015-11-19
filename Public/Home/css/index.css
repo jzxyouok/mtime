@@ -1,0 +1,1344 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+a{
+	color: #08c;
+    text-decoration: none;
+    vertical-align: baseline;
+    cursor: pointer;
+}
+
+a:hover{
+	text-decoration:none;
+	 color: #08c !important;
+}
+
+.btns a:hover{
+	color:#fff !important;
+}
+
+.moviebtn a:hover{
+	color:#fff !important;
+}
+
+
+ul{
+	list-style:none;
+}
+
+.contanier{
+	background: #fff;
+	font: 12px/150% arial,helvetica,"Î¢ÈíÑÅºÚ","microsoft yahei",verdana,lucida,sans-serif,"ºÚÌå";
+    color: #333;
+    min-width: 1100px;
+    zoom: 1;
+    padding-bottom: 0;
+	display: block;
+}
+
+.isthefilm{
+	background: #f2f2f2;
+	display: block;
+}
+
+.isthefilm .onlineticket{
+	height: 75px;
+    background: #333;
+    border-top: 1px solid #515151;
+    position: relative;
+    z-index: 10;
+}
+.isthefilm .onlineticket .midbox{
+	width: 1000px;
+    margin: auto;
+    height: 75px;
+    position: relative;
+    z-index: 0;
+}
+
+.isthefilm .onlineticket .midbox .cityselect{
+	min-width: 160px;
+	float: left;
+	display: inline;
+}
+
+.midbox .cityselect h2{
+	font-size: 20px;
+    margin: 0 10px 0 0;
+	float: left;
+    display: inline;
+	color: #fff;
+    line-height: 75px;
+}
+
+.midbox .cityselect .citylink{
+	font-size: 14px;
+    text-decoration: underline;
+	color: #fff;
+    line-height: 75px;
+	float: left;
+    display: inline;
+}
+
+.midbox .movieselectbox{
+	float: left;
+    display: inline;
+	height: 36px;
+    border-left: 1px solid #6c6c6c;
+    margin: 20px 0 0 20px;
+    padding: 0 0 0 30px;
+	position:relative;
+}
+
+.midbox .movieselectbox .moviemid{
+	background: #f5f5f5;
+    border-radius: 20px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 5px 0 0;
+    font-size: 14px;
+    margin: 0 8px 0 0;
+	float:left;
+}
+
+.movieselectbox .moviemid span{
+	display: inline-block;
+    vertical-align: middle;
+	padding: 0 30px 0 10px;
+    min-width: 110px;
+    width: 110px;
+    position: relative;
+    zoom: 1;
+    cursor: pointer;
+}
+
+.ico_select{
+	float:right;
+	width: 24px;
+    height: 24px;
+	margin-top:5px;
+    border-radius: 40px;
+    background: #0081bc url("../images/cinema_public.png") no-repeat -212px -110px;
+}
+
+.notime{
+	color: #ccc;
+    background: #f0f0f0;
+}
+
+.notime .ico_select{
+	cursor: default;
+    background-color: #ccc !important;
+}
+
+.movieselectbox .ticketinfo{
+	float: left;
+    display: inline;
+}
+
+.movieselectbox .ticketinfo .ticket{
+	background: #ccc;
+    cursor: default;
+    color: #666;
+	line-height: 36px;
+    height: 36px;
+    font-size: 18px;
+    width: 120px;
+    vertical-align: top;
+	display: inline-block;
+    border-radius: 15px;
+	text-align: center;
+    letter-spacing: 2px;
+	text-decoration: none;
+    position: relative;
+    zoom: 1;
+}
+
+.isthefilm .isthebox{
+	width: 1000px;
+    margin:auto;
+    padding: 50px 0 0;
+}
+
+.isthefilm .isthebox .tit{
+	border-bottom: 1px solid #a9a9a9;
+    position: relative;
+    zoom: 1;
+    z-index: 1;
+	height:54px;
+}
+
+.isthefilm .isthebox .tit h2{
+	width: 180px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 48px;
+    border-left: 10px solid #ff6d00;
+    padding: 0 15px;
+	float:left;
+}
+.isthefilm .isthebox .tit h2 span{
+	font-size: 36px;
+    padding: 0 8px;
+}
+
+.isthefilm .isthebox .tit .filmlink{
+    width: 500px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 15px;
+	float:left;
+}
+
+.isthefilm .isthebox .tit .filmlink ul{
+	list-style:none;
+}
+
+.filmlink a:hover{
+	color:#333 !important;
+}
+
+.filmlink .on{
+	color: #333;
+}
+
+
+
+.isthefilm .isthebox .tit .filmlink ul li{
+	display:inline-block;
+	padding:0px 5px;
+}
+
+.isthefilm .isthebox .tit .filmsearch{
+	margin-top: 15px;
+	width: 205px;
+    height: 30px;
+    float: right;
+    border: 1px solid #c4c4c4;
+    box-shadow: 0 3px 2px rgba(0,0,0,0.1) inset;
+    border-radius: 20px;
+    background: #f7f7f7;
+    padding: 0 8px;
+}
+
+.filmsearch input{
+	display: inline-block;
+    vertical-align: top;
+    border: 0;
+    background: 0;
+    font-size: 14px;
+    margin: 0;
+}
+
+.filmsearch input.film{
+	width: 165px;
+	height: 27px;
+    line-height: 30px;
+    background: 0;
+    margin: 0;
+    border-radius: 3px;
+    color: #000;
+	outline:none;
+}
+
+.filmsearch input.but{
+	width: 32px;
+    height: 23px;
+    margin: 2px 0 0;
+    background: url("../images/topbar.png") no-repeat -155px -106px;
+    cursor: pointer;
+	outline:none;
+}
+
+.moviebox{
+	padding: 20px 0 0;
+}
+
+.moviebox .firstmovie{
+	width: 272px;
+}
+
+
+.moviebox .firstmovie dt{
+	margin-bottom: 10px;
+    position: relative;
+    zoom: 1;
+	display: block;
+}
+
+.moviebox .firstmovie dt .banben{
+	width: 37px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.icon_3d, .icon_3dimax, .icon_dmax, .icon_imax{
+	background: url("../images/allicon24.png") no-repeat;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+}
+
+.icon_3d{
+	background-position: -81px -171px;
+    width: 37px;
+    height: 19px;
+    margin-bottom: 2px;
+}
+
+.icon_3dimax{
+	background-position: -155px -171px;
+    width: 37px;
+    height: 31px;
+    margin-bottom: 2px;
+}
+
+.icon_dmax{
+	background-position: -118px -171px;
+    width: 37px;
+    height: 31px;
+    margin-bottom: 2px;
+}
+
+.icon_imax{
+	background-position: -44px -171px;
+    width: 37px;
+    height: 19px;
+    margin-bottom: 2px;
+}
+
+.moviebox .firstmovie .score{
+	background: #669c20;
+    color: #fff;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    font: 12px/150% helvetica,"Î¢ÈíÑÅºÚ","microsoft yahei",verdana,lucida,arial,sans-serif,"ºÚÌå";
+}
+
+.moviebox .firstmovie .score b{
+	font-size: 12px;
+    line-height: 1em;
+    padding: 8px 0 4px;
+    display: block;
+}
+.moviebox .firstmovie .score p{
+	font-size: 24px;
+    line-height: 1em;
+}
+
+.moviebox .firstmovie dd h2{
+	font-size: 20px;
+    font-weight: normal;
+    line-height: 1.4em;
+	padding-left: 65px;
+}
+
+.moviebox .firstmovie dd h2 a{
+	color:#333;
+}
+
+.moviebox .firstmovie dd h3{
+	font-size: 14px;
+    line-height: 24px;
+	padding-left: 65px;
+    font-weight: normal;
+}
+
+.moviebox .firstmovie dd h3 a{
+	color:#333;
+}
+
+.moviebox .firstmovie dd .hotmovie{
+	color: #679c21;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 0 0 10px 30px;
+    margin: 10px 0 0;
+    position: relative;
+    zoom: 1;
+}
+.moviebox .firstmovie dd .hotmovie .ico_dot{
+	position: absolute;
+    left: 0;
+    top: 0;
+	width: 23px;
+    height: 23px;
+    background: url(../images/cinema_png.png) no-repeat -114px -150px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.moviebox .firstmovie dd .moviebtn{
+	text-align:center;
+}
+.moviebox .firstmovie dd .moviebtn strong{
+	font-size: 54px;
+    line-height: 1em;
+    margin-right: 6px;
+	font-weight: bold;
+	float:left;
+	font-family:arial;
+}
+
+.moviebox .firstmovie dd .moviebtn .tic{
+	width: 162px;
+    border-radius: 40px;
+    margin-left: 5px;
+    height: 46px;
+    font-size: 24px;
+    line-height: 46px;
+    letter-spacing: 2px;
+	background: #0081bc;
+	color: #fff;
+    text-decoration: none;
+    position: relative;
+    zoom: 1;
+	text-align: center;
+	display: inline-block;
+	margin-top:5px;
+}
+
+.othermovie{
+	width: 680px;
+}
+.fr{
+	float:right;
+}
+
+.fl{
+	float:left;
+}
+
+
+.othermovie ul{
+	list-style:none;
+}
+
+.othermovie ul li{
+	display:inline-block;
+	float:left;
+	width: 320px;
+    zoom: 1;
+    margin: 0 0 20px 10px;
+}
+
+.othermovie ul li .picbox{
+	width: 100px;
+    margin-right: 13px;
+    position: relative;
+    zoom: 1;
+	float: left;
+    display: inline;
+	border:1px solid #ccc;
+}
+
+.othermovie ul li .picbox .score{
+	background: #679c21;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    height: 20px;
+    padding: 0 5px;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+	font-family: tahoma;
+}
+
+.othermovie ul li .picbox  .icon_hot{
+	position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 44px;
+    height: 44px;
+	background: url(../images/allicon24.png) no-repeat;
+	background-position: 0 -215px;
+    display: inline-block;
+    zoom: 1;
+    overflow: hidden;
+}
+.othermovie ul li .picbox .banben{
+	width: 37px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.othermovie ul li dl{
+	width: 205px;
+	float: left;
+    display: inline;
+}
+.othermovie ul li dl dt{
+	font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 8px;
+}
+
+.othermovie ul li dl a{
+	color: #333;
+}
+
+.othermovie ul li dd{
+	font-size: 14px;
+    line-height: 24px;
+}
+.othermovie ul li dd.hot{
+	color: #679c21;
+    line-height: 20px;
+    padding: 0 0 0 25px;
+    margin: 10px 0 0;
+    position: relative;
+    zoom: 1;
+}
+
+.othermovie ul li dd.hot .ico_dot{
+	position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.ico_dot{
+	width: 23px;
+    height: 23px;
+    background: url(../images/cinema_png.png) no-repeat -114px -150px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.othermovie ul li dd.btns{
+	margin-top: 10px;
+}
+
+.isthefilm .ticket{
+	background: #0081bc;
+    width: 94px;
+    height: 25px;
+    display: inline-block;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    zoom: 1;
+}
+
+.moviemore{
+	margin-top:30px;
+	float:left;
+}
+.moviemore .otherfilm{
+	width: auto;
+}
+
+.moviemore .otherfilm ul{
+	display: block;
+	list-style:none;
+	position: relative;
+    zoom: 1;
+}
+
+.moviemore ul li{
+	display:inline-block;
+	width: 320px;
+    zoom: 1;
+    margin: 0 0 20px 10px;
+}
+
+.moviemore ul li .picbox{
+	width: 100px;
+    margin-right: 13px;
+    position: relative;
+    zoom: 1;
+	float: left;
+    display: inline;
+	border:1px solid #ccc;
+}
+
+.moviemore ul li .picbox .score{
+	background: #679c21;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    height: 20px;
+    padding: 0 5px;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+	font-family: tahoma;
+}
+
+.moviemore ul li .picbox  .icon_hot{
+	position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 44px;
+    height: 44px;
+	background: url(../images/allicon24.png) no-repeat;
+	background-position: 0 -215px;
+    display: inline-block;
+    zoom: 1;
+    overflow: hidden;
+}
+.moviemore ul li .picbox .banben{
+	width: 37px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.moviemore ul li dl{
+	width: 205px;
+	float: left;
+    display: inline;
+}
+.moviemore ul li dl dt{
+	font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 8px;
+}
+
+.moviemore ul li dl a{
+	color: #333;
+}
+
+.moviemore ul li dd{
+	font-size: 14px;
+    line-height: 24px;
+}
+.moviemore ul li dd.hot{
+	color: #679c21;
+    line-height: 20px;
+    padding: 0 0 0 25px;
+    margin: 10px 0 0;
+    position: relative;
+    zoom: 1;
+}
+
+.moviemore ul li dd.hot .ico_dot{
+	position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.ico_dot{
+	width: 23px;
+    height: 23px;
+    background: url(../images/cinema_png.png) no-repeat -114px -150px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.moviemore ul li dd.btns{
+	margin-top: 10px;
+}
+
+
+.i_more{
+	text-align: center;
+    font-size: 18px;
+    line-height: 31px;
+    padding: 0 0 50px;
+}
+
+.i_more a{
+	color: #333;
+    text-decoration: none;
+}
+
+.i_more a .xila{
+	background: url(../images/allicon23.png) no-repeat;
+	background-position:-267px -336px;
+    width: 31px;
+    height: 31px;
+    position: relative;
+    zoom: 1;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.upcoming{
+	width: 1000px;
+    margin: auto;
+    padding: 45px 0 30px 0;
+}
+
+.upcoming .title{
+	border-left: 10px solid #ff6d00;
+}
+
+.upcoming .title h2{
+	font-size: 20px;
+    font-weight: normal;
+    line-height: 48px;
+    padding: 0 15px;
+}
+.upcoming .i_swwantlist{
+	position: relative;
+	border-top: 2px dashed #d9d9d9;
+    margin-top: 25px;
+}
+
+.upcoming .i_swwantlist .dot{
+	background: url(../images/index.jpg) no-repeat -220px 0;
+    width: 17px;
+    height: 17px;
+    display: block;
+    overflow: hidden;
+}
+
+.upcoming .i_swwantlist .day{
+	color: #7b7b7b;
+    font-size: 14px;
+    margin-top: 10px;
+	display:block;
+}
+
+.upcoming .i_swwantlist .day strong{
+	font-size: 20px;
+    line-height: 1em;
+    font-weight: normal
+}
+
+.upcoming .i_swwantlist .i_wantmovie{
+	position: relative;
+    zoom: 1;
+    min-height: 152px;
+    color: #323232;
+    font-size: 14px;
+    margin-top: 17px;
+}
+
+.upcoming .i_swwantlist .i_wantmovie .img{
+	display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.upcoming .i_swwantlist .i_wantmovie .img img{
+	border: 1px solid #000;
+}
+
+.i_wantmovie a{
+	color:#333;
+}
+
+.upcoming .i_swwantlist .i_wantmovie .tex{
+	margin-left:117px;
+}
+.upcoming .i_swwantlist .i_wantmovie h3{
+	padding-top: 7px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.upcoming .i_swwantlist .i_wantmovie p{
+	margin-top: 6px;
+}
+
+.upcoming .i_swwantlist .i_wantmovie .i_wbr{
+	position: relative;
+    zoom: 1;
+    padding-left: 45px;
+    line-height: 1.5em;
+}
+
+.upcoming .i_swwantlist .i_wantmovie .i_wbr b{
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 45px;
+}
+
+.i_wantmovie  .icon_ivideo{
+	margin-left: 5px;	
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+	background: url(../images/allicon23.png) no-repeat;
+	background-position: -44px -190px;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+}
+
+.filmticket{
+	width: 1000px;
+    margin: 40px auto 0;
+}
+
+.filmticket .title{
+	border-bottom: 1px solid #a9a9a9;
+	float:left;
+}
+
+.filmticket .title h2{
+	width: 200px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 48px;
+    border-left: 10px solid #ff6d00;
+    padding: 0 15px;
+}
+
+.filmticket .title h2 .num{
+	font-size: 36px;
+    padding: 0 8px;
+}
+
+.filmticket .title .othermenu{
+	padding: 10px 0 0;
+    border: 0;
+	height: 35px;
+    position: relative;
+    zoom: 1;
+    z-index: 2;
+	float:left;
+}
+
+.filmticket .title .othermenu li{
+	line-height: 28px;
+    height: 28px;
+    float: left;
+    display: inline;
+    padding: 2px 10px 0;
+    margin-top: 0;
+    border-right: 1px solid #cecece;
+    font-size: 14px;
+}
+
+.filmticket .title .othermenu li.first{
+	position: relative;
+    zoom: 1;
+    z-index: 7;
+	width: 135px;
+    margin-left: 5px;
+	cursor: pointer;
+}
+
+.filmticket .title .othermenu li .ico_f_jiao{
+	position: absolute;
+    right: 0px;
+    top: 15px;   
+	width: 12px;
+    height: 6px;
+	display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+	padding-right:10px;
+	background-image: url(../images/cinema_public.png);
+    background-repeat: no-repeat;
+    background-position: -52px -111px;
+}
+
+.filmticket .title .othermenu li .ico_radio{
+	margin: 0px 5px 0 10px;
+	width: 14px;
+    height: 14px;
+    cursor: pointer;
+	background: url(../images/newfilm_ico.png) no-repeat;
+    background-position: -15px 0;
+	display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.filmticket .title .othermenu li  .v_m{
+	vertical-align: middle;
+	cursor: default;
+}
+
+.filmticket .title .othermenu li .notcheck{
+	color: #ccc;
+    cursor: not-allowed;
+}
+
+.filmticket .title .othermenu li .on{
+	background-position: 0 0;
+}
+
+.filmticket .title .othermenu .citysearch{
+	width: 194px;
+    position: absolute;
+	top: 5px;
+    right: -300px;
+	height: 30px;
+    float: right;
+    border: 1px solid #c4c4c4;
+    box-shadow: 0 3px 2px rgba(0,0,0,0.1) inset;
+    border-radius: 20px;
+    background: #f7f7f7;
+    padding: 0 8px;
+}
+
+.filmticket .title .othermenu .citysearch input{
+	display: inline-block;
+    vertical-align: top;
+    border: 0;
+    font-size: 14px;
+    margin: 0;
+}
+
+.filmticket .title .othermenu .citysearch input.text{
+	width: 150px;
+	height: 30px;
+    line-height: 30px;
+    background: 0;
+    margin: 0;
+    border-radius: 3px;
+    color: #d0d0d0;
+	outline:none;
+}
+.filmticket .title .othermenu .citysearch input.btn{
+	width: 34px;
+    height: 24px;
+	background: url(../images/newfilm_ico.png) no-repeat;
+    background-position: -66px -24px;
+    margin-top: 4px;
+	margin: 2px 0 0;
+	cursor: pointer;
+	outline:none;
+}
+
+.filmticketbox .main{
+	width: 680px;
+}
+
+.filmticketbox .main .movietxt{
+	padding: 0;
+}
+
+.main .movietxt ul{
+	list-style:none;
+}
+
+.main .movietxt ul li{
+	border-bottom: 1px solid #e8e8e8;
+    padding: 30px 0;
+    min-height: 90px;
+    position: relative;
+    zoom: 1;
+}
+
+.loadtempimg{
+	width: 102px;
+    height: 63px;
+    border: 1px solid #a5a5a5;
+}
+
+.main .movietxt ul li .picbox{
+	position: absolute;
+    left: 0;
+    top: 30px;
+    z-index: 2;
+}
+
+.main .movietxt ul li .movieinfobox{
+	border: 0;
+    padding: 0 0 0 125px;
+    position: relative;
+    zoom: 1;
+}
+
+.main .movietxt ul li .movieinfobox dt{
+	padding-top: 0;
+    margin-top: -6px;
+    position: relative;
+    zoom: 1;
+	font-size: 24px;
+    padding: 5px 0 0 0;
+	min-height: 35px;
+    line-height: 35px;
+}
+
+.main .movietxt ul li .movieinfobox dt a{
+	color:#333;
+}
+
+.main .movietxt ul li .movieinfobox .htitle{
+	background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    zoom: 1;
+}
+
+.filmicon{
+	margin: 10px 0 0;
+}
+
+.main .movietxt ul li .movieinfobox .infotxt p{
+	font-size: 14px;
+    line-height: 24px;
+}
+
+.main .movietxt ul li .movieinfobox .infotxt .moretool{
+	text-align: left;
+    margin: 10px 0 0 0;
+    position: relative;
+	zoom: 1;
+    z-index: 1;
+}
+
+.main .movietxt ul li .movieinfobox .infotxt .moretool span{
+	margin-bottom: 5px;
+	margin: 0 2px 0 2px;
+	overflow: hidden;
+}
+
+.ico_c_f02, .ico_c_f03, .ico_c_f15, .ico_c_f09, .ico_c_f14, .ico_c_f25, .ico_c_f12 ,.ico_c_f08, .ico_c_f13, .ico_c_f27{
+	display: inline-block;
+    vertical-align: middle;
+    background: url(../images/infrastructure_icon.png) no-repeat;
+    border-radius: 3px;
+}
+
+.moretool .ico_c_f02{
+	width: 48px;
+	height:25px;
+    background-position: -50px -72px;
+}
+.main .movietxt ul li .movieinfobox .infotxt .moretool .ico_c_f03{
+	width: 48px;
+	height:25px;
+    background-position: -100px -72px;
+}
+.main .movietxt ul li .movieinfobox .infotxt .moretool .ico_c_f15{
+	width: 48px;
+	height:25px;
+    background-position: -227px -72px;
+}
+.main .movietxt ul li .movieinfobox .infotxt .moretool .ico_c_f09{
+	width: 28px;
+	height:25px;
+	background-position: 0 -97px;
+}
+.main .movietxt ul li .movieinfobox .infotxt .moretool .ico_c_f14{
+	width: 28px;
+	height:25px;
+	background-position: -60px -97px;
+}
+.main .movietxt ul li .movieinfobox .infotxt .moretool .ico_c_f25{
+	width: 28px;
+	height:25px;
+	background-position: -30px -97px;
+}
+.main .movietxt ul li .movieinfobox .infotxt .moretool .ico_c_f12{
+	width: 28px;
+	height:25px;
+	background-position: -91px -97px;
+}
+.main .movietxt ul li .movieinfobox .infotxt .moretool .ico_c_f13{
+	width: 28px;
+	height:25px;
+	background-position: -121px -97px;
+}
+
+.filmticketbox .aside{
+	width: 300px;
+}
+.filmticketbox .aside a{
+	display:block;
+	margin-top:20px;
+}
+.appdown{
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.filmtip{
+	background: #0081bc;
+    padding: 30px 0;
+    position: relative;
+    zoom: 1;
+}
+
+.filmtip .filmtipbox{
+	width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.filmtip .filmtipbox ul{
+	display:block;
+	list-style:none;
+}
+.filmtip .filmtipbox ul li{
+	background: #e1eef4;
+    padding: 15px 20px;
+    width: 490px;
+    border-radius: 5px;
+    float: left;
+    display: inline;
+    margin: 0 0 10px 10px;
+}
+
+.filmtip .filmtipbox ul li.first{
+	width: 420px;
+    margin-left: 0;
+}
+
+.moviecard{
+	height: 140px;
+    position: relative;
+    zoom: 1;
+    padding-left: 180px;
+}
+
+.moviecard  .cardbg{
+	background: url(../images/filmmovie.jpg) no-repeat 0 -104px;
+    width: 182px;
+    height: 146px;
+	position: absolute;
+    left: -20px;
+    top: -20px;
+}
+.moviecard  .cardbg1{
+	background: url(../images/cinema_png.png) no-repeat 0 -228px;
+    width: 110px;
+    height: 90px;
+	position: absolute;
+    bottom: -20px;
+    left: -20px;
+}
+
+.moviecard dt{
+	color: #033333;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.moviecard dd{
+	font-size: 14px;
+    line-height: 26px;
+    padding: 0;
+	color:#333;
+}
+
+.ticketoline h2{
+	font-size: 18px;
+    line-height: 26px;
+    color: #033333;
+}
+
+.ticketoline p{
+	width: 450px;
+    height: 104px;
+    margin: 10px auto 0;
+    background: url(../images/filmmovie.jpg) no-repeat;
+	background-position:0 0;
+}
+
+.filmtip .filmtipbox ul li.last{
+	width: auto;
+    width: 960px;
+    margin: 0;
+}
+
+.telbox{
+	font-size: 14px;
+    line-height: 28px;
+}
+
+.telbox .tel{
+	font-size: 20px;
+}
+
+.telbox  b{
+	font-weight: bold;
+    font-size: 18px;
+    color: #033333;
+}
+
+.telbox a{
+	color: #333;
+}
+
+.telbox .mline{
+	padding: 0 10px;
+    color: #333;
+}
+
+.telbox a.link_green{
+	font-size: 14px;
+    line-height: 28px;
+    width: auto;
+    height: auto;
+    padding: 0 20px;
+    color: #fff;
+	text-align: center;
+	background: #679c21;
+	display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.mtimebar{
+	width: 50px;
+    position: fixed;
+	right: 0;
+    bottom: 5px;
+    z-index: 100;
+}
+
+.sharebar, .collectbar, .messagebar, .codebar, .topbar, .searchbar{
+	width: 50px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/mtimebar.png) no-repeat;
+    margin: 1px 0 0;
+    cursor: pointer;
+    position: relative;
+    zoom: 1;
+    opacity: .9;
+}
+.searchbar:hover, .sharebar:hover, .collectbar:hover, .messagebar:hover, .codebar:hover, .topbar:hover{
+	opacity: 1;
+}
+.topbar{
+	background-position: -55px -456px;
+}
+.searchbar{
+	background-position: -55px -201px;
+}
+.searchbar:hover{
+	background-position: 0 0;
+}
+.topbar:hover {
+	background-position: 0 -255px;
+}
+
+.moviestip{
+	width:255px;
+	height:392px;
+	background:#fff;
+	z-index:20;
+	position:absolute;
+	left:-50px;
+	top:40px;
+	border-radius:7px;
+	border: 1px solid #ebebeb;
+    box-shadow: 1px 1px 3px #ebebeb;
+	overflow: hidden;
+    overflow-y: auto;
+	padding:3px 1px;
+}
+
+.cinematip{
+	width:255px;
+	height:392px;
+	background:#fff;
+	position:absolute;
+	top:40px;
+	left:220px;
+	border:1px solid #ccc;
+	border-radius:7px;
+	overflow:hidden;
+	overflow-y:auto;
+	padding:3px 1px;
+	z-index:20;
+}
+
+.searcher{
+	width:197px;
+	height:30px;
+	border:1px solid #ccc;
+	padding:0 9px;
+	display: block;
+    margin: 12px;
+	border-radius:15px;
+}
+
+.searcher input{
+	color: #a5a5a5;
+    width: 170px;
+    margin-top: 3px;
+    border: 0;
+    float: left;
+    font-size: 14px;
+	font-family: "Î¢ÈíÑÅºÚ","microsoft yahei";
+	padding: 2px;
+    vertical-align: middle;
+    outline: 0;
+}
+
+.searcher .sub{
+	background: url(http://static1.mtime.cn/theater/20150824094941/images/index.jpg) no-repeat -265px 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    float: right;
+    display: inline;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.moviestip ul,.cinematip ul{
+	height: 312px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.moviestip li,.cinematip li{
+	position:relative;
+	display:block;
+	font-size:14px;
+	overflow:hidden;
+}
+
+.moviestip li a,.cinematip li a{
+	display:block;
+	overflow:hidden;
+	position:relative;
+	clear:both;
+	color: #333;
+    text-decoration: none;
+    padding: 5px 12px;
+    line-height: 1.6em;
+}
+
+.db_point{
+	background: #679c21;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    padding: 4px 5px 4px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    color: #fff;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+.moviestip li b,.cinematip li b{
+	float: right;
+    display: inline;
+}
+
+.moviestip li a:hover,.cinematip li a:hover{
+	background: #e5f2fb;
+    color: #08c;
+}
+

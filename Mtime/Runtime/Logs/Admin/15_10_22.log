@@ -1,0 +1,6 @@
+[ 2015-10-22T16:27:59+08:00 ] ::1 /mtime/index.php/Admin/Comment/updatestatus/id/37/p/1/mid/9/status/0
+ERR: 非法操作:updatestatus
+
+[ 2015-10-22T16:28:15+08:00 ] ::1 /mtime/index.php/Admin/Comment/updatestatus/id/37/p/1/mid/9/status/0
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( comment_status = 0 )' at line 1
+

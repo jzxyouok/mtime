@@ -1,0 +1,39 @@
+[ 2015-10-09T14:48:47+08:00 ] ::1 /mtime/index.php/Admin/Cinema/addfilm
+ERR: 模板不存在:./Mtime/Admin/View/Cinema/addfilm.html
+
+[ 2015-10-09T15:33:33+08:00 ] ::1 /mtime/index.php/Admin/Cinema/addcz
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and m_cmrelation.cm_time =  and m_movie.movie_id = m_cmrelation.cm_mid' at line 1
+
+[ 2015-10-09T15:33:35+08:00 ] ::1 /mtime/index.php/Admin/Cinema/addcz
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and m_cmrelation.cm_time =  and m_movie.movie_id = m_cmrelation.cm_mid' at line 1
+
+[ 2015-10-09T15:34:33+08:00 ] ::1 /mtime/index.php/Admin/Cinema/addcz
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and m_cmrelation.cm_time =  and m_movie.movie_id = m_cmrelation.cm_mid' at line 1
+
+[ 2015-10-09T15:35:09+08:00 ] ::1 /mtime/index.php/Admin/Cinema/addcz
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and m_cmrelation.cm_time =  and m_movie.movie_id = m_cmrelation.cm_mid' at line 1
+
+[ 2015-10-09T15:35:20+08:00 ] ::1 /mtime/index.php/Admin/Cinema/addcz
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and m_cmrelation.cm_time =  and m_movie.movie_id = m_cmrelation.cm_mid' at line 1
+
+[ 2015-10-09T15:35:21+08:00 ] ::1 /mtime/index.php/Admin/Cinema/addcz
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and m_cmrelation.cm_time =  and m_movie.movie_id = m_cmrelation.cm_mid' at line 1
+
+[ 2015-10-09T15:37:32+08:00 ] ::1 /mtime/index.php/Admin/Cinema/addcz?cm_cid=---%E8%AF%B7%E9%80%89%E6%8B%A9---&cm_time=2015-10-09
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+
+[ 2015-10-09T15:37:51+08:00 ] ::1 /mtime/index.php/Admin/Cinema/addcz?cm_cid=---%E8%AF%B7%E9%80%89%E6%8B%A9---&cm_time=2015-10-09
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+
+[ 2015-10-09T15:40:30+08:00 ] ::1 /mtime/index.php/Admin/Cinema/addcz?cm_cid=---%E8%AF%B7%E9%80%89%E6%8B%A9---&cm_time=2015-10-02
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+
+[ 2015-10-09T15:41:26+08:00 ] ::1 /mtime/index.php/Admin/Cinema/addcz?cm_cid=---%E8%AF%B7%E9%80%89%E6%8B%A9---&cm_time=2015-10-09
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+
+[ 2015-10-09T15:46:47+08:00 ] ::1 /mtime/index.php/Admin/Cinema/addcz?cm_cid=---%E8%AF%B7%E9%80%89%E6%8B%A9---&cm_time=2015-10-09&sub=%E9%80%89%E6%8B%A9
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+
+[ 2015-10-09T17:28:31+08:00 ] ::1 /mtime/index.php/Admin/Cinema/__CONTROLLER/tjcz/cid/1/mid/8/time/1444320000
+ERR: 非法操作:__CONTROLLER
+

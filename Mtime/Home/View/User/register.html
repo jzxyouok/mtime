@@ -1,0 +1,141 @@
+<html>
+	<head>
+		<title>注册登录页 - Mtime时光网</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/header.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/register.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/footer.css">
+		<script src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+		<script src="__PUBLIC__/Home/js/header.js"></script>
+		<script src="__PUBLIC__/Home/js/register.js"></script>
+	</head>
+	<body>
+		<div class="back" id="back"></div>
+		<div class="tanchuang" id="fwtk">
+				<div class="popmid">
+					<div class="tk">您需要阅读并同意服务条款才能注册</div>
+					<div class="tc">
+						<a href="javascript:;" class="btn_blue " id="close">确定</a>
+					</div>
+				</div>
+			</div>
+		<div class="container">	
+			<include file="Public/header" />
+			<div class="regin_out">
+				<div class="regin_line"></div>
+				<div class="regin_inner">
+					<!--注册-->
+					<div class="regin_left">
+						<h5>新会员注册</h5>
+						<dl class="regin_tab">
+							<dd class="on" id="yx">邮箱注册</dd>
+							<dd id="sj">手机注册</dd>
+						</dl>
+						<form action="" method="post" id="register_msg">
+						<dl>
+							<dd id="yxzc">
+								<div class="reg_txt" >
+									<input id="reg_email" type="text" name="member_name" value="" class="c_a5 er" placeholder="填个常用邮箱做为登录帐号">
+									<p class="reg_err">邮箱不能为空</p>
+								</div>
+							</dd>
+							<dd id="sjzc" style="display:none;">
+								<div class="reg_txt"  >
+									<input id="reg_mobile" type="text" name="phone_name" value="" class="c_a5 pr" placeholder="常用手机号">
+									<p class="reg_err">请输入手机号注册</p>
+								</div>
+							</dd>
+							<dd>
+								<div class="reg_txt">
+									<input type="password" id="pass" name="member_pass" value="" class="c_a5 er pr" maxlength="20" placeholder="密码(6-20位字母与数字、符号组合)">
+									<p class="reg_err">请输入密码</p>
+								</div>
+							</dd>
+							<dd>
+								<div class="reg_txt">
+									<input type="password" id="repass" value="" class="c_a5 er pr" maxlength="20" placeholder="确认密码" name="repass">
+									<p class="reg_err">两次输入的密码不相同</p>
+								</div>
+							</dd>
+							<dd id="yzm">
+								<div class="reg_txt" style="width:190px;">
+									<input type="text" id="cod" name="code" value="" class="c_a5 er" maxlength="4" placeholder="点击获取验证码" style="width:160px;" onkeyup="this.value = this.value.toUpperCase()">
+									<p class="reg_err" style="width:160px;">请输入验证码</p>
+								</div>
+								<span class="ml12" id="vcode" style="display:none;">
+									<span id="img_vcode">
+										<img width="140" height="50" alt="点击更换图片" style="cursor:pointer;margin-right:6px;vertical-align:middle;" src="{:U('User/Vcode')}" id="code" onclick="this.src = '__URL__/Vcode/'+Math.random() "/>
+									</span>
+								</span>
+							</dd>
+							<dd id="sjyz" style="display:none;">
+								<div class="reg_txt">
+									<input type="text" id="reg_smscode" class="c_a5 pr" value="" placeholder="短信验证码">
+									<p class="reg_err">请输入短信验证码</p>
+									<a id="reg_smscodeBtn" href="javascript:;" onclick="return false;" class="bind_telcode">获取验证码</a>
+								</div>
+							</dd>
+							<dd>
+								<div class="bind_pro">
+									<span id="reg_policy" class="on"></span>
+									<a href="http://feature.mtime.com/help/policy.htm" target="_blank">已同意《Mtime时光网服务条款》</a>
+								</div>
+							</dd>
+						</dl>
+						</form>
+						<dt class="tc">
+							<a id="btn_submit"  href="javascript:;" class="regin_btn">注册</a>
+							<a id="mobileRegisterBtn"  href="javascript:;" class="regin_btn" style="display:none;">注册</a>
+						</dt>
+					</div>
+					<!--注册 end-->
+					<!--登录-->
+					<div class="regin_right">
+						<h5>会员登录</h5>
+						<p class="pt">已有时光账号请在此登录</p>
+						<form id="loginForm" action="__CONTROLLER__/do_login" method="post">
+							<dl>
+								<dd>
+									<div class="reg_txt">
+										<input type="text" name="email" id="loginEmailText" class="c_a5 chk" value="" placeholder="输入电子邮箱的地址/手机号">
+										<p class="reg_err">请输入登录邮箱 / 手机号</p>
+									</div>
+								</dd>
+								<dd>
+									<div class="reg_txt">
+										<input type="password" name="pass" id="loginPasswordText" value="" class="c_a5 chk" placeholder="确认密码">
+										<p class="reg_err">请输入密码</p>
+									</div>
+								</dd>
+								<dd>
+									<div class="bind_pro">
+										<a href="#" style="float:right;">忘记密码</a>
+										<span id="isAutoSign"></span>下次自动登录
+									</div>
+								</dd>
+								<dt style="text-align:center;margin-top:20px;">
+									<a id="loginButton" href="javascript:;" class="regin_btn">登录</a>
+								</dt>
+							</dl>
+						</form>
+						
+						<dl class="regin_log3">
+							<dt>使用第三方登录</dt>
+							<dd>
+								<a href="http://passport.mtime.com/unitelogin/dispatch/weibo/web/?r=http%3a%2f%2ftheater.mtime.com%2fChina_Shanxi_Province2_Changzhi%2f" class="sina"></a>
+								<a href="http://passport.mtime.com/unitelogin/dispatch/qq/web/?r=http%3a%2f%2ftheater.mtime.com%2fChina_Shanxi_Province2_Changzhi%2f" class="qq"></a>
+							</dd>
+						</dl>
+					</div>
+					<!--登录 end-->
+				</div>
+			</div>
+			<include file="Public/footer" />
+		</div>
+	</body>
+	<script>
+		url = '{:U("User/select")}';
+		emailaction = '__CONTROLLER__/email_register';
+		phoneaction = '__CONTROLLER__/phone_register';
+	</script>
+</html>

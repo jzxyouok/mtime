@@ -1,0 +1,265 @@
+/*尾部css*/
+.footout{
+	background: #f7f7f7;
+    position: relative;
+	height:205px;
+    zoom: 1;
+    font-family: helvetica,"微软雅黑","microsoft yahei",verdana,lucida,arial,sans-serif,"黑体";
+}
+
+.footout a:hover{
+	color:#08c;;
+}
+
+.footout .topline{
+	background: url("../images/bar.png") no-repeat center 0 #337fab;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.footinner{
+	width: 1000px;
+    margin: 0 auto;
+    padding-top: 40px;
+    font-size: 13px;
+}
+.footinner a{
+	color:#333;
+}
+.footinner .fotlogo{
+	width: 200px;
+    float: left;
+    display: inline;
+    position: relative;
+    min-height: 157px;
+}
+
+.footinner .fotlogo dl{
+	padding:20px;
+}
+
+.footinner .fotlogo dl dt{
+	padding-bottom: 10px;
+}
+
+.footinner .fotlogo dl dt a{
+	background: url("../images/bar.png") no-repeat 0 -9px;
+    width: 136px;
+    height: 44px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.footinner .fotlogo dl dd{
+	padding-top:5px;
+}
+
+.ml30{
+	margin-left: 30px;
+}
+
+.fotlogo .line{
+	background: url("../images/bar.png") no-repeat -495px -9px;
+    width: 1px;
+    height: 157px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.footinner .fotmap{
+	width: 401px;
+    float: left;
+    display: inline;
+    position: relative;
+    min-height: 157px;
+}
+
+.footinner .fotmap dl{
+	display: inline;
+    margin-left: 33px;
+    line-height: 2em;
+	float:left;
+}
+
+.footinner .fotmap dl dd{
+	font-size: 16px;
+    line-height: 2em;
+}
+.footinner .fotmap .tj dd a{
+	padding-right:15px;
+}
+
+.footinner .fotmap dl dd .sina{
+	background: url("../images/bar.png") no-repeat -140px -9px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    margin-top: 8px;
+}
+.footinner .fotmap dl dd .weixin{
+	background: url("../images/bar.png") no-repeat -170px -9px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    margin-top: 8px;
+}
+.footinner .fotmap dl dd .rss{
+	background: url("../images/bar.png") no-repeat -200px -9px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.footinner .fotweek{
+	width: 230px;
+    float: left;
+    display: inline;
+    min-height: 157px;
+}
+
+.footinner .fotweek dl{
+	width: 172px;
+    margin: 0 auto;
+}
+
+.footinner .fotweek dl dt .fr{
+	color: #7d7d7d;
+    padding-top: 3px;
+	float: right;
+}
+
+.footinner .fotweek dl dt strong{
+	font-size: 18px;
+    font-weight: normal;
+}
+
+.footinner .fotweek dl dd{
+	margin-top:10px;
+}
+
+.footinner .fotweek dl .input{
+	background: url("../images/bar.png") no-repeat -330px -35px;
+    width: 163px;
+    height: 25px;
+    position: relative;
+    zoom: 1;
+    padding-top: 1px;
+}
+
+.footinner .fotweek dl .input input{
+	background: transparent;
+    width: 100px;
+    text-align: center;
+    margin-left: 12px;
+    border: 0;
+    height: 22px;
+	outline:none;
+}
+.footinner .fotweek dl .input a{
+	background: url("../images/bar.png") no-repeat -330px -9px;
+    width: 54px;
+    height: 25px;
+    position: absolute;
+    right: -10px;
+    top: 1px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    line-height: 25px;
+}
+
+.footinner .fothr{
+	width: 155px;
+    float: right;
+    display: inline;
+    min-height: 157px;
+    text-align: center;
+}
+
+.footinner .fothr dl dt{
+	color: #7d7d7d;
+}
+
+.footinner .fothr dl dt strong{
+	font-size: 18px;
+    font-weight: normal;
+    color: #333;
+    line-height: 1em;
+}
+
+.footinner .fothr dl dd{
+	margin-top: 12px;
+}
+
+.footinner .fothr dl dd i{
+	background: url("../images/bar.png") no-repeat -795px -9px;
+    width: 99px;
+    height: 99px;
+    margin: 0 auto;
+    display: block;
+}
+
+.db_foot{
+	background: #f7f7f7;
+    color: #7e7e7f;
+    text-align: center;
+    font-family: verdana,"宋体";
+    padding: 30px 0 20px;
+    line-height: 2em;
+}
+.db_foot a{
+	color: #7e7e7f;
+}
+.db_foot a:hover{
+	color: #08c;
+    text-decoration: none;
+}
+.mr12{
+	margin-right: 12px;
+}
+
+.db_foot .credible{
+	text-align: center;
+    padding-top: 12px;
+}
+
+.db_foot .credible a{
+	background: url("../images/allicon.gif") no-repeat 0 0;
+    display: inline-block;
+    width: 68px;
+    height: 25px;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+.db_foot .credible .credibler{
+	background-position: 0 -120px;
+} 
+
+.db_foot .credible .goodfaith{
+	background-position: -68px -120px;
+    width: 70px;
+}
+
+/*尾部css结束*/

@@ -1,0 +1,81 @@
+[ 2015-09-30T14:58:33+08:00 ] ::1 /mtime/Admin/Login/login
+ERR: 模板不存在:./Mtime/Admin/View/Login/login.html
+
+[ 2015-09-30T15:00:15+08:00 ] ::1 /mtime/Admin/Login/login
+ERR: XML标签语法错误
+
+[ 2015-09-30T15:00:16+08:00 ] ::1 /mtime/Admin/Login/login
+ERR: XML标签语法错误
+
+[ 2015-09-30T15:00:17+08:00 ] ::1 /mtime/Admin/Login/login
+ERR: XML标签语法错误
+
+[ 2015-09-30T15:00:32+08:00 ] ::1 /mtime/Admin/Login/login
+ERR: XML标签语法错误
+
+[ 2015-09-30T15:01:48+08:00 ] ::1 /mtime/Admin/Login/login
+ERR: XML标签语法错误
+
+[ 2015-09-30T15:01:49+08:00 ] ::1 /mtime/Admin/Login/login
+ERR: XML标签语法错误
+
+[ 2015-09-30T15:07:54+08:00 ] ::1 /mtime/Admin/Login/login
+ERR: XML标签语法错误
+
+[ 2015-09-30T15:07:54+08:00 ] ::1 /mtime/Admin/Login/login
+ERR: XML标签语法错误
+
+[ 2015-09-30T15:07:55+08:00 ] ::1 /mtime/Admin/Login/login
+ERR: XML标签语法错误
+
+[ 2015-09-30T15:07:56+08:00 ] ::1 /mtime/Admin/Login/login
+ERR: XML标签语法错误
+
+[ 2015-09-30T15:07:57+08:00 ] ::1 /mtime/Admin/Login/login
+ERR: XML标签语法错误
+
+[ 2015-09-30T16:06:44+08:00 ] ::1 /mtime/index.php/Admin/Login/Vcode
+ERR: 非法操作:Vcode
+
+[ 2015-09-30T16:07:20+08:00 ] ::1 /mtime/index.php/Admin/User/Vcode
+ERR: 无法加载控制器:User
+
+[ 2015-09-30T16:07:53+08:00 ] ::1 /mtime/index.php/Admin/User/Vcode
+ERR: 无法加载控制器:User
+
+[ 2015-09-30T16:07:54+08:00 ] ::1 /mtime/index.php/Admin/User/Vcode
+ERR: 无法加载控制器:User
+
+[ 2015-09-30T16:08:07+08:00 ] ::1 /mtime/index.php/Admin/User/Vcode
+ERR: 无法加载控制器:User
+
+[ 2015-09-30T16:08:07+08:00 ] ::1 /mtime/index.php/Admin/User/Vcode
+ERR: 无法加载控制器:User
+
+[ 2015-09-30T16:08:08+08:00 ] ::1 /mtime/index.php/Admin/User/Vcode
+ERR: 无法加载控制器:User
+
+[ 2015-09-30T16:08:08+08:00 ] ::1 /mtime/index.php/Admin/User/Vcode
+ERR: 无法加载控制器:User
+
+[ 2015-09-30T16:08:28+08:00 ] ::1 /mtime/index.php/Admin/User/Vcode
+ERR: 无法加载控制器:User
+
+[ 2015-09-30T16:08:32+08:00 ] ::1 /mtime/index.php/Admin/User/Vcode
+ERR: 无法加载控制器:User
+
+[ 2015-09-30T16:14:36+08:00 ] ::1 /mtime/index.php/Admin/Login/do_login
+ERR: 非法操作:do_login
+
+[ 2015-09-30T20:39:32+08:00 ] ::1 /mtime/index.php/Admin/Member/memberlist
+ERR: 无法加载控制器:Member
+
+[ 2015-09-30T21:09:40+08:00 ] ::1 /mtime/index.php/Admin/Member/edit/id/11
+ERR: 模板不存在:./Mtime/Admin/View/Member/edit.html
+
+[ 2015-09-30T21:36:17+08:00 ] ::1 /mtime/index.php/Admin/Member/edit/id/2
+ERR: 非法操作:edit
+
+[ 2015-09-30T21:53:18+08:00 ] ::1 /mtime/index.php/Admin/Index/memberlist/p/2.html
+ERR: 非法操作:memberlist
+

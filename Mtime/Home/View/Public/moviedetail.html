@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<title><block name="title"></block> – Mtime时光网</title>
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/header.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/moviedetial.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/footer.css">
+		<script src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+		<script src="__PUBLIC__/Home/js/header.js"></script>
+		<block name="css"></block>
+	</head>
+	<body>
+		<div class="container">
+			<include file="Public/header" />
+			<div id="db_sechead">
+				<div class="db_head">
+					<div>
+						<h1>
+							<a href="#"><block name="name"></block></a>
+						</h1>
+						<p class="db_year">
+							(<block name="time"></block>)
+						</p>
+						<p class="db_enname">
+							<a href="#"><block name="ename"></block></a>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<block name="nav"></block>
+			<block name="content"></block>
+			<div style="clear:both;"></div>
+			<include file="Public/footer" />
+		</div>
+	</body>
+	<script>
+		$("#detailMenuRegion").hover(
+			function(){
+				$(".db_nav dt.more em").css({"background-position":"-59px -15px"});
+				$("#detailSubMenuRegion").show();
+			},
+			function(){
+				$(".db_nav dt.more em").css({"background-position":"-68px -15px"});
+				$("#detailSubMenuRegion").hide();
+			}
+		);
+	</script>
+	<block name="js"></block>
+</html>

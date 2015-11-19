@@ -1,0 +1,78 @@
+<extend name="Public:public" />
+<block name="title">审核长评论</block>
+<block name="css">
+	<script src="__PUBLIC__/kd/kindeditor-min.js"></script>
+	<script src="__PUBLIC__/kd/lang/zh_CN.js"></script>
+	<style>
+		.row{
+			margin-top:20px;
+		}
+	</style>
+</block>
+<block name="content">
+	<div class="container">
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<p style="font-size:16px;">审核长评论<p>
+			</div>
+			<div class="panel-body">
+					<div class="row">
+						<div class="form-group">
+							<label for="t" class="col-md-2">评论标题:</label>
+							<div class="col-md-8">
+								<input type="text" value="{$row['comment_title']}" class="form-control">
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="form-group">
+							<label for="dat" class="col-md-2">评论内容:</label>
+							<div class="col-md-8">
+								<textarea class="form-control" name="comment_text" rows="20">{$row['comment_text']}</textarea>
+							</div>
+						</div>
+					</div>
+					
+					<form action="__URL__/editcommentstatus" method="post">
+						<input type="hidden" name="comment_id" value="{$row['comment_id']}">
+						<input type="hidden" name="p" value="{$p}">
+						<input type="hidden" name="comment_mid" value="{$row['comment_mid']}">
+						<div class="row">
+							<div class="form-group">
+								<label for="dat" class="col-md-2">评论状态:</label>
+								<div class="col-md-4">
+									<select class="form-control" name="comment_status">
+										<option value="0" {$row['comment_status']==0?'selected':''}>未审核</option>
+										<option value="1" {$row['comment_status']==1?'selected':''}>已通过审核</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								<div class="col-md-1 col-md-offset-2">
+									<button type="submit" class="btn btn-info">修改</button>
+								</div>
+							</div>
+						</div>
+					</form>
+			</div>
+		</div>
+	</div>
+</block>
+<block name="js">
+<script>
+	var editor;
+		KindEditor.ready(function(K) {
+			editor = K.create('textarea[name="comment_text"]', {
+				resizeType : 0,
+				allowImageUpload : true,
+				items : [
+					'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+					'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+					'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+			});
+		});
+</script>
+</block>

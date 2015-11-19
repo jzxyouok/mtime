@@ -1,0 +1,10 @@
+[ 2015-10-19T14:10:47+08:00 ] ::1 /mtime/
+ERR: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+
+
+[ 2015-10-19T16:32:43+08:00 ] ::1 /mtime/index.php/Home/Comment/longcommentdetail/comid/5
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtime.m_memberdatail' doesn't exist
+
+[ 2015-10-19T17:03:14+08:00 ] ::1 /mtime/index.php/Home/Comment/longcommentdetail/comid/5
+ERR: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s)
+

@@ -1,0 +1,51 @@
+<extend name="Public:public" />
+<block name="title">幻灯片列表</block>
+<block name="css">
+	<style>
+		.panel-footer .num,.panel-footer .current{
+			border:1px solid #ddd;
+			margin:0 5px;
+			padding:5px;
+		}
+		.panel-footer .current{
+			background:#0081bc;
+			color:#fff;
+		}
+	</style>	
+</block>
+<block name="content">
+	<div class="container">
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<p style="font-size:16px;">幻灯片列表</p>
+			</div>
+			<div class="panel-body">
+				<p><span style="color:#31708F;">用于管理网站主页的幻灯片</span></p>
+			</div>
+			<table class="table table-hover table-striped table-bordered">
+				<tr>
+					<th>幻灯片ID</th>
+					<th>幻灯片名称</th>
+					<th>电影名称</th>
+					<th>幻灯片图片地址</th>
+					<th>幻灯片背景地址</th>
+					<th>幻灯片出现时间</th>
+					<th>修改</th>
+					<th>删除</th>
+				</tr>
+				<foreach name="rows" item="row">
+					<tr>
+						<td>{$row['slide_id']}</td>
+						<td>{$row['slide_name']}</td>
+						<td>{$row['movie_name']}</td>
+						<td>{$row['slide_pic']}</td>
+						<td>{$row['slide_bg']}</td>
+						<td>{$row['slide_time']|date="Y-m-d",###}</td>
+						<td><a href="__URL__/editslide/id/{$row['slide_id']}">修改</a></td>
+						<td><a href="__URL__/del/id/{$row['slide_id']}" onclick="javascript:return confirm('你确定删除？');">删除</a></td>
+					</tr>
+				</foreach>
+			</table>
+		</div>			
+	</div>
+</block>

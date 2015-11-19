@@ -1,0 +1,72 @@
+<extend name="Public:public" />
+<block name="title">电影图片列表</block>
+<block name="css">
+	<style>
+		.panel-footer .num,.panel-footer .current{
+			border:1px solid #ddd;
+			margin:0 5px;
+			padding:5px;
+		}
+		.panel-footer .current{
+			background:#0081bc;
+			color:#fff;
+		}
+	</style>	
+</block>
+<block name="content">
+	<div class="container">
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<p style="font-size:16px;">电影图片列表</p>
+			</div>
+			<div class="panel-body">
+				<p><span style="color:#31708F;">查看已添加的电影图片</span></p>
+				<form action="__URL__/piclist" method="get" class="form-horizontal">
+					<div class="form-group">
+						<label class="col-md-2">电影名称:</label>
+						<div class="col-md-4">
+							<select name="movie_id" class="form-control">
+								<option>---请选择---</option>
+								<foreach name="r" item="m">
+									<option value="{$m['movie_id']}">{$m['movie_name']}</option>
+								</foreach>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-1 col-md-offset-2">
+							<button type="submit" class="btn btn-info">查看</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<table class="table table-hover table-striped table-bordered">
+				<tr class="success">
+					<th>图片ID</th>
+					<th>图片</th>
+					<th>图片尺寸</th>
+					<th>删除</th>
+				</tr>
+				<foreach name="rows" item="row">
+					<tr>
+						<td>{$row['pic_id']}</td>
+						<td>
+							<img src="__PUBLIC__/{$row['pic_address']}">
+						</td>
+						<td>
+							<if condition="$row['pic_big'] eq 1">
+								大图
+							<else />
+								小图
+							</if>
+						</td>
+						<td>
+							<a href="__URL__/delpic/id/{$row['pic_id']}/page/{$p}/mid/{$row['pic_mid']}" onclick="javascript:return confirm('你确定删除？');">删除</a>
+						</td>
+					</tr>
+				</foreach>
+			</table>
+			<div class="panel-footer text-right" style="padding-right:70px;">{$show}</div>
+		</div>			
+	</div>
+</block>

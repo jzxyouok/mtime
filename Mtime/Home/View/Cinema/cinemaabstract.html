@@ -1,0 +1,13 @@
+<extend name="Public:cinemadetail" />
+<block name="ci_mon">
+	<div class="ci_mon">
+		<div class="movieinfo" style="padding: 20px 40px;">
+			{$detail['cinema_abstract']|htmlspecialchars_decode}
+		</div>
+	</div>
+</block>
+<block name="js">
+	<script>
+		$(".navlb li").eq(1).addClass("curr");
+	</script>
+</block>

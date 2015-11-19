@@ -1,0 +1,221 @@
+<html>
+	<head>
+		<title>{$com['comment_title']} 更多评论 - Mtime时光网</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/header.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/morelongcomment.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/footer.css">
+		<script src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+		<script src="__PUBLIC__/Home/js/header.js"></script>
+		
+	</head>
+	<body>
+		<div class="container">
+			<include file="Public/header" />
+			
+			<div class="db_mediaout">
+				<div class="sharp">&nbsp;</div>
+				<div class="clearfix db_comment_newstit" id="titleRegion">
+					<a href="#" class="fr mt15">查看原文</a>
+					<h2>
+						<a href="__CONTROLLER__/longcommentdetail/comid/{$com['comment_id']}">{$com['comment_title']}</a>
+						 的评论
+					</h2>
+				</div>
+			</div>
+			
+			<div class="db_mediacomment">
+				<div class="db_comment db_concomment" id="commentRegion">
+					<h3>我要评论</h3>
+					<div class="db_comment_list">
+						<dl id="commentList">
+							<volist name="recoms" id="recom">
+							<dd>
+								<div class="user_box">
+									<a href="javascript:;">
+										<img src="__PUBLIC__/{$recom['member']['member_pic']}" width="48" height="48" alt="{$recom['member_nickname']}">
+									</a>
+									<p class="mt5">
+										<a target="_blank" href="javascript:;">
+											{$recom['member']['member_nickname']}
+										</a>
+									</p>
+								</div>
+								<div class="user_cont">
+									<div class="user_conter">
+										<p class="px14 lh18">
+										
+											{$recom['recomment_text']}
+					
+										</p>
+										
+										<p class="mt12">
+											<span class="fr"></span>
+											{$recom['recomment_time']|date="Y-m-d H:i",###}
+											<span class="mlr15">|</span>
+											<a href="#" class="showreplay">回复</a>
+											(<a class="my_replycount" href="#">{$recom['replaynum']}</a>)
+										</p>
+										<div class="plqy" style="display:none;">
+											<ul class="my_replies">
+												<volist name="recom['replaycom']" id="replay">
+												<li>
+													<div class="user_box">
+														<a href="javascript:;">
+															<img width="32" height="32" alt="{$replay['member_nickname']}" src="__PUBLIC__/{$replay['member_pic']}">
+														</a>
+													</div>
+													<p class="px14">
+														<a target="_blank" href="javascript:;">{$replay['member_nickname']}</a>
+													</p>
+													<p class="px14 lh18 mt3">{$replay['recomment_text']}</p>
+													<p class="mt3">
+														<span class="fr"></span>
+														{$replay['recomment_time']|date="Y-m-d H:i",###}
+													</p>
+												</li>
+												</volist>
+											</ul>
+											<div class="db_comment_areabox">
+												<textarea id="tbox8256848" class="c_a5" placeholder="请输入简短评论.."></textarea>
+												<div style="display:none;">{$recom['recomment_id']}</div>
+												<div class="mt6 clearfix">
+													<div class="mt9">
+														<p>
+															<a class="btn_dblue recom" href="javascript:;">发表</a>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>		
+									</div>
+								</div>
+							</dd>
+							</volist>
+							
+						</dl>
+					</div>
+					<div class="pagenav tc p_r" id="PageNavigator">
+						{$show}
+					</div>
+				</div>
+			</div>
+			
+			<include file="Public/footer" />
+			
+			<div class="my_layer w295" style="position: fixed; top: 200px; left: 515px; z-index: 111;display:none;" id="tishidl">
+				<a id="tiplogin" class="i_pop_close tiplogin" title="关闭" href="javascript:void(0)">&nbsp;</a>
+				<div class="inner w295">
+					<div class="popmid">
+						<div class="tc mt25 mb30 px20 lh15">请先登录！</div>
+						<div class="tc pb12 pt15">
+							<a href="javascript:;" class="btn_blue mr15 tiplogin">确定</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="my_layer w295" style="position: fixed; top: 200px; left: 515px; z-index: 111;display:none;" id="comtext">
+				<a  class="i_pop_close comtext" title="关闭" href="javascript:void(0)">&nbsp;</a>
+				<div class="inner w295">
+					<div class="popmid">
+						<div class="tc mt25 mb30 px20 lh15">评论内容不能为空！</div>
+						<div class="tc pb12 pt15">
+							<a href="javascript:;" class="btn_blue mr15 comtext">确定</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="my_layer w295" style="position: fixed; top: 200px; left: 515px; z-index: 111;display:none;" id="comsuccess">
+				<a  class="i_pop_close comsuccess" title="关闭" href="javascript:void(0)">&nbsp;</a>
+				<div class="inner w295">
+					<div class="popmid">
+						<div class="tc mt25 mb30 px20 lh15">评论成功！</div>
+						<div class="tc pb12 pt15">
+							<a href="javascript:;" class="btn_blue mr15 comsuccess">确定</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="my_layer w295" style="position: fixed; top: 200px; left: 515px; z-index: 111;display:none;" id="comyzm">
+				<a  class="i_pop_close comyzm" title="关闭" href="javascript:void(0)">&nbsp;</a>
+				<div class="inner w295">
+					<div class="popmid">
+						<div class="tc mt25 mb30 px20 lh15">评论失败！</div>
+						<div class="tc pb12 pt15">
+							<a href="javascript:;" class="btn_blue mr15 comyzm">确定</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="overlay" style="opacity: 0.6; zoom: 1; z-index: 110; position: fixed; margin: 0px; padding: 0px; top: 0px; left: 0px; width: 100%; height: 100%; background: rgb(0, 0, 0);display:none;"></div>
+			
+		</div>
+		<script>
+			$(".showreplay").toggle(
+				function(){
+					$(this).parent().next().show();
+				},
+				function(){
+					$(this).parent().next().hide();
+				}
+			);
+			
+			$(".tiplogin").click(function(){
+				$("#tishidl").hide();
+				$("#overlay").hide();
+			});
+			
+			$(".comtext").click(function(){
+				$("#comtext").hide();
+				$("#overlay").hide();
+			});
+			
+			$(".comsuccess").click(function(){
+				$("#comsuccess").hide();
+				$("#overlay").hide();
+			});
+			
+			$(".recom").click(function(){
+				obj = $(this);
+				var textcom = $(this).parent().parent().parent().prev().prev().val();	
+				var dl={$_SESSION['member_login']?"1":"0"};
+				var pid = $(this).parent().parent().parent().prev().text();
+						
+				if(dl==1){
+					if(!!textcom){
+						$.ajax({
+							'type':'get',
+							'url':"__MODULE__/Comment/morerelongcomment_replay",
+							'data':{'recomment_text':textcom,'recomment_pid':pid},
+							'async':false,
+							'success':function(a){		
+								if(a==1){
+									$("#comsuccess").show();	
+									$("#overlay").show();
+									obj.parent().parent().parent().prev().prev().val("");
+									var str = "<li><div class='user_box'><img width='32' height='32' src='__PUBLIC__/{$_SESSION['member_pic']}'></div><p class='px14 mr5'><a href='javascript:;'>{$_SESSION['member_nickname']}</a></p><p class='px14 lh18 mt3 mr5'>"+textcom+"</p><p class='mt3 mr5'>{$Think.NOW_TIME|date='Y-m-d H:i',###}</p></li>";
+									
+									obj.parent().parent().parent().parent().prev().prepend(str);
+								}else{
+									$("#comyzm").show();	
+									$("#overlay").show();
+								}
+							}
+						});
+					}else{
+						$("#comtext").show();
+						$("#overlay").show();
+					}
+				}else{
+					$("#tishidl").show();
+					$("#overlay").show();
+				}
+			});
+			
+		</script>
+	</body>
+</html>

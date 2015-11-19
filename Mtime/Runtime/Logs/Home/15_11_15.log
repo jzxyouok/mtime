@@ -1,0 +1,102 @@
+[ 2015-11-15T16:10:12+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=46&comment_id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0060s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='46' WHERE ( comment_id = 5 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-15T16:10:12+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=47&comment_id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='47' WHERE ( comment_id = 5 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-15T16:10:13+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=48&comment_id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='48' WHERE ( comment_id = 5 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-15T16:10:13+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=49&comment_id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0060s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='49' WHERE ( comment_id = 5 ) [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-15T16:10:16+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=50&comment_id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='50' WHERE ( comment_id = 5 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-15T16:10:17+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=51&comment_id=5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0070s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='51' WHERE ( comment_id = 5 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-15T16:10:31+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment?recomment_text=1111&recomment_cid=5&plcode=QAQJ
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('5','1111','1','1447575031','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-15T16:11:16+08:00 ] ::1 /mtime/index.php/Home/Comment/relongcomment_replay?recomment_text=aaaa&recomment_pid=93&dplcode=MXU3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0070s ]
+SQL: INSERT INTO `m_recomment` (`recomment_pid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('93','aaaa','1','1447575076','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-15T16:13:59+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=8&comment_text=aa&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0030s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('aa','9','1','1447575239','17') [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 9 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='9',`comgrade_uid`='17',`comgrade_grade`='8' WHERE ( comgrade_id = 1 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-15T23:56:27+08:00 ] ::1 /mtime/Mhop
+ERR: 无法加载控制器:Mhop
+
+[ 2015-11-15T23:56:43+08:00 ] ::1 /mtime/Mhop
+ERR: 无法加载控制器:Mhop
+

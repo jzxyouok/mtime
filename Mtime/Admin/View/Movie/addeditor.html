@@ -1,0 +1,51 @@
+<extend name="Public:public" />
+<block name="title">添加电影编剧</block>
+<block name="css">
+	<style>
+		textarea{
+			resize:none;
+		}
+	</style>
+</block>
+<block name="content">
+	<div class="container">
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<p style="font-size:16px;">添加电影编剧<p>
+			</div>
+			<div class="panel-body">
+				<form action="__URL__/tjeditor" method="post" class="form-horizontal" enctype="multipart/form-data">
+					<div class="form-group">
+						<label class="col-md-2">电影名称:</label>
+						<div class="col-md-4">
+							<select name="filme_mid" class="form-control">
+								<option>---请选择---</option>
+								<foreach name="r" item="row">
+									<option value="{$row['movie_id']}">{$row['movie_name']}</option>
+								</foreach>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-2">编剧名称:</label>
+						<div class="col-md-4">
+							<select name="filme_aid" class="form-control">
+								<option>---请选择---</option>
+								<foreach name="e" item="erow">
+									<option value="{$erow['actor_id']}">{$erow['actor_name']}</option>
+								</foreach>
+							</select>
+						</div>
+					</div>
+					
+					
+					<div class="form-group">
+						<div class="col-md-1 col-md-offset-2">
+							<button type="submit" class="btn btn-info">添加</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</block>

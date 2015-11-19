@@ -1,0 +1,39 @@
+[ 2015-09-29T12:30:22+08:00 ] ::1 /mtime/admin/type/code.html
+ERR: 非法操作:code
+
+[ 2015-09-29T12:32:09+08:00 ] ::1 /mtime/admin/type/type.html
+ERR: 非法操作:type
+
+[ 2015-09-29T12:56:43+08:00 ] ::1 /mtime/index.php/Admin/Type/edit/id/1
+ERR: 非法操作:edit
+
+[ 2015-09-29T13:16:38+08:00 ] ::1 /mtime/index.php/Admin/Type/typelist
+ERR: Think\Model:ordedr方法不存在！
+
+[ 2015-09-29T13:19:15+08:00 ] ::1 /mtime/admin/form/depends.html
+ERR: 无法加载控制器:Form
+
+[ 2015-09-29T13:20:54+08:00 ] ::1 /mtime/admin/type/depends.html
+ERR: 非法操作:depends
+
+[ 2015-09-29T15:28:21+08:00 ] ::1 /mtime/index.php/Admin/Type/edit/id/1
+ERR: 非法操作:edit
+
+[ 2015-09-29T15:34:07+08:00 ] ::1 /mtime/index.php/Admin/Type/U('typelist')
+ERR: 非法操作:U('typelist')
+
+[ 2015-09-29T15:52:13+08:00 ] ::1 /mtime/index.php/Admin/Type/edit/id/2
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'
+
+[ 2015-09-29T15:52:58+08:00 ] ::1 /mtime/index.php/Admin/Type/edit/id/1
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'
+
+[ 2015-09-29T16:06:44+08:00 ] ::1 /mtime/admin/search/code.html
+ERR: 无法加载控制器:Search
+
+[ 2015-09-29T16:07:31+08:00 ] ::1 /mtime/index.php/Admin/Member/memberlist
+ERR: 无法加载控制器:Member
+
+[ 2015-09-29T16:07:32+08:00 ] ::1 /mtime/index.php/Admin/Member/memberlist
+ERR: 无法加载控制器:Member
+

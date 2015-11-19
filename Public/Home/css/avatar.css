@@ -1,0 +1,159 @@
+.t_setright{
+	float: left;
+    display: inline;
+    border-left: 1px solid #ccc;
+    width: 755px;
+    padding-left: 20px;
+    margin-left: 20px;
+    padding-top: 9px;
+	position: relative;
+}
+
+.fl{
+	float:left;
+}
+
+.w140{
+	width: 140px;
+}
+
+.mr35{
+	margin-right: 35px;
+}
+
+.tc{
+	text-align: center;
+}
+
+.mt6{
+	margin-top: 6px;
+}
+
+.w590{
+	width: 580px;
+}
+
+ul{
+	list-style:none;
+}
+
+.ele_tabs_a4{
+	border-bottom: 1px #000 solid;
+    height: 25px;
+    overflow: hidden;
+    padding-top: 5px;
+}
+
+.ele_tabs_a4 li{
+	float: left;
+    height: 16px;
+    line-height: 28px;
+    color: #2f688c;
+    font-size: 10px;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    display: inline;
+    margin-left: -1px;
+}
+
+.ele_tabs_a4 li.on{
+	height: 29px;
+    color: #000;
+    font-weight: bold;
+}
+
+.ele_tabs_a4 li  h2{
+	float: left;
+    padding: 0 15px 0 14px;
+    line-height: 16px;
+    font-weight: normal;
+    border-left: 1px #000 solid;
+}
+
+.ele_tabs_a4 li.on h2{
+	font-weight: bold;
+}
+
+.mt10{
+	margin-top: 10px;
+}
+
+.mt3{
+	margin-top: 3px;
+}
+
+.mt20{
+	margin-top: 20px;
+}
+
+.c_666{
+	color: #666;
+}
+input{
+	font-family: "宋体";
+	font: 12px verdana,lucida,arial,helvetica,宋体,sans-serif;
+	padding: 2px;
+    vertical-align: middle;
+    outline: 0;
+}
+
+.w295{
+	width: 295px;
+}
+
+.mr10{
+	margin-right: 10px;
+}
+
+.t_text{
+	height: 20px;
+}
+
+input.t_text{
+	border: 1px solid #9abed0;
+    padding: 5px 5px;
+}
+
+.t_btn_h,.t_btn_g,.btn_blue{
+	background: #2e8ddf url(../images/mytime/public_bg.jpg) no-repeat -362px -168px;
+    width: auto;
+	color:#fff;
+    overflow: visible;
+    padding: 0 12px;
+    height: 27px;
+    line-height: 27px;
+	border: 1px solid #2785cf;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 3px;
+	font-family: "宋体";
+    font-size: 14px;
+}
+
+.t_btn_h{
+	background-position: -78px -168px;
+    color: #6e6e6e;
+    border-color: #d9d9d9;
+}
+
+.t_btn_g{
+	background-position: -78px -230px;
+    border-color: #68972f;
+}
+
+.ml12{
+	margin-left: 12px;
+}
+
+.mt20{
+	margin-top: 20px;
+}
+
+.btn_blue{
+	line-height: 27px!important;
+    height: 27px!important;
+    width: auto!important;
+    padding: 0 20px!important;
+}

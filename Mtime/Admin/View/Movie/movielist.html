@@ -1,0 +1,88 @@
+<extend name="Public:public" />
+<block name="title">分类列表</block>
+<block name="css">
+	<style>
+		.panel-footer .num,.panel-footer .current{
+			border:1px solid #ddd;
+			margin:0 5px;
+			padding:5px;
+		}
+		.panel-footer .current{
+			background:#0081bc;
+			color:#fff;
+		}
+	</style>	
+</block>
+<block name="content">
+	<div class="container">
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<p style="font-size:16px;">电影列表</p>
+			</div>
+			<div class="panel-body">
+				<p><span style="color:#31708F;">近期上映的最新电影</span></p>
+			</div>
+			<table class="table table-hover table-striped table-bordered">
+				<tr class="success">
+					<th width="3%">电影ID</th>
+					<th width="10%">电影名称</th>
+					<th width="12%">英文名称</th>
+					<th width="9%">上映时间</th>
+					<th width="5%">发行国家</th>
+					<th width="20%">电影简述</th>
+					<th width="8%">电影评分</th>
+					<th width="8%">电影票房</th>
+					<th width="5%">电影热映</th>
+					<th width="5%">超前预售</th>
+					<th width="5%">首页推荐</th>
+					<th width="5%">状态</th>
+					<th width="5%">修改</th>
+					<th width="5%">删除</th>
+				</tr>
+				<foreach name="rows" item="row">
+					<tr>
+						<td>{$row['movie_id']}</td>
+						<td>{$row['movie_name']}</td>
+						<td>{$row['movie_ename']}</td>
+						<td>{$row['movie_start']|date="Y-m-d",###}</td>
+						<td>{$row['movie_country']}</td>
+						<td>{$row['movie_resume']}</td>
+						<td>{$row['movie_graded']}</td>
+						<td>{$row['movie_office']}</td>
+						<td>
+							<if condition="$row['movie_hot'] eq 1">
+								是
+							<else />
+								否
+							</if>
+						</td>
+						<td>
+							<if condition="$row['movie_presell'] eq 1">
+								是
+							<else />
+								否
+							</if>
+						</td>
+						<td>
+							<if condition="$row['movie_big'] eq 1">
+								是
+							<else />
+								否
+							</if>
+						</td>
+						<td>
+							<if condition="$row['movie_status'] eq 1">
+								<span style="color:green;">正常</span>
+							<else />
+								<span style="color:red;">下线</span>
+							</if>
+						</td>
+						<td><a href="__URL__/edit/id/{$row['movie_id']}">修改</a></td>
+						<td><a href="__URL__/del/id/{$row['movie_id']}" onclick="javascript:return confirm('你确定删除？');">删除</a></td>
+					</tr>
+				</foreach>
+			</table>
+			<div class="panel-footer text-right" style="padding-right:70px;">{$page}</div>
+		</div>			
+	</div>
+</block>

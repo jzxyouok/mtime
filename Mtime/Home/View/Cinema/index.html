@@ -1,0 +1,183 @@
+<extend name="Public:cinemadetail" />
+<block name="css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/cinemaindex.css">
+	<style>
+		.ci_filmbox{
+			display:none;
+		}
+	</style>
+</block>
+<block name="ci_mon">
+	<div class="ci_mon" id="showtimeRegion">
+		<h2 class="thefilm">
+			{$time|date="m",###}月{$time|date="d",###}日上映
+			<b>{$cmnum}</b>
+			部 - 共
+			<b>{$cznum}</b>
+			场
+		</h2>
+		<div class="scroll_time">
+			<div class="timemid">
+				<ul id="valueDateRegion" class="transition6">
+					<li class="curr">
+						<a href="#" target="_self">
+							今天
+							<b>{$time|date="m",###}月{$time|date="d",###}日</b>
+							<i class="ico_c_jiao02">&nbsp;</i>
+						</a>
+					</li>
+					<!--<li>
+						<a href="#" target="_self">
+							明天
+							<b>10月9日</b>
+							<i class="ico_c_jiao02">&nbsp;</i>
+						</a>
+					</li>-->
+				</ul>
+			</div>
+		</div>
+		<div class="ci_film">
+			<empty name="cmrows">
+			<div class="nomovie"></div>
+			<else / >
+			
+			<div class="scroll_film" id="movieListRegion">
+				<div class="filmbox">
+					<a href="javascript:;" class="film_prev"></a>
+					<a href="javascript:;" class="film_next"></a>
+					<div class="frul">
+						<ul class="box" style="height:242px">
+							<volist name="cmrows" id="cmrow">
+								<li>
+									<a href="javascript:;" title="{$cmrow['movie_name']} {$cmrow['movie_ename']} {$cmrow['movie_start']|date='Y',###}">
+										<img src="__PUBLIC__/{$cmrow['movie_pic']}" width="152" height="202">
+									</a>
+								</li>
+							</volist>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="filmboxlist">
+			<volist name="czrows" id="czrow">
+				<div class="ci_filmbox">
+					<div class="filmtxt" id="movieDetailRegion">
+						<h2>
+							<a href="__MODULE__/Movie/movieindex/id/{$czrow['movie_id']}" target="_blank" title="{$czrow['movie_name']}{$czrow['movie_ename']}">
+								{$czrow['movie_name']}
+							</a>
+							<div class="db_point">{$czrow['movie_graded']}</div>
+						</h2>
+						<p>
+							<span style="width:210px;">
+								导演：
+								<volist name="czrow['director']" id="czrowd" offset="0" length="1">
+									{$czrowd['actor_name']}&nbsp;&nbsp;
+								</volist>
+							</span>
+							<span>
+								主演：
+								<volist name="czrow['actor']" id="czrowa" offset="0" length="2">
+									{$czrowa['actor_name']}&nbsp;&nbsp;
+								</volist>
+							</span>
+						</p>
+						<p>
+							<span style="width:210px;">时长：{$czrow['movie_time']} min</span>
+							<span>
+								类型：
+								<volist name="czrow['type']" id="czrowt">
+									{$czrowt['type_name']}&nbsp;&nbsp;
+								</volist>
+							</span>
+						</p>
+						<a href="{$czrow['video']['video_address']}" class="playfilm">预告片</a>
+					</div>
+					<div id="showtimesRegion">
+						<table class="playtime">
+							<tbody>
+								<volist name="czrow['cz']" id="czrowc">
+									<tr class="first">
+										<td class="tl">
+											<div class="p_r">
+												<p class="ci_p_time">{$czrowc['cz_start']|date="H:i",###}</p>
+												<p class="end">预计{$czrowc['cz_start']+$czrow['movie_time']*60|date="H:i",###}散场</p>
+											</div>
+										</td>
+										<td>
+											<p>
+												<switch name="czrowc['cz_tx']">
+													<case value="0">2D</case>
+													<case value="1">3D</case>
+													<case value="2">4D</case>
+													<case value="3">5D</case>
+												</switch>
+											</p>
+											<p>{$czrowc['cz_language']}版</p>
+										</td>
+										<td>
+											<div>
+												<p>{$czrowc['cz_yt']}号厅</p>
+											</div>
+										</td>
+										<td>
+											<p>
+												<span>¥</span>
+												{$czrowc['cz_money']}
+											</p>
+											<p>参考价</p>
+										</td>
+										<td class="tr"></td>
+									</tr>
+								</volist>
+							</tbody>
+						</table>
+						<p class="tc px14 c_666 pt25 pb30">[时光网提供的影讯仅供参考，具体情况以影院现场为准！]</p>
+					</div>
+				</div>
+			</volist>
+			</div>
+			</empty>
+		</div>
+	</div>
+</block>
+<block name="js">
+	<script>
+		$(".navlb li").eq(0).addClass("curr");
+			
+		/* 图片滚动效果 */
+		$(".filmbox").slide({
+			titCell: "",
+			mainCell: ".frul ul",
+			autoPage: true,
+			effect: "left",
+			prevCell:".film_prev",
+			nextCell:".film_next",
+			autoPlay: false,
+			pnLoop:"false",
+			scroll:"2",
+			vis: 4
+			
+		});
+		
+		w = parseInt($(".box").css("width"))+300;
+		$(".box").css({"width":w});
+
+		$(".box li:first").addClass("oncurr");
+		$(".box li:first").children().children("img").attr({"width":"182","height":"242"});
+		
+		
+		$(".box li").click(function(){
+			$(".box li").not($(this)).removeClass("oncurr");
+			$(this).addClass("oncurr");
+			$(".box li").not($(this)).children().children("img").attr({"width":"152","height":"202"});
+			$(this).children().children("img").attr({"width":"182","height":"242"});
+			index = $(this).index(".box li");
+			$("#filmboxlist").children(".ci_filmbox").hide();
+			$("#filmboxlist").children(".ci_filmbox").eq(index).show();
+		});
+		
+		$(".ci_filmbox:first").show();
+		
+	</script>
+</block>

@@ -1,0 +1,9 @@
+[ 2015-10-07T12:55:31+08:00 ] ::1 /mtime/index.php/Admin/Cinema/addcinemapic
+ERR: 非法操作:addcinemapic
+
+[ 2015-10-07T12:56:04+08:00 ] ::1 /mtime/index.php/Admin/Index/cinema/addcinemapic.html
+ERR: 非法操作:cinema
+
+[ 2015-10-07T13:35:40+08:00 ] ::1 /mtime/index.php/Admin/Cinema/delpic/id/6/page/1/cid/1
+ERR: 非法操作:delpic
+

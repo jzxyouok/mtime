@@ -1,0 +1,125 @@
+[ 2015-10-10T00:00:12+08:00 ] ::1 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-10-10T00:00:12+08:00 ] ::1 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+
+[ 2015-10-10T00:06:32+08:00 ] ::1 /mtime/index.php/Home/Movie/movieindex/id/
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2015-10-10T14:37:42+08:00 ] ::1 /mtime/Profile
+ERR: 非法操作:index
+
+[ 2015-10-10T15:35:43+08:00 ] ::1 /mtime/Public/Home/jquery.cxselect.min.js
+ERR: 无法加载控制器:Public
+
+[ 2015-10-10T15:36:00+08:00 ] ::1 /mtime/Public/Home/jquery.cxselect.min.js
+ERR: 无法加载控制器:Public
+
+[ 2015-10-10T16:47:51+08:00 ] ::1 /mtime/index.php/User/select?emailname=3594314%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '3594314@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-10T16:48:00+08:00 ] ::1 /mtime/index.php/User/select?emailname=3594314%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '3594314@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-10T16:48:12+08:00 ] ::1 /mtime/index.php/User/select?emailname=3594314%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '3594314@qq.com' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-10T16:48:23+08:00 ] ::1 /mtime/index.php/User/select?emailname=3594314%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '3594314@qq.com' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-10T16:48:23+08:00 ] ::1 /mtime/index.php/Home/User/email_register
+ERR: Think\Model:date方法不存在！
+
+[ 2015-10-10T16:48:58+08:00 ] ::1 /mtime/index.php/User/select?emailname=3594314%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '3594314@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-10T16:49:15+08:00 ] ::1 /mtime/index.php/User/select?emailname=3594314%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '3594314@qq.com' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-10T16:49:16+08:00 ] ::1 /mtime/index.php/User/select?emailname=3594314%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '3594314@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-10T16:49:27+08:00 ] ::1 /mtime/index.php/User/select?emailname=3594314%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '3594314@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-10T16:59:37+08:00 ] ::1 /mtime/Profile/basic
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2015-10-10T17:15:19+08:00 ] ::1 /mtime/Profile/__CONTROLLER/update
+ERR: 非法操作:__CONTROLLER
+
+[ 2015-10-10T17:15:29+08:00 ] ::1 /mtime/Profile/__CONTROLLER/update
+ERR: 非法操作:__CONTROLLER
+
+[ 2015-10-10T17:15:34+08:00 ] ::1 /mtime/Profile/__CONTROLLER/update
+ERR: 非法操作:__CONTROLLER
+
+[ 2015-10-10T17:15:38+08:00 ] ::1 /mtime/Profile/__CONTROLLER/update
+ERR: 非法操作:__CONTROLLER
+
+[ 2015-10-10T17:39:17+08:00 ] ::1 /mtime/index.php/Profile/basic
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2015-10-10T17:39:19+08:00 ] ::1 /mtime/index.php/Profile/basic
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2015-10-10T17:39:20+08:00 ] ::1 /mtime/index.php/Profile/basic
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+

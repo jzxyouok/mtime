@@ -1,0 +1,307 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	margin:0px;
+	padding:0px;
+}
+
+a{
+    color: #08c;
+    text-decoration: none;
+    vertical-align: baseline;
+    cursor: pointer;
+}
+.container{
+	width:100%;
+	padding-bottom:0px;
+	background:url("../images/html_bg.jpg");
+	font: 12px/150% helvetica,"微软雅黑","microsoft yahei",verdana,lucida,arial,sans-serif,"黑体";
+    color: #333;
+    min-width: 1100px;
+    zoom: 1;
+}
+
+.tanchuang{
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    border: 1px solid #e7e7e7;
+    position: absolute;
+    background: #fff;
+    z-index: 111;
+    top:30%;
+    left:40%;
+    width:295px;
+    height:230px;
+    text-align: center;
+    display: none;
+}
+.tanchuang .popmid{
+    padding:20px;
+}
+.tanchuang .popmid .tk{
+    margin-bottom: 30px;
+    margin-top: 50px;
+    font-size: 21px;
+    font-family: "微软雅黑","microsoft yahei",verdana,lucida,arial,sans-serif,"黑体";
+    color: #333;
+    line-height: 150%;
+}
+.tanchuang .popmid .tc{
+    padding-bottom: 12px;
+    padding-top: 15px;
+}
+.tanchuang .popmid .tc .btn_blue{
+    background: #0081bc;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    font-size: 14px;
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    text-align: center; 
+    width: 70px;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 5px;
+}
+
+.back{
+    opacity: 0.6;
+    zoom: 1;
+    z-index: 110;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    display: none;
+}
+
+.regin_out{
+	background: #fff;
+    width: 1000px;
+    margin: 100px auto 45px;
+    border-radius: 6px;
+    position: relative;
+    padding-bottom: 30px;
+    min-height: 600px;
+}
+
+.regin_out .regin_line{
+	background: url("../images/reg.png") no-repeat 0 0;
+    width: 1px;
+    height: 482px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+}
+
+.regin_out .regin_inner {
+	padding: 30px 65px;
+}
+
+.regin_out .regin_inner  .regin_left{
+	float: left;
+    display: inline;
+    width: 380px;
+}
+
+.regin_out .regin_inner  h5{
+	font-size: 30px;
+    line-height: 1em;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.regin_out .regin_inner  .regin_left .regin_tab dd{
+	width: 50%;
+    float: left;
+    display: inline;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    line-height: 2em;
+    font-weight: bold;
+    border-bottom: 2px solid #e5e5e5;
+    cursor: pointer;
+}
+
+.regin_out .regin_inner .regin_left .regin_tab .on{
+	color: #1689df;
+    border-bottom-color: #1689df;
+}
+
+.reg_txt{
+	position: relative;
+    border: 1px solid #aaa;
+    zoom: 1;
+    height: 49px;
+    width: 375px;
+    margin-top: 23px;
+    border-radius: 4px;
+    vertical-align: baseline;
+    display: inline-block;
+    z-index: 2;
+}
+
+.reg_txt input{
+	background: url("../images/transparent.gif");
+    height: 49px;
+    border: 0;
+    padding: 10px;
+    line-height: 49px;
+    font-size: 14px;
+    width: 345px;
+    outline: 0;
+	text-align:left;
+	color:black;
+	font-family: "微软雅黑","microsoft yahei";
+	vertical-align: middle;   
+}
+
+.reg_txt .c_a5{
+	color: #000;
+}
+
+.reg_err{
+	background: #ffebec;
+    width: 345px;
+    position: absolute;
+    left: -1px;
+    top: 50px;
+    border: 1px solid #e88a9b;
+    border-top: 0;
+    display: block;
+    color: #d84459;
+    line-height: 22px;
+    border-radius: 0 0 3px 3px;
+    padding: 0 15px;
+	display:none;
+}
+
+.ml12{
+	margin-left:12px;
+}
+
+.bind_pro{
+	padding-top: 30px;
+    font-size: 14px;
+}
+.bind_pro span{
+	background: url("../images/reg.png") no-repeat -2px -24px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.bind_pro .on{
+	background-position: -2px 0;
+}
+
+.bind_pro a{
+	color: #0085e5;
+    line-height: 24px;
+}
+
+.tc{
+	padding-top: 35px;
+	text-align: center;
+	display: block;
+}
+
+.regin_btn{
+	background: #0081bc;
+    width: 257px;
+    height: 53px;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 53px;
+    border-radius: 27px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.bind_telcode{
+	background: #f6f6f6;
+    height: 34px;
+    border: 1px solid #b6b6b6;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 14px;
+    line-height: 34px;
+    padding: 0 15px;
+    color: #333;
+    border-radius: 3px;
+}
+
+.reg_txtfalse{
+	border: 1px solid #d21538;
+    height: 49px;
+}
+
+.regin_right{
+	float: right;
+    display: inline;
+    width: 380px;
+}
+
+.regin_right .pt{
+	padding-top: 12px;
+	padding-bottom: 3px;
+	font-size: 16px;	
+}
+
+.regin_log3{
+	padding-top: 35px;
+    text-align: center;
+}
+
+.regin_log3 dt{
+	font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.regin_log3 dd{
+	padding-top:25px;
+}
+
+.regin_log3 dd a{
+	background: url("../images/reg.png") no-repeat 0 0;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.regin_log3 dd .sina{
+	background-position: -2px -48px;
+    width: 52px;
+    height: 50px;
+}
+
+.regin_log3 dd .qq{
+	background-position: -2px -98px;
+    width: 51px;
+    height: 50px;
+}
+
+

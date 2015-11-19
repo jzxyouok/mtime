@@ -1,0 +1,136 @@
+.t_setright{
+	float: left;
+    display: inline;
+    border-left: 1px solid #ccc;
+    width: 755px;
+    padding-left: 20px;
+    margin-left: 20px;
+    padding-top: 9px;
+	position: relative;
+}
+
+.m_data{
+	padding-left: 64px;
+    width: 436px;
+}
+
+.right_info_l1{
+	width: 500px;
+}
+
+.fr{
+	float: left;
+}
+
+.m_data .title1{
+	float: left;
+    width: 48px;
+	margin-left: -60px;
+    margin-top: 2px;
+	text-align: right;
+    position: relative;
+}
+
+input{
+	font: 12px 宋体;
+    padding: 2px;
+    vertical-align: middle;
+    outline: 0;
+}
+
+.w310{
+	width: 310px;
+}
+
+.mt20{
+	margin-top: 20px;
+}
+
+.w60{
+	width: 60px;
+}
+
+.ml12{
+	margin-left: 12px;
+}
+
+.mr6{
+	margin-right: 6px;
+}
+
+.mr3{
+	margin-right: 3px;
+}
+
+.ml15{
+	margin-left: 15px;
+}
+
+.w320{
+	width:320px;
+}
+
+.fl{
+	float:left;
+}
+
+.tag_icon{
+	background: url(../images/mytime/ico.png) no-repeat -160px 0;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+
+.ml12{
+	margin-left: 12px;
+}
+
+.mt3{
+	margin-top: 3px;
+}
+
+.eject_outer{
+	min-width: 252px;
+}
+
+.eject{
+	background: #fff;
+    position: relative;
+    padding: 10px;
+    border: 1px solid #707070;
+	border-radius: 8px;
+	box-shadow: 2px 2px 1px #b2b2b2;
+}
+
+.directiontag{
+	background: url(../images/mytime/ico.png) no-repeat -181px -140px;
+    position: absolute;
+    bottom: -17px;
+	left: 30px;
+    width: 17px;
+    height: 17px;
+}
+
+.c_666{
+	color:#666;
+}
+
+.btn_blue{
+	line-height: 27px!important;
+    height: 27px!important;
+    width: auto!important;
+    padding: 0 20px!important;
+	background: #2e8ddf url(../images/mytime/public_bg.jpg) no-repeat -362px -168px;
+	overflow: visible;
+	    color: #fff;
+    border: 1px solid #2785cf;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 3px;
+	font-family: "宋体";
+    font-size: 14px;
+}

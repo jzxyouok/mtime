@@ -1,0 +1,250 @@
+<extend name="Public:moviedetail" />
+<block name="title">{$mrow['movie_name']} 影评-Mtime时光网</block>
+<block name="css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/movielongcomment.css">
+</block>
+<block name="name"><a href="__MODULE__/Movie/movieindex/id/{$mrow['movie_id']}">{$mrow['movie_name']}</a></block>
+<block name="time">{$mrow['movie_start']|date="Y",###}</block>
+<block name="ename"><a href="__MODULE__/Movie/movieindex/id/{$mrow['movie_id']}">{$mrow['movie_ename']}</a></block>
+<block name="nav">
+	<div class="db_nav db_secnav">
+		<dl id="movieNavigationRegion">
+			<dd>
+				<a href="__MODULE__/Movie/movieindex/id/{$mrow['movie_id']}">
+					影片首页
+				</a>
+			</dd>
+			<dd>
+				<a href="__MODULE__/Moviedetial/movievideo/id/{$mrow['movie_id']}">
+					<span>{$vnum}</span>
+					 个视频
+				</a>
+			</dd>
+			<dd>
+				<a href="__MODULE__/Moviedetial/movieposter/id/{$mrow['movie_id']}">
+					<span>{$pnum}</span>
+					张图片
+				</a>
+			</dd>
+			<dd>
+				<a href="#">
+					<span>{$anum}</span>
+					 位演职员
+				</a>
+			</dd>
+			<dd>
+				<a href="__MODULE__/Moviedetial/movielongcomment/id/{$mrow['movie_id']}">
+					<span>{$cnum}</span>
+					 条影评
+				</a>
+			</dd>
+			<dd>
+				<a href="#">
+					<span>48</span>
+					 条新闻
+				</a>
+			</dd>
+			<dt class="more on" id="detailMenuRegion">
+				<a href="javascript:;">
+					更多
+					<em id="detailMenuRegionLabel">&nbsp;</em>
+				</a>
+				<dl class="db_nav_sel" id="detailSubMenuRegion">
+					<dd>
+						<a href="__MODULE__/Moviedetial/movieabstract/id/{$mrow['movie_id']}">剧情</a>
+					</dd>
+					<dd>
+						<a href="#">角色介绍</a>
+					</dd>
+					<dd>
+						<a href="__MODULE__/Moviedetial/moviesecret/id/{$mrow['movie_id']}">幕后揭秘</a>
+					</dd>
+					<dd>
+						<a href="#">获奖记录</a>
+					</dd>
+					<dd>
+						<a href="#">更多资料</a>
+					</dd>
+				</dl>
+			</dt>
+		</dl>
+	</div>
+</block>
+<block name="content">
+	<div class="db_contout">
+		<div class="db_cont">
+			<div class="details_nav">
+				<ul id="detailSubMenuInDetailPagesRegion">
+					<li class="on">
+						<i>&nbsp;</i>
+						<a href="__CONTROLLER__/movielongcomment/id/{$mrow['movie_id']}">长影评({$lcnum})</a>
+					</li>
+					<li> 
+						<i>&nbsp;</i>
+						<a href="__CONTROLLER__/moviesortcomment/id/{$mrow['movie_id']}">微评论({$scnum})</a>
+					</li>
+				</ul>
+				<div class="add_comment">
+					<a href="__MODULE__/Movie/movieindex/id/{$mrow['movie_id']}#ratingDownRegion" class="add_l">
+						<i></i>
+						写影评
+					</a>
+				</div>
+			</div>
+			<div class="clearfix pt9">
+				<div class="db_selbox fr" style="width:80px">
+					<div id="filterContainer" class="db_selinner">
+						<i></i>
+						<div id="currentBtn" class="db_selon">最新</div>
+						<div id="dbseldrop" class="db_seldrop">
+							<a href="__CONTROLLER__/newmovielongcomment/id/{$mrow['movie_id']}">
+								<p class="active">
+									<em></em>
+									最新
+								</p>
+							</a>
+							<a href="__CONTROLLER__/movielongcomment/id/{$mrow['movie_id']}">
+								<p>
+									<em></em>
+									最热
+								</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="reviewRegion" class="longcomlist">
+				<volist name="comrows" id="comrow" offset="0" length="2">
+					<dl class="clearfix">
+						<dt>
+							<span>TOP</span>
+							<strong>{$i}</strong>
+						</dt>
+						<dd class="comboxcont">
+							<div class="clearfix">
+								<h3>
+									<a target="_blank" href="__MODULE__/Comment/longcommentdetail/comid/{$comrow['comment_id']}">{$comrow['comment_title']}</a>
+								</h3>
+								<p class="mt20 a">
+									<?php
+										echo msubstr(preg_replace('/\s+(\&nbsp\;)*/','',strip_tags(htmlspecialchars_decode($comrow['comment_text']))),0,130,'utf-8');
+									?>
+									<a href="__MODULE__/Comment/longcommentdetail/comid/{$comrow['comment_id']}" class="px12 ml6" target="_blank">
+										全文 
+										<i class="gt"></i>
+									</a>
+								</p>
+							</div>
+							<div class="db_comtool">
+								<a class="com_good" title="赞">
+									<i title="赞"></i>
+									{$comrow['comment_zs']}
+								</a>
+								<a class="com_share" title="转发">
+									<i title="转发"></i>
+									44
+								</a>
+								<a class="com_bbs" title="评论" href="__MODULE__/Comment/longcommentdetail/comid/{$comrow['comment_id']}#commentRegion" target="_blank">
+									<i title="评论"></i>
+									{$comrow['replaynum']}
+								</a>
+							</div>
+						</dd>
+						<dd class="comboxuser2">
+							<div class="pic_58">
+								<a href="javascript:;">
+									<img src="__PUBLIC__/{$comrow['mem']['member_pic']}" width="48" height="48" alt="{$comrow['mem']['member_nickname']}">
+								</a>
+								<p>
+									<a target="_blank" href="javascript:;">{$comrow['mem']['member_nickname']}</a>
+								</p>
+								<p class="mt9 px12">
+									<a target="_blank" href="javascript:;">{$comrow['comment_time']|date="Y-m-d H:i",###}</a>
+								</p>
+								<p class="px12 mt15">
+									看过 
+									<span class="db_point ml12">{$comrow['grade']['comgrade_grade']}.0</span>
+								</p>
+							</div>
+						</dd>
+					</dl>
+				</volist>
+				<volist name="comrows" id="comrow" offset="2" length="8">
+					<dl class="clearfix">
+						<dd class="comboxcont">
+							<div class="clearfix">
+								<h3>
+									<a target="_blank" href="__MODULE__/Comment/longcommentdetail/comid/{$comrow['comment_id']}">{$comrow['comment_title']}</a>
+								</h3>
+								<p class="mt20 a">
+									<?php
+										echo msubstr(preg_replace('/\s+(\&nbsp\;)*/','',strip_tags(htmlspecialchars_decode($comrow['comment_text']))),0,130,'utf-8');
+									?>
+									<a href="__MODULE__/Comment/longcommentdetail/comid/{$comrow['comment_id']}" class="px12 ml6" target="_blank">
+										全文 
+										<i class="gt"></i>
+									</a>
+								</p>
+							</div>
+							<div class="db_comtool">
+								<a class="com_good" title="赞">
+									<i title="赞"></i>
+									{$comrow['comment_zs']}
+								</a>
+								<a class="com_share" title="转发">
+									<i title="转发"></i>
+									44
+								</a>
+								<a class="com_bbs" title="评论" href="__MODULE__/Comment/longcommentdetail/comid/{$comrow['comment_id']}#commentRegion" target="_blank">
+									<i title="评论"></i>
+									{$comrow['replaynum']}
+								</a>
+							</div>
+						</dd>
+						<dd class="comboxuser2">
+							<div class="pic_58">
+								<a href="javascript:;">
+									<img src="__PUBLIC__/{$comrow['mem']['member_pic']}" width="48" height="48" alt="{$comrow['mem']['member_nickname']}">
+								</a>
+								<p>
+									<a target="_blank" href="javascript:;">{$comrow['mem']['member_nickname']}</a>
+								</p>
+								<p class="mt9 px12">
+									<a target="_blank" href="javascript:;">{$comrow['comment_time']|date="Y-m-d H:i",###}</a>
+								</p>
+								<p class="px12 mt15">
+									看过 
+									<span class="db_point ml12">{$comrow['grade']['comgrade_grade']}.0</span>
+								</p>
+							</div>
+						</dd>
+					</dl>
+				</volist>
+			</div>
+			<div class="pagenav tc p_r" id="PageNavigator">
+				{$show}
+			</div>
+			
+
+		</div>
+	</div>
+</block>
+<block name="js">
+	<script>
+	$("#filterContainer").hover(
+		function(){
+			$(this).addClass("open");
+			$(this).css({"height":"75px"});
+			$("#dbseldrop").css({"height":"50px"});
+		},
+		function(){
+			$(this).removeClass("open");
+			$(this).css({"height":"0px"});
+			$("#dbseldrop").css({"height":"0px"});
+		}
+	);
+	
+	$("#PageNavigator .next").text("下一页");
+	$("#PageNavigator .prev").text("上一页");
+	</script>
+</block>

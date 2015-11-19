@@ -1,0 +1,17 @@
+<extend name="Public:cinemadetail" />
+<block name="ci_mon">
+	<div class="ci_mon">
+		<div class="member" style="margin: 0 20px 0 39px;">
+			<div style="padding:20px 0">	
+			<div style="font-size:18px;line-height:1;padding:0 0 10px 0;">会员政策</div>
+			{$detail['cinema_member']|htmlspecialchars_decode}
+			</div>
+			
+		</div>
+	</div>
+</block>
+<block name="js">
+	<script>
+		$(".navlb li").eq(2).addClass("curr");
+	</script>
+</block>

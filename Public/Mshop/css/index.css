@@ -1,0 +1,341 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	background: url(../images/html_bg.jpg);
+    padding-bottom: 0;
+    font: 12px/150% helvetica,"微软雅黑","microsoft yahei",verdana,lucida,arial,sans-serif,"黑体";
+    color: #333;
+    min-width: 1100px;
+    zoom: 1;
+    padding-bottom: 0;
+}
+
+a{
+	color: #08c;
+    text-decoration: none;
+    vertical-align: baseline;
+    cursor: pointer;
+}
+
+ul{
+	list-style:none;
+}
+
+.clearfix, .fix{
+	display: block;
+}
+
+.clearfix:after, .fix:after{
+	content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+a.arealink{
+	width: 1000px;
+    height: 450px;
+    display: block;
+    position: relative;
+    z-index: 1;
+	margin: 0 auto;
+}
+
+.t_nav2{
+	background: #2378ba;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.t_nav2 .t_naver{
+	width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.t_naver .mulu{
+	width: 175px;
+    height: 55px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    text-align: center;
+    line-height: 55px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.t_naver .mulu .line{
+	background: #fff;
+    width: 1px;
+    height: 21px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 13px;
+    opacity: .2;
+}
+
+.t_naver .mulu em{
+	background: url(../images/mall.png) no-repeat -342px 0;
+    width: 18px;
+    height: 14px;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.t_nav2 dl{
+	height: 23px;
+    padding: 19px 0 18px;
+    line-height: 23px;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.t_nav2 dd{
+	float: left;
+    display: inline;
+}
+
+.t_nav2 dl a{
+	display: inline-block;
+    height: 23px;
+    color: #fff;
+    padding: 0 28px;
+    text-decoration: none;
+    position: relative;
+}
+
+.t_nav2 dl a:hover span, .t_nav2 dl a.on span{
+	display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #fff;
+    position: relative;
+}
+
+.t_naver .on{
+	background:#fff;
+	color:#999;
+}
+
+.t_naver .on em{
+	background-position:-360px 0;
+}
+
+.t_nav2 .t_navbox{
+	width:100%;
+	height:105px;
+	background:#fff;
+	z-index:100;
+	position:absolute;
+}
+
+.t_navbox ul{
+	width:1000px;
+	margin:0 auto;
+}
+
+.t_navbox ul li{
+	float:left;
+	display:inline;
+	width:165px;
+	border-right:1px solid #ddd;
+	text-align:center;
+	height:100%;
+}
+
+.t_navbox ul li strong{
+	font-size:14px;
+	color:#333;
+	font-family:arial;
+	display:block;
+	margin-top:5px;
+}
+
+.t_navbox ul li span{
+	width:48px;
+	height:48px;
+	display:inline-block;
+	margin-top:15px;
+}
+
+.t_navbox li:hover{
+	background:#f7f7f7;
+	cursor:pointer;
+}
+
+.t_hotlist{
+	width:1014px;
+	margin:0 auto;
+	margin-top:20px;
+}
+
+.t_hotlist dt,.t_hotlist dd{
+	background:#fff;
+	position:relative;
+	float:left;
+	margin:0 12px 14px 0px;
+	box-shadow:0 0 3px #ccc;
+}
+
+.t_hotlist dt:hover,.t_hotlist dd:hover{
+	box-shadow:0 0 5px #666;
+}
+
+.t_actorbox{
+	position:relative;
+	background:black;
+	margin-top:40px;
+}
+
+.t_actorbox .t_actornav{
+	margin:0 auto;
+	width:1029px;
+	height:105px;
+	position:relative;
+}
+
+.t_actorbox .t_actornav ul{
+	display:block;
+	height:105px;
+	width:100%;
+}
+
+.t_actorbox .t_actornav li{
+	display:inline-block;
+	float:left;
+	height:105px;
+	width:200px;
+	opacity:0.5;
+	margin-right:5px;
+}
+
+.t_actornav a{
+	display: block;
+    width: 49px;
+    height: 104px;
+    position: absolute;
+    top: 0;
+	opacity:0.4;
+}
+
+.t_actornav a.scrollprev{
+	left: -50px;
+    background: url(../images/hdp/foot.png) no-repeat -1822px -9px;
+}
+
+.t_actornav a.scrollnext{
+	right: -36px;
+    background: url(../images/hdp/foot.png) no-repeat right -9px;
+}
+
+.t_actor{
+	height:585px;
+	position:relative;
+}
+
+.t_actor ul{
+	position:relative;
+	height:510px;
+}
+
+.t_actor ul li{
+	width:100%;
+	height:585px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.t_actor ul li dl{
+	width:1000px;
+	margin:0 auto;
+}
+
+.t_actor ul li dd{
+	float:left;
+	display:inline;
+}
+
+
+.t_actor ul li dt{
+	float:left;
+	display:inline;
+}
+
+.t_rcommend{
+	background:#f2f2f2;
+	padding:50px;
+	position:relative;
+}
+
+.t_rcommend .t_commendtext{
+	width:1000px;
+	margin:0 auto;
+	position:relative;
+}
+
+
+.t_rcommend .t_commendtext dd{
+	float:left;
+	display:inline;
+}
+
+.t_rcommend .t_commendtext dt{
+	float:left;
+	display:inline;
+}
+
+.t_rcommend .t_commendtext dd div{
+	width:325px;
+	margin-top:10px;
+	overflow:hidden;
+	position:relative;
+	box-shadow:0 0 4px #ccc;
+}
+
+.t_rcommend .t_commendtext dd div:hover{
+	box-shadow:0 0 6px #999;
+}
+
+.t_rcommend .t_commendtext dd div a{
+	width:100%;
+	height:100%;
+	display:block;
+}
+
+.t_rcommend .t_commendtext dd div h2{
+	position:absolute;
+	top:30px;
+	left:35px;
+	font-family:微软雅黑;
+	font-weight:normal;
+	font-size:18px;
+}
+
+.t_rcommend .t_commendtext dd div p{
+	position:absolute;
+	top:55px;
+	left:35px;
+	color:#999;
+}
+
+.t_rcommend .t_commendtext dd div strong{
+	position:absolute;
+	top:110px;
+	left:35px;
+	font-size:16px;
+}
+
+.t_rcommend .t_commendtext dd div strong span{
+	font-size:24px;
+}

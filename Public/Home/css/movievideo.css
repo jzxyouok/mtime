@@ -1,0 +1,123 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	font: 12px/150% helvetica,"微软雅黑","microsoft yahei",verdana,lucida,arial,sans-serif,"黑体";
+    color: #333;
+    min-width: 1100px;
+    zoom: 1;
+    padding-bottom: 0;
+}
+
+a{
+	color: #08c;
+    text-decoration: none;
+    vertical-align: baseline;
+    cursor: pointer;
+}
+
+.db_convideo{
+	background:url(../images/video_bg.jpg) repeat-x 0 -685px #464646;
+	padding-top:50px;
+}
+
+.db_picposition{
+	width:1000px;
+	margin:0 auto;
+	padding:40px 0 12px 0;
+	color:#999;
+	position:relative;
+}
+
+.db_picposition a{
+	color:#999;
+}
+
+.db_picposition a:hover{
+	text-decoration:underline; 
+}
+
+.px18{
+	font-size:18px;
+}
+
+.fr{
+	float:right;
+}
+
+.pt3{
+	padding-top:3px;
+}
+
+.morevideo{
+	position:absolute;
+	top:40px;
+	right:0px;
+}
+
+.icon_piclist{
+	background:url(../images/icon.gif) no-repeat -92px -230px;
+	position: relative;
+    overflow: hidden;
+    margin-right: 6px;
+    vertical-align: middle;
+	width: 14px;
+    height: 14px;
+	display: inline-block;
+}
+
+.db_conpicinner{
+	width:1000px;
+	margin:0 auto;
+	position:relative;
+	padding-bottom:30px;
+	cursor:pointer;
+}
+
+.db_conpicinner .playvideo{
+	width:110px;
+	height:110px;
+	border-radius:55px;
+	border:3px solid #999;
+	position:absolute;
+	bottom:80px;
+	left:20px;
+	z-index:10;
+}
+
+.db_conpicinner .playvideo .play{
+	border-top: 30px solid transparent;
+    border-left: 50px solid #999;
+    border-bottom: 30px solid transparent;
+	border-radius:5px;
+	position:absolute;
+	top:25px;
+	left:35px;	
+}
+
+.db_conpicinner .playvideo .pause{
+	border-left:6px solid #999!important;
+	border-right:6px solid #999!important;
+	width:20px!important;
+	height:60px!important;
+	position:absolute!important;
+	top:25px!important;
+	left:37px!important;
+	border-bottom:0px;
+	border-top:0px;
+	border-radius:0;
+	
+}
+
+.db_conpicinner .on{
+	border:3px solid #0096FF;
+	background:#1D3338;
+	opacity:0.9;
+}
+
+.db_conpicinner .playvideo .playon{
+	border-left-color: #0096FF!important;
+	border-right-color: #0096FF!important;
+}

@@ -1,0 +1,1102 @@
+<html>
+	<head>
+		<title>长治影讯,长治电影院-在线选座购票-购电影票</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/indexheader.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/index.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/hdp.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/footer.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/xscroll.css">	
+		<script src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+		<script src="__PUBLIC__/Home/js/jquery.SuperSlide.2.1.1.js"></script>
+		<script src="__PUBLIC__/Home/js/header.js"></script>
+		<script src="__PUBLIC__/Home/js/index.js"></script>
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<div class="contanier">
+			<div style="z-index:120" id="searchbar">
+				<include file="Public/indexheader" />
+			</div>
+			
+			<div class="mtime-box">
+				<div class="bd">
+					<ul>
+						<foreach name="sl" item="sld">
+							<li style="background: url(__PUBLIC__/{$sld['slide_bg']}) no-repeat center center">
+								<div class="m-width">
+								<a href="__MODULE__/Movie/movieindex/id/{$sld['slide_mid']}"><img src="__PUBLIC__/{$sld['slide_pic']}" title="{$sld['slide_name']}"/></a>
+								</div>
+							</li>
+						</foreach>
+					</ul>
+				</div>
+				<div class="mtime-btn">
+					<a class="prev" href="javascript:;"></a>
+					<a class="next" href="javascript:;"></a>
+					<div class="hd"><ul></ul></div>
+				</div>
+			</div>
+			
+			<div class="filmcon">
+				<div class="isthefilm">
+					<div class="onlineticket" id="ticketSearchFixDiv">
+						<div class="midbox">
+							<div class="cityselect">
+								<h2>长治</h2>
+								<div id="changecity">
+									<a href="javascript:;" class="citylink">切换城市</a>
+								</div>
+							</div>
+							<div class="movieselectbox">
+								<div class="moviemid m_movie">
+									<span>选电影</span>
+									<a href="javascript:;" class="ico_select"></a>
+								</div>
+								<div class="moviemid m_cinema">
+									<span>选影院</span>
+									<a href="javascript:;" class="ico_select"></a>
+								</div>
+								<div class="moviemid notime">
+									<span>选时间</span>
+									<a href="javascript:;" class="ico_select"></a>
+								</div>
+								<div class="ticketinfo">
+									<a class="ticket">选座购票</a>
+								</div>
+								<div class="moviestip" style="display:none;">
+									<div class="searcher">
+										<input type="text" name="search" placeholder="输入影片名称快速定位" class="textsearch">
+										<i class="sub"></i>
+									</div>
+									<ul class="sear">
+										<volist name="rows" id="row">
+											<li>
+												<a href="__MODULE__/Movie/movieindex/id/{$row['movie_id']}" class="tipsearch">
+													<empty name="row['movie_graded']">
+													<else/>
+														<b class="db_point">{$row['movie_graded']}</b>
+													</empty>
+													<span>{$row['movie_name']}</span>
+												</a>
+											</li>	
+										</volist>					
+									</ul>
+								</div>
+								<div class="cinematip" style="display:none;">
+									<div class="searcher">
+										<input type="text" name="search" placeholder="输入影院名称快速定位" class="cinemasearch">
+										<i class="sub"></i>
+									</div>
+									<ul class="sear">
+										<volist name="crows" id="crow">
+											<li>
+												<a href="__MODULE__/Cinema/index/cid/{$crow['cinema_id']}" class="cinematipsearch">
+													<span>{$crow['cinema_name']}</span>
+												</a>
+											</li>	
+										</volist>					
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="isthebox">
+						<div class="tit">
+							<h2>
+								正在热映
+								<span>{$num}</span>
+								部
+							</h2>
+							<div class="filmlink" id="xz">
+								<ul>
+									<li>
+										<a href="javascript:;" class="on">
+											全部
+										</a>
+									</li>
+									<span>|</span>
+									<li>
+										<a href="javascript:;">
+											3D
+										</a>
+									</li>
+									<span>|</span>
+									<li>
+										<a href="javascript:;">
+											IMAX
+										</a>
+									</li>
+									<span>|</span>
+									<li>
+										<a href="javascript:;">
+											动作
+										</a>
+									</li>
+									<span>|</span>
+									<li>
+										<a href="javascript:;">
+											喜剧
+										</a>
+									</li>
+									<span>|</span>
+									<li>
+										<a href="javascript:;">
+											动画
+										</a>
+									</li>
+									<span>|</span>
+									<li>
+										<a href="javascript:;">
+											冒险
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="filmsearch">
+								<input type="text" id="hotplaySearchText" class="film" placeholder="搜索影片">
+								<input type="button" id="hotplaySearchButton" class="but">
+							</div>
+						</div>
+						
+						<div style="clear:both"></div>
+						<div id="hotplayContent">	
+							<div>
+								<div style="clear:both"></div>
+								<div class="moviebox">
+									<div class="firstmovie fl">
+										<dl>
+											<dt>
+												<a href="__MODULE__/Movie/movieindex/id/{$data['movie_id']}" target="_blank" title="{$data['movie_name']}">
+													<img src="__PUBLIC__/{$data['movie_pic']}" width="270" height="360" alt="{$data['movie_name']}">
+												</a>
+												<div class="banben">
+													<IF condition="$data['movie_3d'] eq 1">
+														<span class="icon_3d"></span>
+													</IF>
+													<IF condition="$data['movie_imax'] eq 1">
+															<span class="icon_imax"></span>
+														</IF>
+													<IF condition="$data['movie_imax3d'] eq 1">
+														<span class="icon_3dimax"></span>
+													</IF>
+													<IF condition="$data['movie_screen'] eq 1">
+														<span class="icon_dmax"></span>
+													</IF>
+												</div>
+											</dt>
+											<dd style="position: relative;">
+												<div class="score">
+													<b>总评分</b>
+													<p>{$data['movie_graded']}</p>
+												</div>
+												<h2>
+													<a href="__MODULE__/Movie/movieindex/id/{$data['movie_id']}" target="_blank">{$data['movie_name']}</a>
+												</h2>
+												<h3 class="t">
+													<span>{$data['movie_time']}分钟 -</span>
+													<volist name="data['type']" id="d" offset="0" length="2">
+														<a href="#" target="_blank">{$d['type_name']}</a>
+														<span style="padding-right:5px;">/ </span>
+													</volist>
+												</h3>
+												<p class="hotmovie">
+													<span class="ico_dot"></span>
+													<span>{$data['movie_resume']}</span>
+												</p>
+												<div class="moviebtn">
+													<strong>{$data['money']}</strong>
+													<span style="">元起</span>
+													<a class="tic" href="#">选座购票</a>
+												</div>
+											</dd>
+										</dl>
+									</div>
+									
+									<div class="othermovie fr">
+										<ul>
+										<volist name="rows" id="row" offset="0" length="6">
+											<li>
+												<a class="picbox" href="__MODULE__/Movie/movieindex/id/{$row['movie_id']}" target="_blank" alt="{$row['movie_name']}">
+													<img src="__PUBLIC__/{$row['movie_pic']}" width="100" height="140">
+													<empty name="row['movie_graded']">
+														<span></span>
+													<else />
+														<span class="score">{$row['movie_graded']}</span>
+													</empty>	
+													<IF condition="$row['movie_hot'] eq 1">
+														<span class="icon_hot"></span>
+													</IF>
+													<span class="banben">
+														<IF condition="$row['movie_3d'] eq 1">
+															<span class="icon_3d"></span>
+														</IF>
+														<IF condition="$row['movie_imax3d'] eq 1">
+															<span class="icon_3dimax"></span>
+														</IF>
+														<IF condition="$row['movie_imax'] eq 1">
+															<span class="icon_imax"></span>
+														</IF>
+														<IF condition="$row['movie_screen'] eq 1">
+															<span class="icon_dmax"></span>
+														</IF>
+														
+													</span>
+												</a>
+												<dl>
+													<dt>
+														<a href="__MODULE__/Movie/movieindex/id/{$row['movie_id']}" target="_blank">{$row['movie_name']}</a>
+													</dt>
+													<dd class="t">
+														<empty name="row['movie_time']">
+															<span></span>
+														<else />
+															<span>{$row['movie_time']}分钟-</span>
+														</empty>
+														<volist name="row['type']" id="r" offset="0" length="2">
+															<a href="#" target="_blank">{$r['type_name']}</a>
+															<span style="padding-right:5px;">/</span>
+														</volist>
+													</dd>
+													<dd>
+														<empty name="row['yy']">
+															0
+														<else />
+														 {$row['yy']}
+														</empty>
+														家影院上映
+														<empty name="row['cz']">
+															0
+														<else />
+														 {$row['cz']}
+														</empty>
+														场
+													</dd>
+													<dd class="hot">
+														<span class="ico_dot"></span>
+														<span>{$row['movie_resume']}</span>
+													</dd>
+													<dd class="btns">
+														<a href="#" class="ticket" target="_blank">
+															选座购票
+														</a>
+													</dd>
+												</dl>
+											</li>
+										</volist>
+										</ul>
+									</div>
+								</div>
+								<div style="clear:both"></div>
+								<div class="moviemore" id="hotplayMoreDiv" style="display:none;">
+									<div class="otherfilm">
+										<ul>
+											<volist name="rows" id="arr" offset="6">
+											<li>
+												<a class="picbox" href="__MODULE__/Movie/movieindex/id/{$arr['movie_id']}" target="_blank" alt="{$arr['movie_name']}">
+													<img src="__PUBLIC__/{$arr['movie_pic']}" width="100" height="140">
+													<empty name="arr['movie_graded']">
+														<span></span>
+													<else />
+														<span class="score">{$arr['movie_graded']}</span>
+													</empty>	
+													<IF condition="$arr['movie_hot'] eq 1">
+														<span class="icon_hot"></span>
+													</IF>
+													<span class="banben">
+														<IF condition="$arr['movie_3d'] eq 1">
+															<span class="icon_3d"></span>
+														</IF>
+														<IF condition="$arr['movie_imax3d'] eq 1">
+															<span class="icon_3dimax"></span>
+														</IF>
+														<IF condition="$arr['movie_imax'] eq 1">
+															<span class="icon_imax"></span>
+														</IF>
+														<IF condition="$arr['movie_screen'] eq 1">
+															<span class="icon_dmax"></span>
+														</IF>
+														
+													</span>
+												</a>
+												<dl>
+													<dt>
+														<a href="__MODULE__/Movie/movieindex/id/{$arr['movie_id']}" target="_blank">{$arr['movie_name']}</a>
+													</dt>
+													<dd class="t">
+														<empty name="arr['movie_time']">
+															<span></span>
+														<else />
+															<span>{$arr['movie_time']}分钟-</span>
+														</empty>
+														<volist name="arr['type']" id="ar" offset="0" length="2">
+															<a href="#" target="_blank">{$ar['type_name']}</a>
+															<span style="padding-right:5px;">/</span>
+														</volist>
+													</dd>
+													<dd>
+														<empty name="arr['yy']">
+															0
+														<else />
+														 {$arr['yy']}
+														</empty>
+														家影院上映
+														<empty name="arr['cz']">
+															0
+														<else />
+														 {$arr['cz']}
+														</empty>
+														场
+													</dd>
+													<dd class="hot">
+														<span class="ico_dot"></span>
+														<span>{$arr['movie_resume']}</span>
+													</dd>
+													<dd class="btns">
+														<a href="#" class="ticket" target="_blank">
+															选座购票
+														</a>
+													</dd>
+												</dl>
+											</li>
+											</volist>
+										</ul>
+									</div>
+								</div>
+								<div style="clear:both"></div>
+								<div class="i_more">
+									<a href="javascript:;" id="hotplayMoreLink">
+										<span class="xila"></span>
+										<i>更多</i>
+									</a>
+								</div>
+							</div>
+							
+							<div style="display:none;">
+								<div class="moviemore">
+									<div class="otherfilm">
+										<ul>
+											<foreach name="arrd" item="ard">
+											<li>
+												<a class="picbox" href="__MODULE__/Movie/movieindex/id/{$ard['movie_id']}" target="_blank" alt="{$ard['movie_name']}">
+													<img src="__PUBLIC__/{$ard['movie_pic']}" width="100" height="140">
+													<empty name="ard['movie_graded']">
+														<span></span>
+													<else />
+														<span class="score">{$ard['movie_graded']}</span>
+													</empty>	
+													<IF condition="$ard['movie_hot'] eq 1">
+														<span class="icon_hot"></span>
+													</IF>
+													<span class="banben">
+														<IF condition="$ard['movie_3d'] eq 1">
+															<span class="icon_3d"></span>
+														</IF>
+														<IF condition="$ard['movie_imax3d'] eq 1">
+															<span class="icon_3dimax"></span>
+														</IF>
+														<IF condition="$ard['movie_imax'] eq 1">
+															<span class="icon_imax"></span>
+														</IF>
+														<IF condition="$ard['movie_screen'] eq 1">
+															<span class="icon_dmax"></span>
+														</IF>
+														
+													</span>
+												</a>
+												<dl>
+													<dt>
+														<a href="__MODULE__/Movie/movieindex/id/{$ard['movie_id']}" target="_blank">{$ard['movie_name']}</a>
+													</dt>
+													<dd class="t">
+														<empty name="ard['movie_time']">
+															<span></span>
+														<else />
+															<span>{$ard['movie_time']}分钟-</span>
+														</empty>
+														<volist name="ard['type']" id="rd" offset="0" length="2">
+															<a href="#" target="_blank">{$rd['type_name']}</a>
+															<span style="padding-right:5px;">/</span>
+														</volist>
+													</dd>
+													<dd>
+														<empty name="ard['yy']">
+															0
+														<else />
+														 {$ard['yy']}
+														</empty>
+														家影院上映
+														<empty name="ard['cz']">
+															0
+														<else />
+														 {$ard['cz']}
+														</empty>
+														场
+													</dd>
+													<dd class="hot">
+														<span class="ico_dot"></span>
+														<span>{$ard['movie_resume']}</span>
+													</dd>
+													<dd class="btns">
+														<a href="#" class="ticket" target="_blank">
+															选座购票
+														</a>
+													</dd>
+												</dl>
+											</li>
+											</foreach>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<div style="display:none;">
+								<div class="moviemore">
+									<div class="otherfilm">
+										<ul>
+											<foreach name="arrm" item="arm">
+											<li>
+												<a class="picbox" href="__MODULE__/Movie/movieindex/id/{$arm['movie_id']}" target="_blank" alt="{$arm['movie_name']}">
+													<img src="__PUBLIC__/{$arm['movie_pic']}" width="100" height="140">
+													<empty name="arm['movie_graded']">
+														<span></span>
+													<else />
+														<span class="score">{$arm['movie_graded']}</span>
+													</empty>	
+													<IF condition="$arm['movie_hot'] eq 1">
+														<span class="icon_hot"></span>
+													</IF>
+													<span class="banben">
+														<IF condition="$arm['movie_3d'] eq 1">
+															<span class="icon_3d"></span>
+														</IF>
+														<IF condition="$arm['movie_imax3d'] eq 1">
+															<span class="icon_3dimax"></span>
+														</IF>
+														<IF condition="$arm['movie_imax'] eq 1">
+															<span class="icon_imax"></span>
+														</IF>
+														<IF condition="$arm['movie_screen'] eq 1">
+															<span class="icon_dmax"></span>
+														</IF>
+														
+													</span>
+												</a>
+												<dl>
+													<dt>
+														<a href="__MODULE__/Movie/movieindex/id/{$arm['movie_id']}" target="_blank">{$arm['movie_name']}</a>
+													</dt>
+													<dd class="t">
+														<empty name="arm['movie_time']">
+															<span></span>
+														<else />
+															<span>{$arm['movie_time']}分钟-</span>
+														</empty>
+														<volist name="arm['type']" id="rm" offset="0" length="2">
+															<a href="#" target="_blank">{$rm['type_name']}</a>
+															<span style="padding-right:5px;">/</span>
+														</volist>
+													</dd>
+													<dd>
+														<empty name="arm['yy']">
+															0
+														<else />
+														 {$arm['yy']}
+														</empty>
+														家影院上映
+														<empty name="arm['cz']">
+															0
+														<else />
+														 {$arm['cz']}
+														</empty>
+														场
+													</dd>
+													<dd class="hot">
+														<span class="ico_dot"></span>
+														<span>{$arm['movie_resume']}</span>
+													</dd>
+													<dd class="btns">
+														<a href="#" class="ticket" target="_blank">
+															选座购票
+														</a>
+													</dd>
+												</dl>
+											</li>
+											</foreach>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<div style="display:none;">
+								<div class="moviemore">
+									<div class="otherfilm">
+										<ul>
+											<foreach name="arrdz" item="ardz">
+												<foreach name="ardz['film']" item="adz">
+												<li>
+													<a class="picbox" href="__MODULE__/Movie/movieindex/id/{$adz['movie_id']}" target="_blank" alt="{$adz['movie_name']}">
+														<img src="__PUBLIC__/{$adz['movie_pic']}" width="100" height="140">
+														<empty name="adz['movie_graded']">
+															<span></span>
+														<else />
+															<span class="score">{$adz['movie_graded']}</span>
+														</empty>	
+														<IF condition="$adz['movie_hot'] eq 1">
+															<span class="icon_hot"></span>
+														</IF>
+														<span class="banben">
+															<IF condition="$adz['movie_3d'] eq 1">
+																<span class="icon_3d"></span>
+															</IF>
+															<IF condition="$adz['movie_imax3d'] eq 1">
+																<span class="icon_3dimax"></span>
+															</IF>
+															<IF condition="$adz['movie_imax'] eq 1">
+																<span class="icon_imax"></span>
+															</IF>
+															<IF condition="$adz['movie_screen'] eq 1">
+																<span class="icon_dmax"></span>
+															</IF>
+															
+														</span>
+													</a>
+													<dl>
+														<dt>
+															<a href="__MODULE__/Movie/movieindex/id/{$adz['movie_id']}" target="_blank">{$adz['movie_name']}</a>
+														</dt>
+														<dd class="t">
+															<empty name="adz['movie_time']">
+																<span></span>
+															<else />
+																<span>{$adz['movie_time']}分钟-</span>
+															</empty>
+															<volist name="adz['type']" id="rdz" offset="0" length="2">
+																<a href="#" target="_blank">{$rdz['type_name']}</a>
+																<span style="padding-right:5px;">/</span>
+															</volist>
+														</dd>
+														<dd>
+															<empty name="adz['yy']">
+															0
+															<else />
+															 {$adz['yy']}
+															</empty>
+															家影院上映
+															<empty name="adz['cz']">
+																0
+															<else />
+															 {$adz['cz']}
+															</empty>
+															场
+														</dd>
+														<dd class="hot">
+															<span class="ico_dot"></span>
+															<span>{$adz['movie_resume']}</span>
+														</dd>
+														<dd class="btns">
+															<a href="#" class="ticket" target="_blank">
+																选座购票
+															</a>
+														</dd>
+													</dl>
+												</li>
+												</foreach>
+											</foreach>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<div style="display:none;">
+								<div class="moviemore">
+									<div class="otherfilm">
+										<ul>
+											<foreach name="arrxj" item="arxj">
+												<foreach name="arxj['film']" item="axj">
+												<li>
+													<a class="picbox" href="__MODULE__/Movie/movieindex/id/{$axj['movie_id']}" target="_blank" alt="{$axj['movie_name']}">
+														<img src="__PUBLIC__/{$axj['movie_pic']}" width="100" height="140">
+														<empty name="axj['movie_graded']">
+															<span></span>
+														<else />
+															<span class="score">{$axj['movie_graded']}</span>
+														</empty>	
+														<IF condition="$axj['movie_hot'] eq 1">
+															<span class="icon_hot"></span>
+														</IF>
+														<span class="banben">
+															<IF condition="$axj['movie_3d'] eq 1">
+																<span class="icon_3d"></span>
+															</IF>
+															<IF condition="$axj['movie_imax3d'] eq 1">
+																<span class="icon_3dimax"></span>
+															</IF>
+															<IF condition="$axj['movie_imax'] eq 1">
+																<span class="icon_imax"></span>
+															</IF>
+															<IF condition="$axj['movie_screen'] eq 1">
+																<span class="icon_dmax"></span>
+															</IF>
+															
+														</span>
+													</a>
+													<dl>
+														<dt>
+															<a href="__MODULE__/Movie/movieindex/id/{$axj['movie_id']}" target="_blank">{$axj['movie_name']}</a>
+														</dt>
+														<dd class="t">
+															<empty name="axj['movie_time']">
+																<span></span>
+															<else />
+																<span>{$axj['movie_time']}分钟-</span>
+															</empty>
+															<volist name="axj['type']" id="rxj" offset="0" length="2">
+																<a href="#" target="_blank">{$rxj['type_name']}</a>
+																<span style="padding-right:5px;">/</span>
+															</volist>
+														</dd>
+														<dd>
+															<empty name="axj['yy']">
+															0
+															<else />
+															 {$axj['yy']}
+															</empty>
+															家影院上映
+															<empty name="axj['cz']">
+																0
+															<else />
+															 {$axj['cz']}
+															</empty>
+															场
+														</dd>
+														<dd class="hot">
+															<span class="ico_dot"></span>
+															<span>{$axj['movie_resume']}</span>
+														</dd>
+														<dd class="btns">
+															<a href="#" class="ticket" target="_blank">
+																选座购票
+															</a>
+														</dd>
+													</dl>
+												</li>
+												</foreach>
+											</foreach>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<div style="display:none;">
+								<div class="moviemore">
+									<div class="otherfilm">
+										<ul>
+											<foreach name="arrdh" item="ardh">
+												<foreach name="ardh['film']" item="adh">
+												<li>
+													<a class="picbox" href="__MODULE__/Movie/movieindex/id/{$adh['movie_id']}" target="_blank" alt="{$adh['movie_name']}">
+														<img src="__PUBLIC__/{$adh['movie_pic']}" width="100" height="140">
+														<empty name="adh['movie_graded']">
+															<span></span>
+														<else />
+															<span class="score">{$adh['movie_graded']}</span>
+														</empty>	
+														<IF condition="$adh['movie_hot'] eq 1">
+															<span class="icon_hot"></span>
+														</IF>
+														<span class="banben">
+															<IF condition="$adh['movie_3d'] eq 1">
+																<span class="icon_3d"></span>
+															</IF>
+															<IF condition="$adh['movie_imax3d'] eq 1">
+																<span class="icon_3dimax"></span>
+															</IF>
+															<IF condition="$adh['movie_imax'] eq 1">
+																<span class="icon_imax"></span>
+															</IF>
+															<IF condition="$adh['movie_screen'] eq 1">
+																<span class="icon_dmax"></span>
+															</IF>
+															
+														</span>
+													</a>
+													<dl>
+														<dt>
+															<a href="__MODULE__/Movie/movieindex/id/{$adh['movie_id']}" target="_blank">{$adh['movie_name']}</a>
+														</dt>
+														<dd class="t">
+															<empty name="adh['movie_time']">
+																<span></span>
+															<else />
+																<span>{$adh['movie_time']}分钟-</span>
+															</empty>
+															<volist name="adh['type']" id="rdh" offset="0" length="2">
+																<a href="#" target="_blank">{$rdh['type_name']}</a>
+																<span style="padding-right:5px;">/</span>
+															</volist>
+														</dd>
+														<dd>
+															<empty name="adh['yy']">
+															0
+															<else />
+															 {$adh['yy']}
+															</empty>
+															家影院上映
+															<empty name="adh['cz']">
+																0
+															<else />
+															 {$adh['cz']}
+															</empty>
+															场
+														</dd>
+														<dd class="hot">
+															<span class="ico_dot"></span>
+															<span>{$adh['movie_resume']}</span>
+														</dd>
+														<dd class="btns">
+															<a href="#" class="ticket" target="_blank">
+																选座购票
+															</a>
+														</dd>
+													</dl>
+												</li>
+												</foreach>
+											</foreach>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<div style="display:none;">
+								<div class="moviemore">
+									<div class="otherfilm">
+										<ul>
+											<foreach name="arrmx" item="armx">
+												<foreach name="armx['film']" item="amx">
+												<li>
+													<a class="picbox" href="__MODULE__/Movie/movieindex/id/{$amx['movie_id']}" target="_blank" alt="{$amx['movie_name']}">
+														<img src="__PUBLIC__/{$amx['movie_pic']}" width="100" height="140">
+														<empty name="amx['movie_graded']">
+															<span></span>
+														<else />
+															<span class="score">{$amx['movie_graded']}</span>
+														</empty>	
+														<IF condition="$amx['movie_hot'] eq 1">
+															<span class="icon_hot"></span>
+														</IF>
+														<span class="banben">
+															<IF condition="$amx['movie_3d'] eq 1">
+																<span class="icon_3d"></span>
+															</IF>
+															<IF condition="$amx['movie_imax3d'] eq 1">
+																<span class="icon_3dimax"></span>
+															</IF>
+															<IF condition="$amx['movie_imax'] eq 1">
+																<span class="icon_imax"></span>
+															</IF>
+															<IF condition="$amx['movie_screen'] eq 1">
+																<span class="icon_dmax"></span>
+															</IF>
+															
+														</span>
+													</a>
+													<dl>
+														<dt>
+															<a href="__MODULE__/Movie/movieindex/id/{$amx['movie_id']}" target="_blank">{$amx['movie_name']}</a>
+														</dt>
+														<dd class="t">
+															<empty name="amx['movie_time']">
+																<span></span>
+															<else />
+																<span>{$amx['movie_time']}分钟-</span>
+															</empty>
+															<volist name="amx['type']" id="rmx" offset="0" length="2">
+																<a href="#" target="_blank">{$rmx['type_name']}</a>
+																<span style="padding-right:5px;">/</span>
+															</volist>
+														</dd>
+														<dd>
+															<empty name="amx['yy']">
+															0
+															<else />
+															 {$amx['yy']}
+															</empty>
+															家影院上映
+															<empty name="amx['cz']">
+																0
+															<else />
+															 {$amx['cz']}
+															</empty>
+															场
+														</dd>
+														<dd class="hot">
+															<span class="ico_dot"></span>
+															<span>{$amx['movie_resume']}</span>
+														</dd>
+														<dd class="btns">
+															<a href="#" class="ticket" target="_blank">
+																选座购票
+															</a>
+														</dd>
+													</dl>
+												</li>
+												</foreach>
+											</foreach>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+				
+				<div class="upcoming">
+					<div class="title">
+						<h2>即将上映 －{$Think.NOW_TIME|date="m",###}月{$t|date="d",###}日~12月31日</h2>
+					</div>
+					<div class="i_swwantlist">
+						<div class="friend">
+							<div class="mr_frbox">
+								<img class="mr_frBtnL prev" src="__PUBLIC__/Home/images/mfrl.gif" />
+								<div class="mr_frUl">
+									<ul id="mr_fu">
+										<foreach name="scrolls" item="scroll">
+										<li>
+											<span class="dot">&nbsp;</span>
+											<span class="day">
+												<strong>{$scroll['movie_start']|date="m",###}月{$scroll['movie_start']|date="d",###}日</strong>
+												<span>即将上映</span>
+											</span>
+											<div class="i_wantmovie">
+												<a href="__MODULE__/Movie/movieindex/id/{$scroll['movie_id']}" class="img" target="_blank">
+													<img src="__PUBLIC__/{$scroll['movie_pic']}" width="100" height="150" alt="{$scroll['movie_name']}/{$scroll['movie_ename']}({$scroll['movie_start']|date='Y',###})">
+												</a>
+												<div class="tex">
+													<h3>
+														<a href="__MODULE__/Movie/movieindex/id/{$scroll['movie_id']}" target="_blank">{$scroll['movie_name']}</a>
+													</h3>
+													<p class="s">
+														<span> 1148人想看 - </span>
+														<volist name="scroll['type']" id="scr" offset="0" length="2">
+															<a href="#" target="_blank">{$scr['type_name']}</a>
+															<span>/</span>
+														</volist>
+													</p>
+													<empty name="scroll['dir_name'][0]['actor_name']">
+														
+													<else />
+														<p class="i_wbr">
+															<b>导演：</b>
+															<a href="#" target="_blank">{$scroll['dir_name'][0]['actor_name']}</a>
+														</p>
+													</empty>
+													<p>
+														<a href="#" target="_blank">
+															<span>预告片</span>
+															<span class="icon_ivideo"></span>
+														</a>
+													</p>
+												</div>
+											</div>
+										</li>
+										</foreach>
+									</ul>
+								</div>
+								<img class="mr_frBtnR next" src="__PUBLIC__/Home/images/mfrr.gif" />
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="filmticket">
+					<div class="title">
+						<h2 class="fl">
+							<span>长治</span>
+							<span class="num">{$cnum}</span>
+							<span>家影院</span>
+						</h2>
+						<div class="othermenu">
+							<ul style="list-style:none;display:block;">
+								<li id="areaAndSubwayFilter" class="first">
+									<span style="padding-right:20px;">商圈及地铁沿线 </span>
+									<span class="ico_f_jiao">&nbsp;</span>
+								</li>
+								<li id="featureFilter">
+									<span class="ico_radio on" v="1"></span>
+									<label class="v_m" v="1">购票</label>
+									<span class="ico_radio notcheck" v="2"></span>
+									<label class="v_m notcheck" v="2">停车场</label>
+									<span class="ico_radio" v="3"></span>
+									<label class="v_m" v="3">3D</label>
+									<span class="ico_radio notcheck" v="4"></span>
+									<label class="v_m notcheck" v="4">IMAX</label>
+								</li>
+							</ul>
+							<div class="citysearch">
+								<input type="text" class="text" id="inputCinameKeyword" placeholder="搜索影院">
+								<input type="button" class="btn" id="buttonCinameKeyword">
+							</div>
+						</div>
+					</div>
+					
+					<div class="filmticketbox">
+						<div class="main fl">
+							<div class="movietxt">
+								<ul id="cinemaListRegion">
+								<volist name="crows" id="crow">
+									<li>
+										<a href="__MODULE__/Cinema/index/cid/{$crow['cinema_id']}" title="{$crow['cinema_name']}" class="picbox loadtempimg">
+											<img src="__PUBLIC__/{$crow['cinema_logo']}" width="102" height="63" alt="{$crow['cinema_name']}">
+										</a>
+										<dl class="movieinfobox">
+											<dt>
+												<a href="__MODULE__/Cinema/index/cid/{$crow['cinema_id']}" target="_blank" class="htitle">{$crow['cinema_name']}</a>
+											</dt>
+											<dd class="infotxt filmicon">
+												<p>{$crow['cinema_address']}</p>
+												<div class="moretool">
+													<if condition="$crow['cinema_3d'] eq 1">
+														<span class="ico_c_f02"></span>
+													</if>
+													<if condition="$crow['cinema_vip'] eq 1">
+														<span class="ico_c_f03"></span>
+													</if>
+													<if condition="$crow['cinema_qlz'] eq 1">
+														<span class="ico_c_f15"></span>
+													</if>
+													<if condition="$crow['cinema_myj'] eq 1">
+														<span class="ico_c_f09"></span>免押金
+													</if>
+													<if condition="$crow['cinema_stop'] eq 1">
+														<span class="ico_c_f14"></span>可停车
+													</if>
+													<if condition="$crow['cinema_qpj'] eq 1">
+														<span class="ico_c_f25"></span>取票机
+													</if>
+													<if condition="$crow['cinema_sk'] eq 1">
+														<span class="ico_c_f12"></span>刷卡
+													</if>
+													<if condition="$crow['cinema_wifi'] eq 1">
+														<span class="ico_c_f13"></span>WIFI
+													</if>
+												</div>
+											</dd>
+										</dl>
+									</li>
+								</volist>
+									
+								</ul>
+							</div>
+						</div>
+						
+						<div class="aside fr">
+							<a href="#"><img src="__PUBLIC__/Home/images/xhrcdb.jpg" target="_blank"></a>
+							<a href="#"><img src="__PUBLIC__/Home/images/xhrgz.jpg" target="_blank"></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="appdown">
+					<a href="http://feature.mtime.com/mobile/" target="_blank">
+						<img src="__PUBLIC__/Home/images/appdown.jpg">
+					</a>
+				</div>
+				
+				<div class="filmtip">
+					<div class="filmtipbox">
+						<ul>
+							<li class="first">
+								<a href="#" target="_blank">
+									<div class="moviecard">
+										<div class="cardbg"></div>
+										<div class="cardbg1"></div>
+										<dl>
+											<dt>时光电影卡：</dt>
+											<dd>尊享3－6折优惠，支持在线选座</dd>
+											<dd>企业个性化定制</dd>
+											<dd>商务馈赠，节日送礼，员工福利</dd>
+										</dl>
+									</div>
+								</a>
+							</li>
+							
+							<li>
+								<div class="ticketoline">
+									<h2>如何在线选座购票：</h2>
+									<p></p>
+								</div>
+							</li>
+							
+							<li class="last telbox">
+								<span class="fr tel">
+									<b>客服电话：</b>
+									<span>4006-118-118</span>
+								</span>
+								<b>影院商务合作：</b>
+								<a href="#" target="_blank">影院开业</a>
+								<span class="mline">|</span>
+								<a href="#" target="_blank">影讯合作</a>
+								<span class="mline">|</span>
+								<a href="#" target="_blank">在线购票</a>
+								<span class="mline">|</span>
+								<a href="http://theater.mtime.com/report/1/" target="_blank" class="link_green">联系时光网</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				
+			</div>
+			<div style="clear:both"></div>
+			<include file="Public/footer" />
+			<div class="mtimebar" style="display:none;">
+				<div class="searchbar" title="搜索"></div>
+				<div class="topbar" title="回到顶部"></div>
+			</div>
+		</div>
+	</body>
+	<script>
+		$(".prev,.next").hover(function(){
+			$(this).stop(true,false).fadeTo("show",0.9);
+		},function(){
+			$(this).stop(true,false).fadeTo("show",0.5);
+		})
+		$(".mtime-box").slide({
+			titCell:".hd ul",
+			mainCell:".bd ul",
+			effect:"fold",
+			interTime:4000,
+			delayTime:1500,
+			autoPlay:true,
+			autoPage:true, 
+			trigger:"click" 
+		});
+		
+		$(".mr_frbox").slide({
+			titCell: "",
+			mainCell: ".mr_frUl ul",
+			autoPage: true,
+			effect: "left",
+			autoPlay: false,
+			pnLoop:"false",
+			delayTime:"500",
+			scroll:2,
+			vis: 4
+		});
+	
+	
+	
+	
+	
+	
+	
+	
+	</script>
+</html>

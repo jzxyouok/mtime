@@ -1,0 +1,62 @@
+.t_setright{
+	float: left;
+    display: inline;
+    border-left: 1px solid #ccc;
+    width: 755px;
+    padding-left: 20px;
+    margin-left: 20px;
+    padding-top: 9px;
+	position: relative;
+}
+
+.mt9{
+	margin-top: 9px;
+}
+
+.c_666{
+	color:#666;
+}
+
+.mt6{
+	margin-top: 6px;
+}
+
+input{
+	font: 12px verdana,lucida,arial,helvetica,宋体,sans-serif;
+    padding: 2px;
+    vertical-align: middle;
+    outline: 0;
+}
+
+.mr6{
+	margin-right: 6px;
+}
+
+.line_dot{
+	height: 0;
+    border-bottom: 1px #cecece dashed;
+    overflow: hidden;
+    width: 100%;
+}
+
+.mt20{
+	margin-top: 20px;
+}
+
+
+.btn_blue{
+	background: #2e8ddf url(../images/mytime/public_bg.jpg) no-repeat -362px -168px;
+	overflow: visible;
+	color: #fff;
+    border: 1px solid #2785cf;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 3px;
+	font-family: "宋体";
+    font-size: 14px;
+	line-height: 27px!important;
+    height: 27px!important;
+    width: auto!important;
+    padding: 0 20px!important;
+}

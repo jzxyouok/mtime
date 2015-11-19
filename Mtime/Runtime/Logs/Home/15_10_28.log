@@ -1,0 +1,22 @@
+[ 2015-10-28T09:39:50+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=3&comment_id=48
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='3' WHERE ( comment_id = 48 ) [ RunTime:0.0770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-28T16:14:49+08:00 ] ::1 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+
+[ 2015-10-28T16:14:49+08:00 ] ::1 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-10-28T16:14:57+08:00 ] ::1 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-10-28T16:14:57+08:00 ] ::1 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+

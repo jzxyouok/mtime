@@ -1,0 +1,38 @@
+[ 2015-10-02T00:32:28+08:00 ] ::1 /mtime/
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mtime.m_mtralation' doesn't exist
+
+[ 2015-10-02T01:11:27+08:00 ] ::1 /mtime/
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) LIMIT 1' at line 1
+
+[ 2015-10-02T01:11:51+08:00 ] ::1 /mtime/
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) LIMIT 1' at line 1
+
+[ 2015-10-02T01:11:52+08:00 ] ::1 /mtime/
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) LIMIT 1' at line 1
+
+[ 2015-10-02T01:11:52+08:00 ] ::1 /mtime/
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) LIMIT 1' at line 1
+
+[ 2015-10-02T01:12:25+08:00 ] ::1 /mtime/
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')} ) LIMIT 1' at line 1
+
+[ 2015-10-02T10:31:28+08:00 ] ::1 /mtime/Index/index
+ERR: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+
+
+[ 2015-10-02T10:31:36+08:00 ] ::1 /mtime/
+ERR: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+
+
+[ 2015-10-02T10:36:08+08:00 ] ::1 /mtime/
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'movie_start' in 'where clause'
+
+[ 2015-10-02T10:37:47+08:00 ] ::1 /mtime/
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'movie_start' in 'where clause'
+
+[ 2015-10-02T10:37:58+08:00 ] ::1 /mtime/
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'movie_start' in 'where clause'
+
+[ 2015-10-02T10:38:02+08:00 ] ::1 /mtime/
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'movie_start' in 'where clause'
+

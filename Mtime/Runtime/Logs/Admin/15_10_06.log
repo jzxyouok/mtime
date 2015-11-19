@@ -1,0 +1,36 @@
+[ 2015-10-06T00:00:16+08:00 ] ::1 /mtime/index.php/Admin/Cinema/cinemalist
+ERR: 非法操作:cinemalist
+
+[ 2015-10-06T00:00:18+08:00 ] ::1 /mtime/index.php/Admin/Cinema/addcinema
+ERR: Think\Controller:dispaly方法不存在！
+
+[ 2015-10-06T00:00:30+08:00 ] ::1 /mtime/index.php/Admin/Cinema/cinemalist
+ERR: 非法操作:cinemalist
+
+[ 2015-10-06T00:00:30+08:00 ] ::1 /mtime/index.php/Admin/Cinema/addcinema
+ERR: 模板不存在:./Mtime/Admin/View/Cinema/addcinema.html
+
+[ 2015-10-06T00:18:28+08:00 ] ::1 /mtime/index.php/Admin/Cinema/cinemalist
+ERR: 非法操作:cinemalist
+
+[ 2015-10-06T00:22:04+08:00 ] ::1 /mtime/index.php/Admin/Cinema/cinemalist
+ERR: 非法操作:cinemalist
+
+[ 2015-10-06T00:23:42+08:00 ] ::1 /mtime/index.php/Admin/Cinema/cinemalist
+ERR: 非法操作:cinemalist
+
+[ 2015-10-06T00:40:54+08:00 ] ::1 /mtime/index.php/Admin/Cinema/cinemalist
+ERR: 非法操作:cinemalist
+
+[ 2015-10-06T00:42:11+08:00 ] ::1 /mtime/index.php/Admin/Cinema/cinemalist
+ERR: 非法操作:cinemalist
+
+[ 2015-10-06T00:43:14+08:00 ] ::1 /mtime/index.php/Admin/Cinema/cinemalist
+ERR: 非法操作:cinemalist
+
+[ 2015-10-06T00:44:03+08:00 ] ::1 /mtime/index.php/Admin/Cinema/cinemalist
+ERR: 非法操作:cinemalist
+
+[ 2015-10-06T00:44:53+08:00 ] ::1 /mtime/index.php/Admin/Cinema/cinemalist
+ERR: 非法操作:cinemalist
+

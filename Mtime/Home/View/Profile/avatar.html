@@ -1,0 +1,142 @@
+<extend name="Public:proindex" />
+<block name="title">基本信息 – 管理头像 – 电影社区 – Mtime时光网</block>
+<block name="css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/avatar.css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/jquery.Jcrop.min.css">
+	<script src="__PUBLIC__/Home/js/jquery.Jcrop.min.js"></script>
+	<script src="__PUBLIC__/Home/js/picupload.js"></script>
+	<style>
+		
+		
+		
+	</style>
+</block>
+<block name="tit">基本资料</block>
+<block name="setsider">
+	<li>
+		<span>&nbsp;</span>
+		<a href="__URL__/basic">基本信息</a>
+	</li>
+	<li>
+		<span>&nbsp;</span>
+		管理头像
+	</li>
+	<li>
+		<span>&nbsp;</span>
+		教育职业
+	</li>
+	<li>
+		<span>&nbsp;</span>
+		影迷档案
+	</li>
+	<li>
+		<span>&nbsp;</span>
+		个性域名
+	</li>
+</block>
+<block name="content">
+	<div class="t_setright">
+		<div>
+			<div class="fl w140 mr35">
+				<img src="__PUBLIC__/{$row['member_pic']}" id="img_current" width="128" height="128" class="mytime_user_photo" alt="头像">
+				<p class="tc mt6">当前头像</p>
+			</div>
+			<div class="w590 fl">
+				<div>
+					<ul class="ele_tabs_a4" id="ul_tab">
+						<li class="on">
+							<h2>本地上传</h2>
+						</li>
+						<li>
+							<h2>相册图片</h2>
+						</li>
+					</ul>
+				</div>
+				<div class="" id="div_container" style="position: relative;">
+					<div>
+						<p class="mt10 c_666">请选择新的图片上传，文件大小不能超过1M</p>
+						<p class="mt3 c_666">支持.jpg/.jpeg/.gif/.png格式的照片</p>
+						<span class="up">
+							<p class="mt20">
+								<form action="__CONTROLLER__/upload" method="post" enctype="multipart/form-data">
+									<input type="text" id="txt_file" class="mr10 t_text w295" readonly>
+									<input type="hidden" id="x1" name="x1" />
+									<input type="hidden" id="y1" name="y1" />
+									<input type="hidden" name="m_id" value="{$row['m_id']}">
+									<input type="file" id="image_file" value="" name="member_pic" style="display:none;">
+									<a href="javascript:;" class="t_btn_h" id="btn_browse">浏 览</a>
+							</p>
+							<p style="margin:10px 0;" class="u">
+								<img id="preview"/>
+							</p>
+							<p class="mt20">
+									<input type="submit" class="btn_blue" id="btn_save" value="保 存">
+								</form>
+							</p>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</block>
+
+<block name="js">
+	<script>
+		$("#nav").children().eq(0).addClass("on");
+		$("#nav").children().children().addClass("a1");		
+		$("#setsider").children().eq(1).addClass("on");
+		/*
+		$("#btn_browse").click(function(){		
+			$("#image_file").click();
+			$("#image_file").change(function(){
+				fileSelectHandler();
+				str = $(this).val();
+				pos = str.lastIndexOf('\\');
+				filename = str.substring(pos+1);
+				$("#txt_file").val(filename);
+				setTimeout(t,500);
+				function t(){
+					var tx = $("#preview").attr("src");
+						
+					$(".jcrop-holder").children().eq(3).attr("src",tx);
+						
+					$(".jcrop-holder").children().eq(0).children().eq(0).children().eq(0).attr({"src":tx});
+		
+				}
+			});
+		});
+		
+		*/
+		$("#btn_browse").data("idx","1");
+		$("#btn_browse").live("click",function(){
+			idx = $(this).data("idx");	
+			if(idx>1){
+				$(".u").html("<img id='preview'/>");
+				$("#image_file").click();
+				$("#image_file").live("change",function(){
+					fileSelectHandler();
+					str = $(this).val();
+					pos = str.lastIndexOf('\\');
+					filename = str.substring(pos+1);
+					$("#txt_file").val(filename);
+				});
+			}else{
+				$("#image_file").click();
+				$("#image_file").live("change",function(){
+					fileSelectHandler();
+					str = $(this).val();
+					pos = str.lastIndexOf('\\');
+					filename = str.substring(pos+1);
+					$("#txt_file").val(filename);
+				});
+			}
+			idx++;
+			$(this).data("idx",idx);
+		});
+		
+		
+		
+
+	</script>
+</block>

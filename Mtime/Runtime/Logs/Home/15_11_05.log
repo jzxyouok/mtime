@@ -1,0 +1,1649 @@
+[ 2015-11-05T00:02:09+08:00 ] ::1 /mtime/index.php/Home/Profile/1
+ERR: 非法操作:1
+
+[ 2015-11-05T00:03:22+08:00 ] ::1 /mtime/index.php/Home/Profile/1
+ERR: 非法操作:1
+
+[ 2015-11-05T00:07:13+08:00 ] ::1 /mtime/index.php/Home/Profile/1
+ERR: 非法操作:1
+
+[ 2015-11-05T00:17:54+08:00 ] ::1 /mtime/index.php/Home/Profile/1
+ERR: 非法操作:1
+
+[ 2015-11-05T00:20:43+08:00 ] ::1 /mtime/index.php/Home/Profile/tx
+ERR: 非法操作:tx
+
+[ 2015-11-05T00:32:56+08:00 ] ::1 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+
+[ 2015-11-05T00:32:56+08:00 ] ::1 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-11-05T00:36:18+08:00 ] ::1 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-11-05T00:36:18+08:00 ] ::1 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+
+[ 2015-11-05T00:36:24+08:00 ] ::1 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-11-05T00:36:24+08:00 ] ::1 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+
+[ 2015-11-05T08:34:48+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=8&comment_text=1111&comment_mid=13
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('1111','13','1','1446683687','17') [ RunTime:0.0000s ]
+SQL: INSERT INTO `m_comgrade` (`comgrade_mid`,`comgrade_uid`,`comgrade_grade`) VALUES ('13','17','8') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-05T08:42:46+08:00 ] 172.31.2.130 /mtime/index.php/User/select?emailname=1111%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '1111@qq.com' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-05T08:43:21+08:00 ] 172.31.2.130 /mtime/index.php/User/select?emailname=1111%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '1111@qq.com' LIMIT 1   [ RunTime:0.0156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-05T08:46:35+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=fxd&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0000s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('fxd','9','1','1446684395','19') [ RunTime:0.0000s ]
+SQL: INSERT INTO `m_comgrade` (`comgrade_mid`,`comgrade_uid`,`comgrade_grade`) VALUES ('9','19','7') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-05T08:46:58+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=4&comment_id=48
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0156s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='4' WHERE ( comment_id = 48 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-05T08:51:54+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/sortcomment?comment_grade=3&comment_text=2323&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0000s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('2323','9','1','1446684714','19') [ RunTime:0.0000s ]
+SQL: INSERT INTO `m_comgrade` (`comgrade_mid`,`comgrade_uid`,`comgrade_grade`) VALUES ('9','19','3') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-05T08:54:45+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/recomment?recomment_text=111&recomment_cid=65
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0000s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('65','111','1','1446684885','19') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-05T08:55:44+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=123&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0156s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('123','9','1','1446684944','19') [ RunTime:0.0000s ]
+SQL: INSERT INTO `m_comgrade` (`comgrade_mid`,`comgrade_uid`,`comgrade_grade`) VALUES ('9','19','7') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-05T09:06:48+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=5&comment_text=1111&comment_mid=13
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0075s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('1111','13','1','1446685608','17') [ RunTime:0.0025s ]
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE `comgrade_mid` = 13 AND `comgrade_uid` = 17 AND `comgrade_grade` = 5 LIMIT 1   [ RunTime:0.0025s ]
+SQL: INSERT INTO `m_comgrade` (`comgrade_mid`,`comgrade_uid`,`comgrade_grade`) VALUES ('13','17','5') [ RunTime:0.0025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2015-11-05T09:08:44+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=2&comment_text=111111aaaaaaaa&comment_mid=13
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('111111aaaaaaaa','13','1','1446685724','17') [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 13 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='13',`comgrade_uid`='17',`comgrade_grade`='2' WHERE ( comgrade_id = 16 ) [ RunTime:0.0025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-05T09:09:13+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=9&comment_text=111&comment_mid=18
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('111','18','1','1446685753','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 18 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `m_comgrade` (`comgrade_mid`,`comgrade_uid`,`comgrade_grade`) VALUES ('18','17','9') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T09:09:50+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/sortcomment?comment_grade=2&comment_text=2323&comment_mid=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('2323','9','1','1446685790','19') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 9 and comgrade_uid = 19 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='9',`comgrade_uid`='19',`comgrade_grade`='2' WHERE ( comgrade_id = 17 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T09:10:07+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=1&comment_id=66
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0080s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='1' WHERE ( comment_id = 66 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T09:10:07+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=2&comment_id=66
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0060s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='2' WHERE ( comment_id = 66 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T09:10:08+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=1&comment_id=70
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='1' WHERE ( comment_id = 70 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T09:10:10+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=1&comment_id=65
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0060s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='1' WHERE ( comment_id = 65 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T09:10:11+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=3&comment_id=66
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0060s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='3' WHERE ( comment_id = 66 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T09:10:11+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=4&comment_id=66
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='4' WHERE ( comment_id = 66 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T09:10:11+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=5&comment_id=66
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0060s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='5' WHERE ( comment_id = 66 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T09:10:12+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=2&comment_id=65
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0060s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='2' WHERE ( comment_id = 65 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T09:10:13+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=3&comment_id=65
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0080s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='3' WHERE ( comment_id = 65 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T09:10:13+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=4&comment_id=65
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0090s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='4' WHERE ( comment_id = 65 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T09:10:14+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=5&comment_id=65
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0060s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='5' WHERE ( comment_id = 65 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T09:10:14+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=6&comment_id=65
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0060s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='6' WHERE ( comment_id = 65 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T09:10:14+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=7&comment_id=65
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0060s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='7' WHERE ( comment_id = 65 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T09:10:15+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=8&comment_id=65
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0090s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='8' WHERE ( comment_id = 65 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T09:10:15+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=9&comment_id=65
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0060s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='9' WHERE ( comment_id = 65 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T09:10:18+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=1&comment_id=64
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='1' WHERE ( comment_id = 64 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T09:10:19+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=2&comment_id=64
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0090s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='2' WHERE ( comment_id = 64 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-11-05T09:10:33+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=10&comment_id=65
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0090s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='10' WHERE ( comment_id = 65 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T09:10:33+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=11&comment_id=65
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0090s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='11' WHERE ( comment_id = 65 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-11-05T09:10:34+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=12&comment_id=65
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0060s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='12' WHERE ( comment_id = 65 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T09:10:34+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=13&comment_id=65
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0060s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='13' WHERE ( comment_id = 65 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T09:11:11+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=3&comment_id=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0100s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='3' WHERE ( comment_id = 37 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T09:11:26+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/updatedz?comment_zs=1&comment_id=9
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0080s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='1' WHERE ( comment_id = 9 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T09:11:46+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/relongcomment?recomment_text=1111&recomment_cid=9&plcode=ARRJ
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T09:11:52+08:00 ] 172.31.2.130 /mtime/index.php/Home/Comment/relongcomment?recomment_text=1111&recomment_cid=9&plcode=BRRJ
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0090s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('9','1111','1','1446685912','19') [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-11-05T09:16:45+08:00 ] 172.31.2.130 /mtime/index.php/Profile/findpass?pass=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `m_member` WHERE `member_pass` = 'd41d8cd98f00b204e9800998ecf8427e' AND `id` = 19 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T20:14:15+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=1111&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0070s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('1111','25','1','1446725655','17') [ RunTime:0.0090s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `m_comgrade` (`comgrade_mid`,`comgrade_uid`,`comgrade_grade`) VALUES ('25','17','7') [ RunTime:0.0420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T20:15:06+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=11111111111&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0340s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('11111111111','25','1','1446725706','17') [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T20:25:14+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=aaaa&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('aaaa','25','1','1446726314','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T20:26:24+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=rrr&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('rrr','25','1','1446726384','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T20:27:14+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=qqqqq&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('qqqqq','25','1','1446726434','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-11-05T20:29:40+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=111&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('111','25','1','1446726580','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T20:31:38+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=111&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('111','25','1','1446726698','17') [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T20:32:26+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=qqq&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0060s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('qqq','25','1','1446726746','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T20:35:06+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=111&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('111','25','1','1446726906','17') [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T20:36:42+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=111&recomment_cid=78
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0060s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('78','111','1','1446727002','17') [ RunTime:0.0150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-05T20:37:27+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=11111&recomment_cid=77
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0000s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('77','11111','1','1446727047','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-05T20:37:52+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=111&recomment_cid=79
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('79','111','1','1446727072','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T20:37:57+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=1111&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0100s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('1111','25','1','1446727077','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T20:40:47+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=1111&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('1111','25','1','1446727247','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T20:41:02+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=11&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('11','25','1','1446727262','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T20:46:44+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=111&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('111','25','1','1446727604','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T20:47:09+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=111&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('111','25','1','1446727629','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T20:48:23+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=111&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('111','25','1','1446727703','17') [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T20:50:47+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=lll&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('lll','25','1','1446727847','17') [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T20:52:12+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=dddd&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('dddd','25','1','1446727932','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T20:52:18+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=11111111&recomment_cid=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('0','11111111','1','1446727938','17') [ RunTime:0.0190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T20:52:32+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=111&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('111','25','1','1446727952','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T20:52:36+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=111111&recomment_cid=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('0','111111','1','1446727956','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-11-05T20:53:45+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=1111&recomment_cid=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('0','1111','1','1446728025','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T20:57:40+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=111111&recomment_cid=87
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0060s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('87','111111','1','1446728260','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T20:58:45+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=aaaa&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('aaaa','25','1','1446728325','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T20:58:51+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=11111&recomment_cid=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('0','11111','1','1446728331','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T21:01:19+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=111&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0100s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('111','25','1','1446728479','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-11-05T21:01:24+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=11111&recomment_cid=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('0','11111','1','1446728484','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-11-05T21:03:31+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=111&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('111','25','1','1446728611','17') [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T21:03:35+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=111&recomment_cid=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('0','111','1','1446728615','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T21:13:34+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1&comment_id=91
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='1' WHERE ( comment_id = 91 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T21:13:38+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=111&recomment_cid=91
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0060s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('91','111','1','1446729218','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T21:13:43+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=11&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('11','25','1','1446729223','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T21:13:46+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=1111&recomment_cid=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0030s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('0','1111','1','1446729226','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T21:14:03+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=11111&recomment_cid=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('0','11111','1','1446729243','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T21:14:36+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=2&comment_id=91
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='2' WHERE ( comment_id = 91 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T21:14:36+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=3&comment_id=91
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='3' WHERE ( comment_id = 91 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T21:15:26+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=111&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0030s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('111','25','1','1446729326','17') [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T21:15:28+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:15:29+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0080s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:15:29+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:15:29+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:15:29+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:15:30+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:15:31+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0210s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:15:31+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:27+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0060s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:27+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:27+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:27+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:27+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:27+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:27+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:28+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:28+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:28+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:28+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:29+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1&comment_id=92
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='1' WHERE ( comment_id = 92 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T21:17:29+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=2&comment_id=92
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='2' WHERE ( comment_id = 92 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T21:17:30+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:30+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:31+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016600s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:31+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:31+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:31+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:31+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:32+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=3&comment_id=92
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='3' WHERE ( comment_id = 92 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T21:17:32+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=4&comment_id=92
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='4' WHERE ( comment_id = 92 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-11-05T21:17:32+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=5&comment_id=92
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='5' WHERE ( comment_id = 92 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T21:17:33+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=6&comment_id=92
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0070s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='6' WHERE ( comment_id = 92 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T21:17:34+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:34+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:35+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:35+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:47+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:48+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0090s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:48+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:17:48+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:23:11+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:23:11+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:23:12+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:23:12+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:23:12+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:23:13+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-11-05T21:23:37+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=7&comment_id=92
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='7' WHERE ( comment_id = 92 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T21:23:38+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=8&comment_id=92
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='8' WHERE ( comment_id = 92 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T21:23:38+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=9&comment_id=92
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='9' WHERE ( comment_id = 92 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-11-05T21:24:05+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=adsadas&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0080s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('adsadas','25','1','1446729845','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T21:24:09+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=adsa&recomment_cid=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0080s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('0','adsa','1','1446729849','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T21:24:25+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=qq&recomment_cid=94
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('94','qq','1','1446729865','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T21:32:26+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=1aadsaagagaga&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('1aadsaagagaga','25','1','1446730346','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T21:39:18+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=adadasdasdas&recomment_cid=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('0','adadasdasdas','1','1446730758','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T21:52:22+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=111&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0270s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('111','25','1','1446731542','17') [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T21:52:28+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=111&recomment_cid=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0000s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('0','111','1','1446731548','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-05T22:00:13+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=111adadsa&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('111adadsa','25','1','1446732013','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T22:00:19+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=fddhdhd&recomment_cid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('0','fddhdhd','1','1446732019','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T22:02:26+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=adadsa&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('adadsa','25','1','1446732146','17') [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T22:02:31+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aadsd&recomment_cid=0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('0','aadsd','1','1446732151','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T22:03:36+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=adasdadasd&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0030s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('adasdadasd','25','1','1446732216','17') [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T22:04:49+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=111adasdas&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0090s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('111adasdas','25','1','1446732289','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T22:19:55+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=11&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('11','25','1','1446733195','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T22:22:52+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=qqq&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0340s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('qqq','25','1','1446733372','17') [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0010s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 190 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2015-11-05T22:23:10+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=aaa&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0070s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('aaa','25','1','1446733390','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T22:23:58+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=aaa&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('aaa','25','1','1446733438','17') [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T22:24:32+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=aaa&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('aaa','25','1','1446733472','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `m_comgrade` (`comgrade_mid`,`comgrade_uid`,`comgrade_grade`) VALUES ('25','17','7') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T22:26:54+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=adasdasd&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0960s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('adasdasd','25','1','1446733614','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T22:27:37+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=aaada&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0060s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('aaada','25','1','1446733657','17') [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T22:29:59+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=7&comment_text=aadsad&comment_mid=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `m_comgrade` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_longcomment` (`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('aadsad','25','1','1446733799','17') [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant comgrade_mid - assumed 'comgrade_mid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+NOTIC: [8] Use of undefined constant comgrade_uid - assumed 'comgrade_uid' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 184 行.
+SQL: SELECT `comgrade_id` FROM `m_comgrade` WHERE ( comgrade_mid = 25 and comgrade_uid = 17 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant comgrade_id - assumed 'comgrade_id' D:\wamp\www\mtime\Mtime\Home\Controller\CommentController.class.php 第 186 行.
+SQL: UPDATE `m_comgrade` SET `comgrade_mid`='25',`comgrade_uid`='17',`comgrade_grade`='7' WHERE ( comgrade_id = 22 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-05T22:30:03+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaaaaa&recomment_cid=108
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0080s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('108','aaaaaa','1','1446733803','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-05T23:30:50+08:00 ] ::1 /mtime/index.php/Home/Cinema/index/id/1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+

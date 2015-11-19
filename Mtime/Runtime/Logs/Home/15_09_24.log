@@ -1,0 +1,417 @@
+[ 2015-09-24T09:44:57+08:00 ] ::1 /mtime/index.php/User/Vcode.html/0.3088786778971553
+ERR: 非法操作:Vcode.html
+
+[ 2015-09-24T09:45:01+08:00 ] ::1 /mtime/index.php/User/Vcode.html/0.3088786778971553/0.9997061470057815
+ERR: 非法操作:Vcode.html
+
+[ 2015-09-24T09:45:02+08:00 ] ::1 /mtime/index.php/User/Vcode.html/0.3088786778971553/0.9997061470057815/0.5826451480388641
+ERR: 非法操作:Vcode.html
+
+[ 2015-09-24T09:45:03+08:00 ] ::1 /mtime/index.php/User/Vcode.html/0.3088786778971553/0.9997061470057815/0.5826451480388641/0.3031131422612816
+ERR: 非法操作:Vcode.html
+
+[ 2015-09-24T09:45:13+08:00 ] ::1 /mtime/index.php/User/Vcode.html/rand/0.5157372625544667
+ERR: 非法操作:Vcode.html
+
+[ 2015-09-24T09:45:15+08:00 ] ::1 /mtime/index.php/User/Vcode.html/rand/0.5157372625544667/rand/0.7407099977135658
+ERR: 非法操作:Vcode.html
+
+[ 2015-09-24T09:45:16+08:00 ] ::1 /mtime/index.php/User/Vcode.html/rand/0.5157372625544667/rand/0.7407099977135658/rand/0.09625388472341001
+ERR: 非法操作:Vcode.html
+
+[ 2015-09-24T09:45:17+08:00 ] ::1 /mtime/index.php/User/Vcode.html/rand/0.5157372625544667/rand/0.7407099977135658/rand/0.09625388472341001/rand/0.6353144149761647
+ERR: 非法操作:Vcode.html
+
+[ 2015-09-24T10:13:59+08:00 ] ::1 /mtime/index.php/User/Vcode.html/0.1595717363525182
+ERR: 非法操作:Vcode.html
+
+[ 2015-09-24T10:14:01+08:00 ] ::1 /mtime/index.php/User/Vcode.html/0.1595717363525182/0.2926477885339409
+ERR: 非法操作:Vcode.html
+
+[ 2015-09-24T10:14:03+08:00 ] ::1 /mtime/index.php/User/Vcode.html/0.1595717363525182/0.2926477885339409/0.10660042986273766
+ERR: 非法操作:Vcode.html
+
+[ 2015-09-24T10:14:15+08:00 ] ::1 /mtime/index.php/User/Vcode.html/rand/0.2579566636122763
+ERR: 非法操作:Vcode.html
+
+[ 2015-09-24T10:14:17+08:00 ] ::1 /mtime/index.php/User/Vcode.html/rand/0.2579566636122763/rand/0.3988577255513519
+ERR: 非法操作:Vcode.html
+
+[ 2015-09-24T10:14:20+08:00 ] ::1 /mtime/index.php/User/Vcode.html/rand/0.2874114369042218
+ERR: 非法操作:Vcode.html
+
+[ 2015-09-24T10:14:21+08:00 ] ::1 /mtime/index.php/User/Vcode.html/rand/0.2874114369042218/rand/0.9090625820681453
+ERR: 非法操作:Vcode.html
+
+[ 2015-09-24T10:14:22+08:00 ] ::1 /mtime/index.php/User/Vcode.html/rand/0.2874114369042218/rand/0.9090625820681453/rand/0.6235475905705243
+ERR: 非法操作:Vcode.html
+
+[ 2015-09-24T11:24:56+08:00 ] ::1 /mtime/index.php/User/select?emailname=3593232%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '3593232@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-09-24T11:25:08+08:00 ] ::1 /mtime/index.php/User/select?emailname=3593232%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '3593232@qq.com' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-24T11:25:53+08:00 ] ::1 /mtime/index.php/User/select?emailname=13213%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '13213@qq.com' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-24T11:26:04+08:00 ] ::1 /mtime/index.php/User/select?emailname=13213%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '13213@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-24T11:28:09+08:00 ] ::1 /mtime/index.php/User/select?emailname=211312%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '211312@qq.com' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-24T11:28:16+08:00 ] ::1 /mtime/index.php/User/select?emailname=211312%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '211312@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-24T11:51:55+08:00 ] ::1 /mtime/index.php/User/select?emailname=13213%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0800s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '13213@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-24T11:52:06+08:00 ] ::1 /mtime/index.php/User/select?emailname=13213%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '13213@qq.com' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-24T11:52:45+08:00 ] ::1 /mtime/index.php/User/select?emailname=222222444%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '222222444@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-24T11:52:56+08:00 ] ::1 /mtime/index.php/User/select?emailname=222222444%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '222222444@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2015-09-24T11:54:24+08:00 ] ::1 /mtime/index.php/User/select?emailname=222222444%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '222222444@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-24T11:54:32+08:00 ] ::1 /mtime/index.php/User/select?emailname=222222444%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '222222444@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-24T11:54:39+08:00 ] ::1 /mtime/index.php/User/select?emailname=222222444%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '222222444@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-24T11:54:48+08:00 ] ::1 /mtime/index.php/User/select?emailname=222222444%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '222222444@qq.com' LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-24T11:55:08+08:00 ] ::1 /mtime/index.php/User/select?emailname=11231514%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '11231514@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-09-24T11:55:21+08:00 ] ::1 /mtime/index.php/User/select?emailname=11231514%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '11231514@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-09-24T12:04:40+08:00 ] ::1 /mtime/index.php/User/select?emailname=13111111111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '13111111111' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-09-24T12:04:45+08:00 ] ::1 /mtime/index.php/User/select?emailname=13112111111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '13112111111' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-24T12:04:51+08:00 ] ::1 /mtime/index.php/User/select?emailname=13112111111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '13112111111' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-09-24T12:05:59+08:00 ] ::1 /mtime/index.php/User/select?emailname=111%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '111@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-24T12:06:15+08:00 ] ::1 /mtime/index.php/User/select?emailname=111%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '111@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-24T12:07:39+08:00 ] ::1 /mtime/index.php/User/select?emailname=11231514%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '11231514@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-24T12:07:51+08:00 ] ::1 /mtime/index.php/User/select?emailname=11231514%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '11231514@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-24T12:08:41+08:00 ] ::1 /mtime/index.php/User/select?emailname=11231514%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '11231514@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-24T12:08:50+08:00 ] ::1 /mtime/index.php/User/select?emailname=11231514%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '11231514@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-24T12:10:22+08:00 ] ::1 /mtime/index.php/User/select?emailname=11111fa%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.2000s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '11111fa@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-24T12:10:31+08:00 ] ::1 /mtime/index.php/User/select?emailname=11111fa%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '11111fa@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-24T12:14:34+08:00 ] ::1 /mtime/index.php/User/select?emailname=359431465%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '359431465@qq.com' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-24T12:15:36+08:00 ] ::1 /mtime/index.php/User/select?emailname=38932934%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '38932934@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-24T12:15:49+08:00 ] ::1 /mtime/index.php/User/select?emailname=38932934%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '38932934@qq.com' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-24T12:18:49+08:00 ] ::1 /mtime/index.php/User/select?emailname=359431465%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '359431465@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-24T12:18:54+08:00 ] ::1 /mtime/index.php/User/select?emailname=35943145%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '35943145@qq.com' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-24T12:19:05+08:00 ] ::1 /mtime/index.php/User/select?emailname=35943145%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '35943145@qq.com' LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-09-24T12:20:40+08:00 ] ::1 /mtime/index.php/User/select?emailname=13213%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '13213@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-24T12:20:50+08:00 ] ::1 /mtime/index.php/User/select?emailname=13213%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '13213@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-24T12:23:54+08:00 ] ::1 /mtime/index.php/User/select?emailname=359431465%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '359431465@qq.com' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-24T20:13:32+08:00 ] ::1 /mtime/Public/Home/css/moviexcroll.css
+ERR: 无法加载控制器:Public
+
+[ 2015-09-24T20:13:33+08:00 ] ::1 /mtime/Public/Home/css/moviexcroll.css
+ERR: 无法加载控制器:Public
+
+[ 2015-09-24T20:13:33+08:00 ] ::1 /mtime/Public/Home/css/moviexcroll.css
+ERR: 无法加载控制器:Public
+

@@ -1,0 +1,91 @@
+<?php if (!defined('THINK_PATH')) exit();?><html>
+	<head>
+		<title>添加电影场次</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/mtime/Public/Bootstrap/css/bootstrap.min.css">
+		<script src="/mtime/Public/Bootstrap/js/jquery-1.11.min.js"></script>
+		<script src="/mtime/Public/Bootstrap/js/bootstrap.min.js"></script>
+		<script src="/mtime/Public/Bootstrap/js/holder.min.js"></script>
+		<script src="/mtime/Public/Bootstrap/js/application.js"></script>
+		
+	</head>
+	<body>
+		
+	<div class="container">
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<p style="font-size:16px;">添加电影场次<p>
+			</div>
+			<div class="panel-body">
+				<form action="/mtime/index.php/Admin/Cinema/deltjcz" method="post" class="form-horizontal">
+					<div class="form-group">
+						<label for="chn" class="col-md-2">影院ID:</label>
+						<div class="col-md-4">
+							<input type="text" name="cz_cid" class="form-control" id="chn" value="<?php echo ($cid); ?>" readonly>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="enn" class="col-md-2">电影ID:</label>
+						<div class="col-md-4">
+							<input type="text" name="cz_mid" class="form-control" id="enn" value="<?php echo ($mid); ?>" readonly>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="mt" class="col-md-2">日期:</label>
+						<div class="col-md-4">
+							<input type="text" name="cz_time" class="form-control" id="mt" value="<?php echo (date('Y-m-d',$time)); ?>" readonly>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-2">开场时间</label>
+						<div class="col-md-4">
+							<input type="text" name="cz_start" class="form-control"  value="" placeholder="格式8:00">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-2">语言</label>
+						<div class="col-md-4">
+							<input type="text" name="cz_language" class="form-control" placeholder="请输入电影语言">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="mc" class="col-md-2">影厅:</label>
+						<div class="col-md-4">
+							<input type="text" name="cz_yt" class="form-control" id="mc" value="" placeholder="请输入影厅号">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="mcon" class="col-md-2">电影特效:</label>
+						<div class="col-md-1">
+							<input type="radio" name="cz_tx" value="0" id="2d" checked><label for="2d" style="padding-left:5px;padding-top:-3px;">2D</label>
+						</div>
+						<div class="col-md-1">
+							<input type="radio" name="cz_tx" value="1" id="3d"><label for="3d" style="padding-left:5px;padding-top:-3px;">3D</label>
+						</div>
+						<div class="col-md-1">
+							<input type="radio" name="cz_tx" value="2" id="4d"><label for="4d" style="padding-left:5px;padding-top:-3px;">4D</label>
+						</div>
+						<div class="col-md-1">
+							<input type="radio" name="cz_tx" value="3" id="5d"><label for="5d" style="padding-left:5px;padding-top:-3px;">5D</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="mc" class="col-md-2">票价:</label>
+						<div class="col-md-4">
+							<input type="text" name="cz_money" class="form-control" id="mc" value="" placeholder="请输入电影票价">
+						</div>
+					</div>		
+					<div class="form-group">
+						<div class="col-md-1 col-md-offset-2">
+							<button type="submit" class="btn btn-info">添加</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+		
+	</body>
+		
+</html>

@@ -1,0 +1,160 @@
+<html>
+	<head>
+		<title>管理日志 – 电影社区 – Mtime时光网</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/header.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/longcomment.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/footer.css">
+		<script src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+		<script src="__PUBLIC__/Home/js/header.js"></script>
+		<script src="__PUBLIC__/kd/kindeditor-min.js"></script>
+		<script src="__PUBLIC__/kd/lang/zh_CN.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<include file="Public/header" />
+			
+			<div id="appRegion">
+				<div class="my_head">
+					<div id="welcomeRegion">
+						<h2>
+							<a href="#">我的博客</a>
+							<span class="px18 bold">
+								<b class="hei">.</b>
+									管理日志
+							</span>
+						</h2>
+					</div>
+				</div>
+				<div class="my_out clearfix">
+					<div class="my_nav clearfix">
+						<ul>
+							<li class="on">
+								<a href="#" class="a1">
+									<span>日志</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="t_blogout clearfix">
+						<div class="t_movieout">
+							<span class="jtbot">&nbsp;</span>
+							<div id="commentObjRegion" class="table">
+								<div class="t_r">
+									<div class="td">
+										<a href="__MODULE__/Movie/movieindex/id/{$mrow['movie_id']}" title="{$mrow['movie_name']} {$mrow['movie_start']|date='Y',###}" target="_blank">
+											<img src="__PUBLIC__/{$mrow['movie_pic']}" width="106px" height="138px" alt="{$mrow['movie_name']} {$mrow['movie_start']|date='Y',###}" class="img_box_fff">
+										</a>
+									</div>
+									<div class="td pl20">
+										<div class="clearfix">
+											<h3 class="fl px14 mt3">
+												<a href="__MODULE__/Movie/movieindex/id/{$mrow['movie_id']}" target="_blank" class="c_000">{$mrow['movie_name']}</a>
+												<span class="normal ml10">({$mrow['movie_start']|date='Y',###})</span>
+											</h3>
+										</div>
+										<div class="mt9">
+											导演：
+											<volist name="dnames" id="dname">
+												<a href="#" class="c_000" target="_blank">{$dname['actor_name']}</a>
+												&nbsp;
+											</volist>
+										</div>
+										<div class="mt9">
+											主演：
+											<volist name="anames" id="aname" offset="0" length="2">
+												<a href="#" class="c_000" target="_blank">{$aname['actor_name']}</a>
+												&nbsp;
+											</volist>
+										</div>
+										<div class="clearfix">
+											<div class="fl ele_grade_main mt9">
+												<span class="fl mll2">
+													评分：
+													<b class="c_green bold">{$pf}</b>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix mt25">
+							<div class="t_blogleft">
+								<form action="__CONTROLLER__/addcomment" method="post" enctype="multipart/form-data">
+								<input type="hidden" name="comment_mid" value="{$mrow['movie_id']}">
+								<input type="hidden" name="comgrade_grade" value="{$pf}">
+								<input type="hidden" name="comment_type" value="1">
+								<!--标题-->
+								<p>
+									<input type="text" id="titleText" value="{$_SESSION['comment_title']}" class="my_ctitle c_a5" name="comment_title" placeholder="请输入标题">
+								</p>
+								<!--内容-->
+								<div class="mt15">
+									<div class="editout">
+										<textarea name="comment_text" rows="20">{$_SESSION['comment_text']}</textarea>
+									</div>
+								</div>
+								<!--验证码-->
+								<div id="vcodeRegion">
+									<p class="mt12">
+										<strong>验证码：</strong>
+										<input type="text" value="" name="code" id="cod" maxlength="4" onkeyup="this.value = this.value.toUpperCase()" placeholder="点击获取验证码" style="width:110px;" class="t_text">
+									</p>
+									<p class="mt12 ml40 pl12" id="vcodep" style="display:none;">
+										<img src="{:U('Comment/Vcode')}" id="code" onclick="this.src = '__URL__/Vcode/'+Math.random() "  id="vcodeImage"  class="mr6 v_m">
+										<a href="javascript:;" id="refreshVcodeButton">刷新</a>
+									</p>
+								</div>
+								<!--操作按钮-->
+								<p class="mt12">
+									<input type="submit" value="发&nbsp;&nbsp;布" class="btn_fabu">
+								</p>
+							</div>
+							<div class="t_blogright">
+								<p class="line_dot mt15 mb15">&nbsp;</p>
+								<!--作者-->
+								<p>
+									作者：
+									<input id="postAuthorText" type="text" style="width:185px;" class="t_text" value="{$_SESSION['member_nickname']}">
+								</p>
+								<p class="mt12">
+									时间：
+									<input id="postTimeText" type="text" style="width:185px;" class="t_text" name="comment_time" value="{$Think.NOW_TIME|date='Y-m-d H:i',###}">
+								</p>
+								<p class="line_dot mt15 mb15">&nbsp;</p>
+								<p class="mt6">
+									<input id="allowCommentCheckbox" type="checkbox" value="1" name="comment_pl" checked="checked">
+									<label for="allowCommentCheckbox" class="ml6">允许评论</label>
+								</p>
+								<p class="line_dot mt15 mb15">&nbsp;</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<include file="Public/footer" />
+		</div>
+	</body>
+	<script>
+		$("#cod").focus(function(){
+			$("#vcodep").show();
+		});
+		$("#refreshVcodeButton").click(function(){
+			$("#code").attr({"src":"__URL__/Vcode/'+Math.random()"});
+		});
+	
+		var editor;
+		KindEditor.ready(function(K) {
+			editor = K.create('textarea[name="comment_text"]', {
+				resizeType : 0,
+				allowImageUpload : true,
+				items : [
+					'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+					'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+					'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+			});
+		});
+	</script>
+</html>

@@ -1,0 +1,43 @@
+[ 2015-10-27T15:38:51+08:00 ] ::1 /mtime/Profile/avatar
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2015-10-27T15:39:22+08:00 ] ::1 /mtime/Profile/basic
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2015-10-27T15:40:59+08:00 ] ::1 /mtime/Profile/basic
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2015-10-27T15:41:04+08:00 ] ::1 /mtime/Profile/basic
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2015-10-27T15:41:35+08:00 ] ::1 /mtime/Profile/avatar
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2015-10-27T15:46:08+08:00 ] ::1 /mtime/Profile/basic
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2015-10-27T15:46:45+08:00 ] ::1 /mtime/Profile/basic
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2015-10-27T15:48:35+08:00 ] ::1 /mtime/index.php/Login/login
+ERR: 无法加载控制器:Login
+
+[ 2015-10-27T15:50:09+08:00 ] ::1 /mtime/index.php/Login/login
+ERR: 无法加载控制器:Login
+
+[ 2015-10-27T16:12:31+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=2&comment_id=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0040s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='2' WHERE ( comment_id = 37 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-27T20:28:32+08:00 ] 192.168.191.3 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-10-27T20:28:32+08:00 ] 192.168.191.3 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+

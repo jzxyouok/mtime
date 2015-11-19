@@ -1,0 +1,11 @@
+[ 2015-11-16T15:21:05+08:00 ] ::1 /mtime/index.php/Admin/Movie/tjvideo
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'video_address' cannot be null
+
+[ 2015-11-16T15:41:43+08:00 ] ::1 /mtime/index.php/Admin/Movie/movielist
+ERR: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+
+
+[ 2015-11-16T15:41:44+08:00 ] ::1 /mtime/index.php/Admin/Movie/addvideo
+ERR: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+
+

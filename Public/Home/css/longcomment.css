@@ -1,0 +1,337 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	font: 75%/150% verdana,lucida,arial,helvetica,宋体,sans-serif;
+    color: #000;
+}
+
+a{
+	color: #2a78b4;
+    cursor: pointer;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+ul{
+	list-style:none;
+}
+
+#appRegion{
+	background: #235D73;
+}
+
+.my_head{
+	padding-top: 100px;
+	background-position: right bottom;
+    background-repeat: no-repeat;
+    width: 960px;
+    height: 120px;
+    margin: 0 auto;
+    margin-bottom: -26px;
+    position: relative;
+}
+
+.my_head h2{
+	padding-top: 30px;
+	color: #fff;
+    font-family: "microsoft yahei",arial,helvetica,sans-serif,"黑体";
+    font-size: 28px;
+    line-height: 1em;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+.my_head a, .my_head a:hover{
+	color: #fff;
+    text-decoration: none;
+}
+
+.px18{
+	font-size: 18px;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.hei{
+	font-family: "黑体";
+}
+
+.clearfix{
+	display: block;
+}
+
+.my_out{
+	position: relative;
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.clearfix:after{
+	content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+.my_nav li{
+	float: left;
+    display: inline;
+    margin-right: 4px;
+}
+
+.my_nav a{
+	background: url(../images/mytime/public_bg.jpg) no-repeat 0 0;
+    border: 1px solid #7bc8d1;
+    border-bottom: 0;
+    -webkit-border-radius: 6px 6px 0 0;
+	display: block;
+    font-size: 14px;
+	line-height: 25px;
+    overflow: hidden;
+	width: 85px;
+    text-align: center;
+    float: left;
+}
+
+.my_nav li.on a{
+	background-image: url(../images/mytime/mytime_bg.jpg);
+    color: #000;
+    font-weight: bold;
+    height: 26px;
+}
+
+.my_nav li.on a.a1{
+	background-position: 0 0;
+}
+
+.t_blogout{
+	width: 910px;
+    margin: 0 auto;
+    padding: 25px;
+    margin-top: -2px;
+    background: #fff url(../images/mytime/mytime_bg.jpg) no-repeat -960px 0;
+    min-height: 700px;
+}
+
+.t_movieout{
+	position: relative;
+    background: url(../images/mytime/mytime_bg.jpg) no-repeat 0 0;
+    padding: 25px;
+    min-height: 125px;
+    z-index: 10;
+	margin: -23px -25px 0;
+}
+
+.t_movieout .jtbot{
+	position: absolute;
+    bottom: -16px;
+    left: 75px;
+    border-top: 16px solid #7eb152;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    border-left: 16px solid #fff;
+    border-right: 16px solid #fff;
+}
+
+.table{
+	width: 100%;
+	overflow: visible;
+}
+
+.table .t_r{
+	display: table-row;
+}
+
+.table .td{
+	display: table-cell;
+    vertical-align: top;
+}
+
+.img_box_fff{
+	border: 1px solid #000;
+    padding: 4px;
+    background: #fff;
+}
+
+.pl20{
+	padding-left: 20px;
+}
+
+.t_movieout h3{
+	line-height: 120%;
+}
+
+.fl{
+	float: left;
+}
+
+.mt3{
+	margin-top: 3px;
+}
+
+.px14{
+	font-size: 14px;
+}
+
+.c_000, a.c_000:hover{
+	color: #000;
+}
+
+.ml10{
+	margin-left: 10px;
+}
+
+.normal{
+	font-weight: normal;
+    font-style: normal;
+}
+
+.mt9{
+	margin-top: 9px;
+}
+
+.ml12{
+	margin-left: 12px;
+}
+
+.c_green, a.c_green:hover{
+	color: #4b860b;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.mt25{
+	margin-top: 25px;
+}
+
+.t_blogleft{
+	float: left;
+    display: inline;
+    width: 640px;
+}
+
+input.my_ctitle{
+	border: 1px solid #9abed0;
+    font-size: 14px;
+    width: 100%;
+    padding: 4px 5px;
+}
+
+.c_a5, a.c_a5:hover, .time{
+	color: #a5a5a5;
+}
+
+input{
+	vertical-align: middle;
+	font-family: "宋体";
+	font: 12px verdana,lucida,arial,helvetica,宋体,sans-serif;
+	outline: 0;
+}
+
+.mt15{
+	margin-top: 15px;
+}
+
+.editout{
+	border: 1px solid #9abed0;
+    border-bottom: 0;
+}
+
+.ke-container {
+	width:636px!important;
+}
+
+.mt12{
+	margin-top: 12px;
+}
+
+.pl12{
+	padding-left: 12px;
+}
+
+.ml40{
+	margin-left: 40px;
+}
+
+.mr6{
+	margin-right: 6px;
+}
+
+.v_m{
+	vertical-align: middle;
+}
+
+input.t_text{
+	border: 1px solid #9abed0;
+    padding: 5px 5px;
+	height: 35px;
+}
+
+input{
+	vertical-align: middle;
+	font-family: "宋体";
+	font: 12px verdana,lucida,arial,helvetica,宋体,sans-serif;
+	outline: 0;
+}
+
+.btn_fabu, .btn_fabu:hover, .btn_enter, .btn_enter:hover{
+	background: #ffe344 url(../images/mytime/public_bg.jpg) no-repeat 0 -30px;
+    width: 107px;
+    height: 39px;
+    padding: 0;
+    line-height: 41px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 2px #666;
+	border: 1px solid #a66f00;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    zoom: 1;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+}
+
+.t_blogright{
+	float: right;
+    width: 245px;
+}
+
+.t_blogleft, .t_blogright{
+	display: inline;
+}
+
+.mb15{
+	margin-bottom: 15px;
+}
+
+.mt15{
+	margin-top: 15px;
+}
+
+.line_dot{
+	height: 0;
+    border-bottom: 1px #cecece dashed;
+    overflow: hidden;
+    width: 100%;
+}
+
+.ml6{
+	margin-left:6px;
+}

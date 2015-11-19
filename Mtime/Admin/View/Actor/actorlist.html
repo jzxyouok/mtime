@@ -1,0 +1,57 @@
+<extend name="Public:public" />
+<block name="title">演员</block>
+<block name="css">
+	<style>
+	table,th{
+		text-align:center;
+	}
+	.panel-footer .num,.panel-footer .current{
+		border:1px solid #ddd;
+		margin:0 5px;
+		padding:5px;
+	}
+	.panel-footer .current{
+		background:#0081bc;
+		color:#fff;
+	}
+	</style>
+</block>
+<block name="content">
+	<div class="container">
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<p style="font-size:16px;">演员</p>
+			</div>
+			<div class="panel-body">
+				<p><span style="color:#31708F;">用于所有的演员信息</span></p>
+			</div>
+			<table class="table table-hover table-striped table-bordered">
+				<tr>
+					<th>演员ID</th>
+					<th>演员名称</th>
+					<th>演员英文名称</th>
+					<th>演员图片</th>
+					<th>修改</th>
+					<th>删除</th>
+				</tr>
+				<foreach name="rows" item="row">
+					<tr>
+						<td>{$row['actor_id']}</td>
+						<td>{$row['actor_name']}</td>
+						<td>{$row['actor_ename']}</td>
+						<td>
+							<empty name="row['actor_pic']">
+								<div style="height:100px;"></div>
+							<else />
+								<img src="__PUBLIC__/{$row['actor_pic']}" height="100">
+							</empty>	
+						</td>
+						<td><a href="__URL__/editactor/id/{$row['actor_id']}">修改</a></td>
+						<td><a href="__URL__/del/id/{$row['actor_id']}" onclick="javascript:return confirm('你确定删除？');">删除</a></td>
+					</tr>
+				</foreach>
+			</table>
+			<div class="panel-footer text-right" style="padding-right:70px;">{$page}</div>
+		</div>			
+	</div>
+</block>

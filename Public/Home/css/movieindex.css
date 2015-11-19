@@ -1,0 +1,1912 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+    padding-bottom: 0;
+    font: 12px/150% "微软雅黑",arial;
+    color: #333;
+    min-width: 1100px;
+    zoom: 1;
+    padding-bottom: 0;
+}
+
+a{
+	color: #08c;
+    text-decoration: none;
+    vertical-align: baseline;
+    cursor: pointer;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+.db_bodyout{
+	background: #fff;
+    position: relative;
+    zoom: 1;
+    padding-top: 50px;
+}
+
+.db_bodyout .db_bodybg{
+	background-color: #127bab;
+    width: 100%;
+    height: 260px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.db_bodyout .db_shadow{
+	background: url(../images/group_shadow.png) no-repeat 0 0;
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    padding: 17px 11px 0;
+	margin-top:35px;
+}
+
+.db_topcont{
+	background: #fff !important;
+}
+
+#db_head{
+	background-position: center 0;
+    position: relative;
+    zoom: 1;
+    z-index: 9;
+}
+
+.db_coverout{
+	position: relative;
+    zoom: 1;
+    height: 0;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.db_coverout .db_coverinner{
+	position: absolute;
+    left: 15px;
+    top: 15px;
+	z-index:1;
+}
+
+.db_coverout .db_coverinner .db_coverpicbox{
+	background: #f9f9fa;
+    border: 1px solid #d5d5d5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #999;
+    padding: 10px;
+    width: 272px;
+}
+
+.db_coverout .db_coverinner .db_coverpicbox .db_cover{
+	background: #000;
+    text-align: center;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    width: 270px;
+    min-height: 275px;
+    border-radius: 6px;
+    border: 1px solid #000;
+}
+
+.sharp_showtime{
+	background: url(../images/allicon24.png) no-repeat -159px -270px;
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0;
+    line-height: 0;
+    color: #ff9300;
+}
+
+.sharp_jjsy{
+	background: url(../images/allicon24.png) no-repeat -159px -344px;
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0;
+    line-height: 0;
+    color: #ff9300;
+}
+
+.db_cover .sharp_showtime{
+	background-position: -159px -270px;
+}
+
+.db_cover .icon_type{
+	position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.icon_type span{
+	background: url(../images/allicon24.png) no-repeat;
+    display: block;
+    width: 55px;
+    height: 28px;
+    margin-bottom: 3px;
+    line-height: 0;
+    font-size: 0;
+    color: #000;
+}
+
+.icon_type .ico_imax{
+	background-position: -103px -270px;
+}
+
+.icon_type .ico_dmax{
+	background-position: -103px -364px;
+}
+
+.icon_type .ico_3d{
+	background-position: -103px -298px;
+}
+
+.icon_type .ico_3dimax{
+	background-position: -103px -326px;
+	height:38px;
+}
+
+
+.db_cover .bg{
+	background: #000;
+    position: absolute;
+    height: 115px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: .9;
+}
+
+.db_cover .bg .db_wsnormal{
+	position: absolute;
+    height: 105px;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 4;
+}
+.db_wsnormal .will_day{
+	font-size: 22px;
+    color: #fff;
+}
+
+.will_day span{
+	background: #ff9300;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    color: #000;
+    font-size: 50px;
+    line-height: 58px;
+    overflow: hidden;
+    width: 70px;
+    height: 57px;
+    margin-right: 1px;
+}
+
+.db_wsnormal .will_date{
+	font-size: 24px;
+    line-height: 1em;
+    color: #ff9300;
+    margin-top: 11px;
+}
+
+
+
+
+.db_theaterlist{
+	padding-top: 10px;
+}
+
+.db_theaterlist dd{
+	padding: 6px 0;
+    clear: both;
+    overflow: hidden;
+    zoom: 1;
+    position: relative;
+    font-size: 14px;
+    color: #151515;
+}
+
+.fr{
+	float:right;
+}
+
+.db_ihead{
+	width: 660px;
+    padding-left: 340px;
+	padding-top:40px;
+    margin: 0 auto;
+    zoom: 1;
+}
+
+.db_ihead .db_head{
+	width: 660px;
+}
+
+.db_ihead .db_head .otherbox{
+	background: #444;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 5px;
+    padding: 0 10px;
+    border-radius: 3px;
+    position: relative;
+    zoom: 1;
+}
+
+.db_head .otherbox a{
+	color: #fff;
+}
+
+.db_nav{
+	background: #127bab;
+    width: 690px;
+    height: 45px;
+    position: relative;
+    zoom: 1;
+    box-shadow: 0 1px 3px #dbdcdf;
+	z-index: 5;
+	margin-top:20px;
+	margin-left:-30px;
+}
+
+.db_nav ul{
+	display: block;
+	list-style:none;
+	margin: 0 20px;
+}
+
+.db_nav ul li{
+	position: relative;
+    zoom: 1;
+    float: left;
+    display: inline;
+    height: 45px;
+    text-align: center;
+    z-index: 2;
+}
+
+.db_nav ul li:hover{
+	background:#004C7F;
+}
+
+.db_nav ul li a{
+	display: inline-block;
+    height: 45px;
+    padding: 0 11px;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 49px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+}
+
+.db_nav  ul li span{
+	font-size: 20px;
+    line-height: 32px;
+}
+
+.db_nav dt.more{
+	width: 74px;
+    height: 37px;
+    float: left;
+    display: inline;
+    position: relative;
+    zoom: 1;
+    margin-top: 6px;
+    line-height: 37px;
+    z-index: 1;
+}
+
+.db_nav dt.onmouse{
+
+	background: url(../images/icon24.png) no-repeat -198px -45px;
+    width: 74px;
+    z-index: 7;
+	height:37px;
+}
+
+
+.db_nav dt.onmouse a{
+	color: #333 !important;
+}
+
+.db_nav dt.more a{
+	padding: 0 11px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 28px;
+	 height: 37px;
+    text-decoration: none;
+}
+
+.db_nav dt.more em{
+	overflow: hidden;
+    zoom: 1;
+	background: url(../images/icon24.png) no-repeat;
+	background-position: -86px -15px;
+    height: 32px;
+    width: 9px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.db_nav_sel{
+	background: url(../images/icon24.png) no-repeat -150px -81px;
+	width: 114px !important;
+    position: absolute;
+    top: 37px;
+    right: 0;
+    padding: 4px 4px;
+    overflow: hidden;
+	height: 187px;
+	display:none;
+	z-index: 5;
+}
+
+.db_nav_sel dd{
+	height: 35px;
+    position: relative;
+    z-index: 2;
+    float: none;
+    display: block;
+    border: 0;
+    margin-top: 0;
+	text-align: center;
+}
+.db_nav .db_nav_sel dd a{
+	display: block;
+    padding: 0 20px;
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
+    color: #666;
+    zoom: 1;
+    text-align: right;
+}
+
+.db_nav .db_nav_sel dd a:hover{
+	background: #e5f2fb;
+    color: #343434;
+    text-decoration: none;
+}
+
+.news_area{
+	padding: 15px 0 8px;
+    position: relative;
+    zoom: 1;
+    z-index: 1;
+}
+
+.grade_area{
+	background: #e8e9ee;
+    margin-left: -30px;
+	height:150px;
+}
+
+.grade_area .grade_areaer{
+	margin: 0 auto;
+    padding-left: 33px;
+	height:140px;
+}
+
+.grade_areaer .grade_tool{
+    width: 284px;
+    position: relative;
+	height:150px;
+	border-right:1px solid #ccc;
+	padding-right:20px;
+}
+
+.grade_areaer .grade_tool .t{
+	width:100%;
+	height:120px;
+}
+
+.grade_areaer .grade_tool .t .rig{
+	width:200px;
+	height:100%;
+	margin-left:80px;
+}
+.rig dt{
+	height:30px;
+	width:100%;
+	text-align:center;
+	border-bottom:1px solid #ccc; 
+}
+
+.rig dd{
+	line-height: 1.5em;
+	margin-left:15px;
+	padding:2px 3px 2px 0;
+}
+
+.grade_areaer .grade_tool .d{
+	width: 268px;
+    border: 1px solid #c1c0cd;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    zoom: 1;
+    margin: 8px 0 0 0px;
+    background: #f1f2f7;
+    cursor: pointer;
+}
+
+.grade_tool .d .grad_ellip{
+	width: 33px;
+    border-left: 1px solid #c1c0cd;
+    height: 27px;
+    line-height: 17px;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.grade_tool .d span{
+	border-left: 1px solid #c1c0cd;
+    line-height: 27px;
+    display: inline-block;
+    height: 27px;
+    width: 42%;
+    font-size: 13px;
+}
+
+.grade_areaer .grade_tool .gradebox{
+	background: #679c21;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+	left: -1px;
+    top: 5px;
+	color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+.gradebox b{
+	padding: 0;
+    width: 45px;
+    height: 45px;
+    margin: 5px auto 3px;
+    text-align: left;
+    font-size: 30px;
+    line-height: 1.2em;
+    letter-spacing: 0;
+    position: relative;
+    zoom: 1;
+	display: block;
+	font-weight: bold;
+}
+
+.db_contout{
+	background: #fff;
+    position: relative;
+    zoom: 1;
+    padding-bottom: 15px;
+    font-size: 14px;
+    padding-top: 15px;
+    z-index: 0;
+	width:1000px;
+	float:left;
+}
+
+.db_contout .sharp{
+	background: url(../images/icon24.png) no-repeat 0 -350px;
+	width: 119px;
+	height: 45px;
+	position: absolute;
+    left: 50%;
+    margin-left: -385px;
+    bottom: -45px;
+}
+.db_contout .db_cont{
+	width: 1000px;
+    margin: 0 auto;
+}
+
+.db_cont .base_r{
+	float: right;
+    display: inline;
+    width: 670px;
+}
+
+.db_gtopout{
+	margin-left: 10px;
+    float: right;
+    display: inline;
+	min-height: 140px;
+	width: 326px;
+	margin-top:-160px;
+	padding-left:20px;
+}
+
+.db_gtopout .mdr{
+	display: table-cell;
+    width: 100%;
+}
+.db_gtopout .mdr .looktool{
+	color: #333;
+	padding: 0 0 8px 0;
+    font-size: 12px;
+}
+.db_gtopout .mdr .per_totalarea01{
+	position: relative;
+    zoom: 1;
+    width: 230px;
+}
+
+.per_totalarea01 .want{
+	border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 3px;
+    float: left;
+    display: inline;
+    padding: 0 8px;
+    height: 20px;
+    line-height: 20px;
+    color: #ccc;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+.db_gtopout .per_message{
+	height: 50px;
+    width: 292px;
+    margin: 10px 0 0;
+}
+
+.db_gtopout .per_message textarea{
+	background-color: rgb(255, 255, 255);
+    background-position: -620px 0px;
+	width: 280px;
+    height: 54px;
+    border: 1px solid #a9a9a9;
+    resize: none;
+	color: #333;
+	line-height: 18px;
+    overflow: hidden;
+    overflow-y: auto;
+	font-family: "微软雅黑","microsoft yahei";
+    font-size: 12px;
+    padding: 2px;
+    vertical-align: middle;
+    outline: 0;
+}
+
+.db_gtopout .per_btn{
+	width: 285px;
+    margin: 8px 0 0;
+    height: 28px;
+    line-height: 28px;
+}
+
+.db_gtopout .per_btn a{
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.ico_white , .ico_add{
+	display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    background: url(../images/icon24.png) no-repeat;
+    width: 16px;
+    height: 18px
+}
+
+.ico_white {
+	background-position: -250px -432px;
+}
+
+.cyp{
+	color: #333;
+	padding: 0 3px;
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.per_btn .shu{
+	padding: 0 3px;
+    color: #d0cfd4;
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.ico_add{
+	background-position: -250px -462px;
+}
+
+
+
+.pt15{
+	padding-top: 15px;
+}
+
+.info_l{
+	float: left;
+    display: inline;
+    width: 407px;
+    margin-left: 6px;
+}
+
+.info_l dd{
+	border-bottom: 1px dotted #999;
+    position: relative;
+    zoom: 1;
+    padding: 9px 0 9px 95px;
+    line-height: 1.5em;
+    font-size: 13px;
+}
+
+.info_l dd strong{
+	position: absolute;
+    left: 0;
+    top: 7px;
+    width: 95px;
+    font-size: 14px;
+    line-height: 1.5em;
+	font-weight: bold;
+}
+
+.info_l dt{
+	font-size:13px;
+}
+
+.mt12{
+	margin-top:12px;
+}
+
+.mt6{
+	margin-top:6px;
+}
+
+.px14{
+	font-size:14px;
+}
+
+.ln18{
+	line-height:25px;
+}
+
+.tr{
+	text-align:right;
+}
+
+.mt9{
+	margin-top:9px;
+}
+
+.gt{
+	background: url(../images/allicon24.png) no-repeat -125px 0;
+    width: 11px;
+    height: 10px;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    vertical-align: middle;
+	color: #2f688c;
+    font-size: .9em;
+    font-family: "宋体";
+    margin-left: 3px;
+}
+
+.info_r{
+	width: 235px;
+    margin-left: 20px;
+	float: left;
+    display: inline;
+}
+
+.info_r dl{
+	width:235px;
+} 
+
+.main_actor dd{
+	position: relative;
+    zoom: 1;
+    padding: 0 62px;
+    min-height: 59px;
+    font-size: 12px;
+    margin-top: 13px;
+}
+
+.main_actor dd img{
+	border: 1px solid #ccc;
+    position: absolute;
+    top: 0;
+    zoom: 1;
+}
+
+.main_actor dd img.per{
+	left:0;
+}	
+
+.main_actor dd img.cha{
+	right: 0;
+    border: 0;
+    border-radius: 30px;
+}
+
+.mt15{
+	margin-top: 15px;
+}
+
+.px12{
+	font-size: 12px;
+}
+
+.mt25{
+	margin-top: 25px;
+}
+
+.mb25{
+	margin-bottom: 25px;
+}
+
+.pt25{
+	padding-top:25px;
+}
+
+.line_dot{
+	border-bottom: 1px dotted #ccc;
+	height: 0;
+	overflow: hidden;
+    width: 100%;
+}
+
+.db_ivm{
+	width: 655px;
+    float: right;
+    display: inline;
+}
+
+.db_ivideos{
+	 width: 655px;
+	 float: right;
+    display: inline;
+    zoom: 1;
+}
+
+.px20{
+	font-size: 20px;
+}
+.db_ipicbox{
+	width: 655px;
+	position: relative;
+    zoom: 1;
+    height: 105px;
+    margin-top: 6px;
+}
+
+.db_ipiclist{
+	height: 122px;
+	width: 655px;
+	position: relative;
+    zoom: 1;
+	overflow: hidden;
+    z-index: 1;
+}
+
+.db_ipiclist dl{
+	position: absolute;
+    left: 0;
+    top: 0;
+	width:680px;
+}
+
+.db_ipiclist dl dd{
+	width: 215px;
+    margin-right: 5px;
+	float: left;
+    display: inline;
+}
+
+.db_avideo{
+	width: 215px;
+    height: 122px;
+    font-size: 12px;
+	display: block;
+	position: relative;
+    zoom: 1;
+    overflow: hidden;
+    text-decoration: none;
+    color: #fff;
+}
+
+.db_avideo img{
+	border: 1px solid #ccc;
+}
+
+.db_avideo em{
+	height: 25px;
+    left: 1px;
+    bottom: 1px;
+    width: 100%;
+	background: #000;
+    opacity: .7;
+	display: block;
+    position: absolute;
+	z-index: 1;
+}
+
+.db_avideo b{
+	bottom: 6px;
+	background: url(../images/icon24.png) no-repeat 0 -323px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 27px;
+    height: 27px;
+    z-index: 2;
+}
+
+.db_avideo i{
+	bottom: 4px;
+	position: absolute;
+    right: 10px;
+	z-index: 4;
+}
+
+.db_avideo span{
+	bottom: 4px;
+	position: absolute;
+    left: 45px;
+	z-index: 3;
+}
+
+.tupian{
+	margin-top:40px;
+	float:left;
+}
+
+.tupian .db_ipics{
+	width: 655px;
+	float: left;
+    display: inline;
+}
+
+.mt30{
+	margin-top:30px;
+}
+
+.mb30{
+	margin-bottom:30px;
+}
+
+.db_mhcont{
+	position: relative;
+    zoom: 1;
+    overflow: hidden;
+    clear: both;
+	float:left;
+}
+
+.db_mhcont .db_mhleft{
+	float: left;
+    width: 100%;
+}
+
+.db_mhcont .db_mhleft h4{
+	line-height: 30px;
+}
+
+.px18{
+	font-size: 18px;
+}
+
+.db_mhcont .db_mhleft h4 b{
+	font-size: 26px;
+    margin: 0 5px;
+    font-weight: bold;
+    line-height: 1em;
+	font-style: normal;
+}
+
+.revealed_list{
+	position: relative;
+    z-index: 2;
+}
+
+.db_mhcont .revealed_list dd{
+	padding-left: 60px;
+	position: relative;
+	font-size: 14px;
+    line-height: 1.6em;
+    margin-top: 15px;
+    zoom: 1;
+}
+.db_mhcont .revealed_list dd span.num{
+    opacity: .5;
+    margin-top: 0;
+	background: #333;
+    position: absolute;
+    left: 10px;
+	top: 0;
+	width: 30px;
+    height: 30px;
+    color: #fff;
+    border-radius: 30px;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 22px;
+    text-align: center;
+    line-height: 32px;
+    font-weight: normal;
+}
+
+.db_eveline{
+	margin-top: 0;
+	background: #ccc;
+    width: 1px;
+    overflow: hidden;
+    height: 105px;
+    float: left;
+    display: inline;
+    margin: 26px 26px 0;
+    color: #ccc;
+}
+
+.db_mhright{
+	float: right;
+    width: 396px;
+}
+
+.db_mhright .db_i_lines{
+	line-height: 1.8em;
+    font-size: 18px;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    padding-left: 65px;
+}
+.db_mhright .db_i_lines .qute{
+	background: url(../images/icon24.png) no-repeat 0 -65px;
+	width: 38px;
+    height: 37px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .2;
+}
+
+.db_i_comcont{
+	background: #127bab;
+	padding-top: 60px;
+}
+.db_i_comcont .db_i_comment{
+	width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.db_i_comment .db_gradetool{
+	position: relative;
+    width: 1000px;
+    zoom: 1;
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+}
+
+.db_gradetool .db_radius{
+	background: #000;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    opacity: .4;
+    filter: alpha(opacity=40);
+    border-radius: 12px 12px 0 0;
+}
+
+.db_gradetool .new_userbox{
+	background: url(../images/per_line.png) no-repeat 430px 50%;
+}
+
+.per_userbox{
+	position: relative;
+    z-index: 3;
+    padding: 30px 45px 20px;
+	float:left;
+}
+
+.per_usergrade{
+	min-height: 105px;
+	width: 275px;
+    float: left;
+    display: inline;
+    position: relative;
+    zoom: 1;
+    padding-left: 80px;
+}
+
+.per_usergrade .per_userimg{
+	width: 60px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.per_usergrade .per_userimg img{
+	background: url(../images/per_none.jpg) no-repeat -580px -64px;
+    width: 58px;
+    height: 58px;
+    line-height: 0;
+    font-size: 0;
+    border: 1px solid #c4c4c4;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+}
+
+
+
+.per_usergrade .mpscore{
+	margin-top: 10px;
+}
+
+.mdlr .mdr{
+	display: table-cell;
+    width: 100%;
+}
+
+.mdlr .mdr .looktool{
+	color: #fff;
+    padding: 0 0 10px 0;
+    font-size: 14px;
+}
+
+.mpscore .per_totalarea01{
+	width: 277px;
+}
+
+.mpscore .p_message{
+	position: absolute;
+    left: 415px;
+    top: 10px;
+    width: 490px;
+    margin: 0;
+    border: 1px solid #ccc;
+}
+
+.mpscore .p_message textarea{
+	background-color: rgb(255, 255, 255);
+    background-position: -620px 0px;
+	width: 494px;
+    border: 0;
+    height: 50px;
+	color: #333;
+	line-height: 18px;
+    overflow: hidden;
+    overflow-y: auto;
+	font-family: "微软雅黑","microsoft yahei";
+    font-size: 12px;
+    padding: 2px;
+    vertical-align: middle;
+    outline: 0;
+}
+
+.mpscore .p_btn{
+	width: 500px;
+    position: absolute;
+    left: 415px;
+    top: 80px;
+	color: #fff;
+}
+
+.mpscore .p_btn span{
+	padding:0 3px;
+}
+
+.c_fff{
+	color:#fff;
+}
+
+.px14{
+	font-size:14px;
+}
+
+.btn_dblue{
+	color:#fff;
+	cursor:pointer;
+	background:#0081bc;
+	height:28px;
+	width:68px;
+	display:inline-block;
+	position:relative;
+	border-radius:14px;
+	font-size:14px;
+	line-height:28px;
+	text-decoration:none;
+	text-align:center;
+}
+
+.p_btn a{
+	color:#fff;
+}
+.p_btn a:hover{
+	background:#0074a9;
+	text-decoration:none!important;
+}
+.p_btn .ico_white{
+	background-position:-250px -532px;
+}
+.p_btn .ico_add{
+	background-position:-250px -562px;
+}
+
+.demo{
+	font: normal 10px/1.6  Arial;
+	width:160px;
+	float:left;
+}
+
+.demo .target-demo { 
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.demo div.hint {
+	border-radius: 5px; 
+	color: #fff;
+	display: inline-block; 
+	height: 20px; 
+	font-size: 14px;
+	text-align: center;
+	width: 25px;
+	vertical-align: middle;
+	position:absolute;
+	left:140px;
+	top:8px;
+}
+
+
+.db_comcont{
+	position: relative;
+    zoom: 1;
+    overflow: hidden;
+    margin-top: 9px;
+}
+
+.new_comcont .main{
+	width: 690px;
+    float: left;
+	display: inline;
+}
+
+.new_comcont .main .db_mediacom{
+	margin-bottom: 10px;
+	width: 690px;
+	background: #fff;
+	margin: 0;
+    padding: 0;
+}
+
+.db_mediacom h4{
+	width: 110px;
+    height: 32px;
+    background: #999;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+}
+
+.db_mediacom  .db_mediatab{
+	margin: 30px 25px 18px 25px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    position: relative;
+    zoom: 1;
+}
+
+.db_mediacom  .db_mediatab .db_show{
+	width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+ .db_mediatab .db_show ul{
+	list-style:none;
+	position: relative;
+	left: 0px;
+    width: 617px;
+ }
+ 
+ .db_show li{
+	float: left;
+    display: inline;
+    font-size: 14px;
+    line-height: 14px;
+    border-left: 1px solid #333;
+    padding: 0 10px;
+    cursor: pointer;
+ }
+ 
+.db_show li:nth-child(1){
+	border-left: none;
+}
+  
+.db_show li.on{
+	color: #f77603;
+}
+
+.db_mediacom .db_mediatxt{
+	padding: 0 25px 30px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ul{
+	list-style:none;
+}
+
+
+.db_mediacom .db_mediatxt li{
+	border-bottom: 1px solid #f2f2f2;
+    padding: 10px 0;
+}
+
+.db_mediacom .db_mediatxt li p{
+	font-size: 14px;
+    line-height: 1.4;
+    padding: 3px 0 0;
+}
+
+.db_mediacom .db_mediatxt li a{
+	color:#333;
+}
+
+.none{
+	display: none;
+}
+
+.main .db_longcom{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 0;
+	width: 690px;
+    float: none;
+	background: #fff;
+}
+
+.db_longcom h4{
+	margin-top: -1px;
+	width: 110px;
+    height: 32px;
+    background: #999;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+}
+
+.longcombox{
+	padding-bottom: 15px;
+}
+.longcombox dl{
+	position: relative;
+    zoom: 1;
+    margin: 35px 20px 0;
+    padding-left: 85px;
+    padding-bottom: 25px;
+    border-bottom: 1px dotted #999;
+} 
+.longcombox dl dt{
+	background: #ff9600;
+    width: 67px;
+    height: 79px;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    padding: 6px 8px 0 0;
+    font-size: 18px;
+    line-height: 1.2em;
+    color: #fff;
+    text-align: right;
+}
+.longcombox dl dt strong{
+	display: block;
+    margin-right: 5px;
+    font-size: 45px;
+    line-height: 1em;
+	font-weight: bold;
+}
+.longcombox dl h3{
+	font-size: 22px;
+    line-height: 1.4em;
+}
+.longcombox dl h3 a{
+	color:#333;
+}
+
+.longcombox dl h3 a:hover{
+	color:#08c;
+	text-decoration:none;
+}
+
+.mt20{
+	margin-top:20px;
+}
+
+.longcombox .comboxcont{
+	font-size: 16px;
+    line-height: 1.5em;
+    color: #999;
+}
+
+.ml16{
+	margin-left: 6px;
+}
+
+.longcombox .comboxuser{
+	margin-top: 15px;
+    color: #999;
+	height:53px;
+}
+
+.comboxuser .db_comtool{
+	margin-top: 30px;
+}
+
+.db_comtool a{
+	color: #2874a7;
+	font-size: 14px;
+    margin-left: 10px;
+}
+.db_comtool a:hover{
+	color:#f77603;
+	text-decoration:none;
+}
+.db_comtool i{
+	background: url(../images/allicon24.png) no-repeat;
+    width: 17px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    margin-right: 3px;
+    vertical-align: text-bottom;
+}
+
+.db_comtool a.com_good i{
+	background-position: -34px 0;
+}
+.db_comtool a.com_good i:hover{
+	background-position: -34px -15px;
+}
+
+.db_comtool a.com_share i{
+	background-position: -17px 0;
+}
+.db_comtool a.com_share i:hover{
+	background-position: -17px -15px;
+}
+.db_comtool a.com_bbs i{
+	background-position: 0 0;
+}
+.db_comtool a.com_bbs i:hover{
+	background-position: 0 -15px;
+}
+
+.comboxuser .pic_58{
+	padding-left: 60px;
+	float: left;
+    display: inline;
+	min-height: 53px;
+	border-left: 1px solid #ccc;
+	position: relative;
+    zoom: 1;
+	word-break: break-all;
+    word-wrap: break-word;
+	border: 0;
+}
+
+.comboxuser .pic_58 img{
+	position: absolute;
+	left: 0;
+	top: 2px;
+    border: 1px solid #c4c4c4;
+}
+
+.px14{
+	font-size: 14px;
+}
+
+.pt6{
+	padding-top: 6px;
+}
+
+.tc{
+	text-align:center;
+}
+
+.btn_plots{
+	color: #333;
+    position: relative;
+	font-size: 12px;
+	margin-top:12px;
+	height: 28px;
+    display: inline-block;
+	line-height: 28px;
+	padding: 0 12px;
+    border-radius: 14px;
+}
+.btn_plots i{
+	background: url(../images/icon.gif) no-repeat 0 0;
+    overflow: hidden;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+.btn_plots .down{
+	background-position: 0 -95px;
+}
+
+.db_shortcomment{
+	background: #fff;
+    margin-top: 0;
+    border-bottom: 1px solid #aaa;
+}
+.db_shortcomment h4{
+	width: 110px;
+    height: 32px;
+    background: #999;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+}
+
+.db_shortcomment dl{
+	position: relative;
+    zoom: 1;
+    overflow: hidden;
+    margin: 15px 30px;
+}
+.db_shortcomment dd{
+	position: relative;
+    zoom: 1;
+    overflow: hidden;
+    display: block;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    border-top: 0;
+    float: none;
+    width: auto;
+	margin-left: -1px;
+	border-left: 1px solid #cdcdcd;
+}
+
+.db_shortcomment dd .mod_short{
+	padding: 15px 0;
+    padding-left: 180px;
+    position: relative;
+    zoom: 1;
+    margin: 0;
+	border-top: 1px dotted #999;
+}
+
+.mod_short h3{
+	font-size: 16px;
+    line-height: 1.8em;
+    font-weight: normal;
+    word-break: break-all;
+    word-wrap: break-word;
+	display:inline;
+}
+
+.mod_short .comboxuser{
+	position: absolute;
+    left: 0;
+    top: 10px;
+    width: 150px;
+    padding-right: 10px;
+    border-right: 1px solid #ccc;
+	margin-top: 15px;
+    color: #999;
+}
+
+.db_point{
+	background: #679c21;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    padding: 4px 5px 4px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    color: #fff;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+.ml6{
+	margin-left: 6px;
+}
+
+.mt10{
+	margin-top: 10px;
+	float:left;
+}
+
+.pr5{
+	width:100px;
+}
+
+.mt18{
+	margin-top: 18px;
+}
+
+.mod_short .ele_replay{
+	position: relative;
+}
+
+.mod_short .ele_replay .focus{
+	border: 2px solid #0087e2!important;
+    padding: 5px 0 5px 8px!important;
+}
+/*.mod_short .ele_replay .textarea{
+	width: 290px;
+	background: #fbfbfb;
+    height: 30px;
+    position: relative;
+    border: 1px solid #d6d6d6;
+    padding: 3px 10px;
+}*/
+
+
+.ele_replay .textarea textarea{
+    font-size: 13px;
+    line-height: 20px;
+    resize: none;
+    color: #878787;
+    overflow: auto;
+	width:100%;
+	font-family: "微软雅黑","microsoft yahei";
+	vertical-align: middle;
+    outline: 0;
+}
+.ele_replay .textarea .tex{
+	width: 310px;
+	background: #fbfbfb;
+    height: 40px;
+    position: relative;
+    border: 1px solid #d6d6d6;
+    padding: 3px 10px;
+}
+ 
+.ele_replay .db_comtool{
+	position: absolute;
+    right: 0;
+    top: -13px;
+}
+
+.hf{
+	display:inline-block;
+	font-size:16px;
+	color:#fff;
+	background:#0081BC;
+	width:80px;
+	height:20px;
+	text-align:center;
+	border-radius:20px;
+	margin-left:125px;
+	cursor:pointer;
+	padding:5px 0;
+}
+
+.hf:hover{
+	background:#0074a9;
+}
+
+.p20{
+	padding:20px;
+}
+
+.line_dot{
+	border-bottom: 1px dotted #ccc;
+	height: 0;
+	overflow: hidden;
+    width: 100%;
+}
+
+.new_comcont .aside{
+	width: 300px;
+    float: right;
+	display: inline;
+}
+
+.aside .db_inewsbox{
+	background: #fff;
+    padding: 17px;
+    position: relative;
+    zoom: 1;
+    margin-bottom: 10px;
+}
+
+.aside .db_inewsbox .db_inews{
+	padding: 20px 0;
+}
+
+.db_inewsbox .db_inews h4{
+	background: #999;
+    width: 110px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+.db_inewsbox .db_inews dt{
+	border-bottom: 1px dotted #dcdcdc;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.6em;
+    padding-bottom: 10px;
+    margin-bottom: 3px;
+    margin-top: 10px;
+}
+
+.db_inewsbox .db_inews dt .imgbox{
+	position: relative;
+    zoom: 1;
+    overflow: hidden;
+}
+
+.db_inews dt .imgbox .jies{
+	position: absolute;
+    left: 0;
+    top: 95px;
+    overflow: hidden;
+    padding: 7px 12px;
+    margin-right: 30px;
+}
+
+.db_inews dt .imgbox .jies .bg{
+	background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    opacity: .7;
+}
+
+.db_inews dt .imgbox h3{
+	position: relative;
+    font-size: 18px;
+    line-height: 1.4em;
+}
+
+.db_inews dd{
+	font-size: 12px;
+    color: #666;
+    padding-top: 6px;
+}
+
+.guessfilm{
+	background: #fff;
+	margin-bottom: 10px;
+	margin-top:10px;
+}
+.guessfilm h4{
+	width: 110px;
+    height: 32px;
+    background: #999;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+}
+
+.guessfilm .guessbox{
+	padding: 20px;
+}
+
+.guessfilm .guessbox dt img{
+	border: 1px solid #adadad;
+}
+
+.guessfilm .guessbox dd{
+	font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+input{
+	font-family: "微软雅黑","microsoft yahei";
+    font-size: 12px;
+    padding: 2px;
+    vertical-align: middle;
+    outline: 0;
+}
+.guessfilm .guessbox li input{
+	margin-right: 5px;
+	display: inline-block;
+    vertical-align: middle;
+}
+.guessfilm .guessbox label{
+	display: inline-block;
+    vertical-align: middle;
+	cursor: default;
+}
+
+.guessfilm .guessbox .btns{
+	margin: 10px 0 0;
+}
+.guessfilm .guessbox .btn_dblue{
+	border: 0;
+    padding: 0 35px;
+    cursor: pointer;
+	background: #0081bc;
+	height: 28px;
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+	border-radius: 14px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+	width:100px;
+}
+
+.db_popmod2{
+	background: #fff;
+}
+
+.my_layer{
+	border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    border: 1px solid #e7e7e7;
+    position: absolute;
+    z-index: 17;
+    background: #fff;
+}
+
+.w295{
+	width: 315px;
+}
+
+.i_pop_close{
+	width: 42px;
+    height: 42px;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    position: absolute;
+    background: url(../images/mtipbar_num.png) no-repeat -67px 0;
+    right: -20px;
+    top: -20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.my_layer .inner{
+	border: 0;
+    position: relative;
+    zoom: 1;
+    min-height: 60px;
+}
+
+.my_layer .inner .popmid{
+	padding:20px;
+}
+
+.lh15{
+	line-height: 150%;
+}
+
+.pb12{
+	padding-bottom: 12px;
+}
+
+.btn_blue{
+	display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    padding: 0 12px;
+    margin: 0 5px;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+	background: #0081bc;
+}
+
+.popmid a:hover{
+	background: #0074a9;
+	text-decoration:none;
+}
+
+
+.mr20{
+	margin-right: 20px;
+}
+
+.pic_32{
+	position: relative;
+    zoom: 1;
+    padding-left: 45px;
+    min-height: 35px;
+    _height: 35px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.new_comcont .mod_short .pic_32{
+	font-size: 12px;
+}
+
+.pic_32 img{
+	position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #c4c4c4;
+}
+
+.pl25{
+	padding-left: 25px;
+}
+
+.mt5{
+	margin-top:5px;
+}

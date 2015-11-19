@@ -1,0 +1,44 @@
+<extend name="Public:public" />
+<block name="title">分类列表</block>
+<block name="css">
+	<style>
+		.panel-footer .num,.panel-footer .current{
+			border:1px solid #ddd;
+			margin:0 5px;
+			padding:5px;
+		}
+		.panel-footer .current{
+			background:#0081bc;
+			color:#fff;
+		}
+	</style>	
+</block>
+<block name="content">
+	<div class="container">
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<p style="font-size:16px;">电影分类</p>
+			</div>
+			<div class="panel-body">
+				<p><span style="color:#31708F;">用于管理网站所有的电影分类</span></p>
+			</div>
+			<table class="table table-hover table-striped">
+				<tr>
+					<th>类型ID</th>
+					<th>类型名称</th>
+					<th>修改</th>
+					<th>删除</th>
+				</tr>
+				<foreach name="rows" item="row">
+					<tr>
+						<td>{$row['type_id']}</td>
+						<td>{$row['type_name']}</td>
+						<td><a href="__URL__/edit/id/{$row['type_id']}">修改</a></td>
+						<td><a href="__URL__/del/id/{$row['type_id']}" onclick="javascript:return confirm('你确定删除？');">删除</a></td>
+					</tr>
+				</foreach>
+			</table>
+			<div class="panel-footer text-right" style="padding-right:70px;">{$page}</div>
+		</div>			
+	</div>
+</block>

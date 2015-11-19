@@ -1,0 +1,135 @@
+<extend name="Public:moviedetail" />
+<block name="title">{$mrow['movie_name']} 剧照</block>
+<block name="css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/movieposter.css" />
+	<script type="text/javascript" src="__PUBLIC__/Home/js/picjs/notification.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/picjs/bigimg.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/picjs/jquery.lazyload.min.js" ></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/picjs/blocksit.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/picjs/pubu.js"></script>
+	
+
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/pubu.css" type="text/css" media='screen'/>
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/bigimg.css" type="text/css" />
+</block>
+<block name="name"><a href="__MODULE__/Movie/movieindex/id/{$mrow['movie_id']}">{$mrow['movie_name']}</a></block>
+<block name="time">{$mrow['movie_start']|date="Y",###}</block>
+<block name="ename"><a href="__MODULE__/Movie/movieindex/id/{$mrow['movie_id']}">{$mrow['movie_ename']}</a></block>
+<block name="nav">
+	<div class="db_nav db_secnav">
+		<dl id="movieNavigationRegion">
+			<dd>
+				<a href="__MODULE__/Movie/movieindex/id/{$mrow['movie_id']}">
+					影片首页
+				</a>
+			</dd>
+			<dd>
+				<a href="__MODULE__/Moviedetial/movievideo/id/{$mrow['movie_id']}">
+					<span>{$vnum}</span>
+					 个视频
+				</a>
+			</dd>
+			<dd class="on">
+				<a href="__MODULE__/Moviedetial/movieposter/id/{$mrow['movie_id']}">
+					<span>{$pnum}</span>
+					张图片
+				</a>
+			</dd>
+			<dd>
+				<a href="#">
+					<span>{$anum}</span>
+					 位演职员
+				</a>
+			</dd>
+			<dd>
+				<a href="__MODULE__/Moviedetial/movielongcomment/id/{$mrow['movie_id']}">
+					<span>{$cnum}</span>
+					 条影评
+				</a>
+			</dd>
+			<dd>
+				<a href="#">
+					<span>48</span>
+					 条新闻
+				</a>
+			</dd>
+			<dt class="more on" id="detailMenuRegion">
+				<a href="javascript:;">
+					更多
+					<em id="detailMenuRegionLabel">&nbsp;</em>
+				</a>
+				<dl class="db_nav_sel" id="detailSubMenuRegion">
+					<dd>
+						<a href="__MODULE__/Moviedetial/movieabstract/id/{$mrow['movie_id']}">剧情</a>
+					</dd>
+					<dd>
+						<a href="#">角色介绍</a>
+					</dd>
+					<dd>
+						<a href="__MODULE__/Moviedetial/moviesecret/id/{$mrow['movie_id']}">幕后揭秘</a>
+					</dd>
+					<dd>
+						<a href="#">获奖记录</a>
+					</dd>
+					<dd>
+						<a href="#">更多资料</a>
+					</dd>
+				</dl>
+			</dt>
+		</dl>
+	</div>
+</block>
+<block name="content">
+	<div class="db_contout">
+		<div class="db_cont">
+			<div class="details_nav">
+				<ul id="detailSubMenuInDetailPagesRegion">
+					<li>
+						<i>&nbsp;</i>
+						<a href="#">全部图片</a>
+					</li>
+					<li class="false">
+						<a href="">剧照</a>
+					</li>
+					<li class="on">
+						<i>&nbsp;</i>
+						<a href="__MODULE__/Moviedetial/movieposter/id/{$mrow['movie_id']}">海报</a>
+					</li>
+					<li class="false">
+						<a href="">工作照</a>
+					</li>
+					<li>
+						<i>&nbsp;</i>
+						<a href="">新闻图片</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="db_pictypeout">
+				<div class="pictypenav">
+					<ul class="fl mt3">
+						<li class="on">
+							<a href="__MODULE__/Moviedetial/movieposter/id/{$mrow['movie_id']}">全部图片</a>
+						</li>
+					</ul>
+				</div>
+				<div class="db_pictypelist">
+					<div id="wrapper">
+						<div id="container" style="width:990px;">
+						<volist name="prow" id="row">
+							<div class="grid">
+								<div class="imgholder">
+									<img class="lazy thumb_photo" title="{$i}" src="__PUBLIC__/Home/images/pixel.gif" data-original="__PUBLIC__/{$row['pic_address']}" width="220" />
+								</div>
+							</div>
+						</volist>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			
+			
+		</div>
+	</div>
+</block>

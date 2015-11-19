@@ -1,0 +1,284 @@
+[ 2015-10-23T00:00:34+08:00 ] ::1 /mtime/index.php/Home/Comment/longcommentdetail/comid/7
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'comment_mid = 9 ) LIMIT 5' at line 1
+
+[ 2015-10-23T00:01:15+08:00 ] ::1 /mtime/index.php/Home/Comment/longcommentdetail/comid/7
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'comment_mid = 9 ) LIMIT 5' at line 1
+
+[ 2015-10-23T00:05:05+08:00 ] ::1 /mtime/index.php/User/select?emailname=33333%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '33333@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-23T00:05:15+08:00 ] ::1 /mtime/index.php/User/select?emailname=33333%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `m_member` WHERE `member_name` = '33333@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-23T00:06:49+08:00 ] ::1 /mtime/index.php/Home/Comment/addcomment
+ERR: 非法数据对象！
+
+[ 2015-10-23T00:12:25+08:00 ] ::1 /mtime/index.php/Home/Comment/addcomment
+ERR: 非法数据对象！
+
+[ 2015-10-23T00:14:44+08:00 ] ::1 /mtime/index.php/Home/Comment/addcomment
+ERR: 非法数据对象！
+
+[ 2015-10-23T00:17:02+08:00 ] ::1 /mtime/index.php/Home/Comment/addcomment
+ERR: 非法数据对象！
+
+[ 2015-10-23T00:28:09+08:00 ] ::1 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+
+[ 2015-10-23T00:28:09+08:00 ] ::1 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-10-23T00:31:45+08:00 ] ::1 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+
+[ 2015-10-23T00:31:45+08:00 ] ::1 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-10-23T00:35:00+08:00 ] ::1 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+
+[ 2015-10-23T00:35:00+08:00 ] ::1 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-10-23T00:36:03+08:00 ] ::1 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-10-23T00:36:03+08:00 ] ::1 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+
+[ 2015-10-23T00:36:05+08:00 ] ::1 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-10-23T00:36:05+08:00 ] ::1 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+
+[ 2015-10-23T00:37:03+08:00 ] ::1 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+
+[ 2015-10-23T00:37:03+08:00 ] ::1 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+
+[ 2015-10-23T17:05:37+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=8&comment_text=111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111&comment_mid=11
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0075s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('8','111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111','11','1','1445591136','17') [ RunTime:0.9250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2015-10-23T17:05:37+08:00 ] ::1 /mtime/index.php/Home/Comment/sortcomment?comment_grade=8&comment_text=111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111&comment_mid=11
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0075s ]
+SQL: INSERT INTO `m_longcomment` (`comment_grade`,`comment_text`,`comment_mid`,`comment_status`,`comment_time`,`comment_uid`) VALUES ('8','111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111','11','1','1445591137','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2015-10-23T21:33:03+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaaaaaaaaaaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-23T21:33:37+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaaaaaaaaaaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-23T21:33:38+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaaaaaaaaaaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-23T21:34:24+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaaaaaaaaaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-23T21:41:39+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-23T21:41:40+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-23T21:41:40+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-23T21:41:40+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-23T21:41:40+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-23T21:43:18+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-23T21:44:03+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-10-23T21:44:03+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-23T21:45:17+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaaaaaaaaaaaaaaaaaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('37','aaaaaaaaaaaaaaaaaaa','1','1445607917','17') [ RunTime:0.1740s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-23T21:47:37+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('37','aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa','1','1445608057','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-23T21:48:20+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('37','aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa','1','1445608100','17') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-23T21:48:23+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0060s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('37','aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa','1','1445608103','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-23T21:48:23+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('37','aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa','1','1445608103','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-23T21:48:23+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('37','aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa','1','1445608103','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-23T21:49:11+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('37','aaaa','1','1445608151','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-23T21:49:41+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0060s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('37','aaa','1','1445608181','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-23T21:49:50+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0080s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('37','aaa','1','1445608190','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-23T21:50:36+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=AAAAA&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0060s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('37','AAAAA','1','1445608236','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-23T21:51:15+08:00 ] ::1 /mtime/index.php/Home/Comment/recomment?recomment_text=aaa&recomment_cid=37
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `m_recomment` [ RunTime:0.0050s ]
+SQL: INSERT INTO `m_recomment` (`recomment_cid`,`recomment_text`,`recomment_status`,`recomment_time`,`recomment_uid`) VALUES ('37','aaa','1','1445608275','17') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-23T23:33:51+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=5&comment_id=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0550s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='5' WHERE ( comment_id = 7 ) [ RunTime:0.0750s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2015-10-23T23:33:53+08:00 ] ::1 /mtime/index.php/Home/Comment/updatedz?comment_zs=6&comment_id=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `m_longcomment` [ RunTime:0.0125s ]
+SQL: UPDATE `m_longcomment` SET `comment_zs`='6' WHERE ( comment_id = 7 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+

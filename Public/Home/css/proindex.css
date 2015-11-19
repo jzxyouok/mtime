@@ -1,0 +1,196 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	font: 12px/150% verdana,lucida,arial,helvetica,宋体,sans-serif;
+    color: #000;
+}
+
+a{
+	color: #2a78b4;
+    cursor: pointer;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+
+
+.container{
+	background:#235D73;
+}
+
+.my_head{
+	padding-top: 100px;
+	background-position: right bottom;
+    background-repeat: no-repeat;
+    width: 960px;
+    height: 120px;
+    margin: 0 auto;
+    margin-bottom: -26px;
+    position: relative;
+}
+
+.my_head h2{
+	color: #fff;
+    font-family: "microsoft yahei",arial,helvetica,sans-serif,"黑体";
+    font-size: 28px;
+    line-height: 1em;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+.my_head a{
+	color:#fff;
+	text-decoration:none;
+}
+
+.px18{
+	font-size: 18px;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.hei{
+	font-family: "黑体";
+}
+
+.my_out{
+	position: relative;
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.my_nav{
+	position: relative;
+    height: 28px;
+}
+
+ul{
+	list-style:none;
+}
+
+.my_nav li{
+	float: left;
+    display: inline;
+    margin-right: 4px;
+}
+
+.my_nav  a{
+	background: url(../images/mytime/public_bg.jpg) no-repeat 0 0;
+    border: 1px solid #7bc8d1;
+    border-bottom: 0;
+	border-radius: 6px 6px 0 0;
+	display: block;
+    font-size: 14px;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    color: #fff;
+    width: 85px;
+    text-align: center;
+    float: left;
+}
+
+.my_nav  li.on a{
+	background-image: url(../images/mytime/mytime_bg.jpg);
+    color: #000;
+    font-weight: bold;
+    height: 26px;
+}
+
+.my_nav  li.on a.a1{
+	background-position: 0 0;
+}
+
+.my_nav  li.on a.a2{
+	background-position: -90px 0;
+}
+.my_nav  li.on a.a3{
+	background-position: -180px 0;
+}
+.my_nav  li.on a.a4{
+	background-position: -270px 0;
+}
+.my_nav  li.on a.a5{
+	background-position: -380px 0;
+}
+.my_nav  li.on a.a6{
+	background-position: -470px 0;
+}
+.my_nav  li.on a.a7{
+	background-position: -570px 0;
+}
+.my_nav  li.on a.a8{
+	background-position: -670px 0;
+}
+
+
+
+.t_blogout{
+	width: 910px;
+    margin: 0 auto;
+    padding: 25px;
+    margin-top: -2px;
+    background: #fff url(../images/mytime/mytime_bg.jpg) no-repeat -960px 0;
+    min-height: 700px;
+}
+
+.o_h{
+	overflow: hidden;
+}
+
+.t_setleft{
+	float: left;
+    display: inline;
+    margin-bottom: -32767px;
+    padding-bottom: 32767px;
+    width: 110px;
+    position: relative;
+}
+
+.setsider{
+	padding-bottom: 100px;
+}
+
+.setsider a:hover{
+	text-decoration:underline;
+}
+
+.setsider li{
+	position: relative;
+    border-bottom: 1px dashed #ccc;
+    padding: 9px 0;
+    color: #2a78b4;
+    cursor: pointer;
+}
+
+.setsider li.on{
+	display: block;
+    font-weight: bold;
+    color: #000;
+    cursor: default;
+}
+
+.setsider li span{
+	background: url(../images/mytime/ico.png) no-repeat -191px -33px;
+    width: 4px;
+    height: 7px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    display: none;
+}
+
+.setsider li.on span{
+	display: block;
+    font-weight: bold;
+    color: #000;
+    cursor: default;
+}

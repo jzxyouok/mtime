@@ -1,0 +1,56 @@
+<extend name="Public:public" />
+<block name="title">添加影院热映电影</block>
+<block name="css">
+	<style>
+		textarea{
+			resize:none;
+		}
+	</style>
+</block>
+<block name="content">
+	<div class="container">
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<p style="font-size:16px;">添加影院热映电影<p>
+			</div>
+			<div class="panel-body">
+				<form action="__CONTROLLER__/tjfilm" method="post" class="form-horizontal">
+					<div class="form-group">
+						<label class="col-md-2">影院名称:</label>
+						<div class="col-md-4">
+							<select name="cm_cid" class="form-control">
+								<option>---请选择---</option>
+								<foreach name="r" item="row">
+									<option value="{$row['cinema_id']}">{$row['cinema_name']}</option>
+								</foreach>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-2">电影名称:</label>
+						<div class="col-md-4">
+							<select name="cm_mid" class="form-control">
+								<option>---请选择---</option>
+								<foreach name="mr" item="mrow">
+									<option value="{$mrow['movie_id']}">{$mrow['movie_name']}</option>
+								</foreach>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-2">日期:</label>
+						<div class="col-md-4">
+							<input type="date" name="cm_time" value="" class="form-control">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="col-md-1 col-md-offset-2">
+							<button type="submit" class="btn btn-info">添加</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</block>

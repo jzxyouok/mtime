@@ -1,0 +1,24 @@
+[ 2015-10-07T00:26:45+08:00 ] ::1 /mtime/Cinema/cinemaindex
+ERR: 模板不存在:./Mtime/Home/View/Cinema/cinemaindex.html
+
+[ 2015-10-07T01:01:11+08:00 ] ::1 /mtime/Cinema/cinemamember
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-10-07T01:01:12+08:00 ] ::1 /mtime/Cinema/cinemaindex
+ERR: 非法操作:cinemaindex
+
+[ 2015-10-07T01:01:22+08:00 ] ::1 /mtime/index.php/Home/Cinema/cinemamember/cid/1
+ERR: Think\Controller:assing方法不存在！
+
+[ 2015-10-07T20:32:39+08:00 ] ::1 /mtime/index.php/Home/Cinema/cinemamember/cid/1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.m_video v WHERE ( m.movie_id=v.video_mid and m.movie_start > unix_timestamp(now' at line 1
+
+[ 2015-10-07T21:16:00+08:00 ] ::1 /mtime/index.php/Home/Cinema/cinemamember/cid/1
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and g.tid = t.type_id )' at line 1
+
+[ 2015-10-07T22:48:24+08:00 ] ::1 /mtime/Public/Home/js/picjs/bigimg.js
+ERR: 无法加载控制器:Public
+
+[ 2015-10-07T22:48:24+08:00 ] ::1 /mtime/Public/Home/css/bigimg.css
+ERR: 无法加载控制器:Public
+

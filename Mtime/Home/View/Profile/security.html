@@ -1,0 +1,92 @@
+<extend name="Public:proindex" />
+<block name="title">隐私管理 – 电影社区 – Mtime时光网</block>
+<block name="css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/security.css">
+</block>
+<block name="tit">安全隐私</block>
+<block name="setsider">
+	<li>
+		<span>&nbsp;</span>
+		隐私管理
+	</li>
+	<li>
+		<span>&nbsp;</span>
+		<a href="__URL__/password">修改密码</a>
+	</li>
+	<li>
+		<span>&nbsp;</span>
+		黑名单
+	</li>
+</block>
+<block name="content">
+	<div class="t_setright">
+		<form id="setForm" action="#" method="post">
+			<dl>
+				<dt class="mt9">
+					<strong>评论：</strong>
+					<span class="c_666">设置谁可以评论我的微评</span>
+				</dt>
+				<dd class="mt6">
+					<input type="radio" id="comment_0" name="comment" value="1" class="mr6" checked>
+					<label for="comment_0">
+						所有人
+						<span class="c_666">(不包括你的黑名单用户)</span>
+					</label>
+				</dd>
+				<dd class="mt6">
+					<input type="radio" id="comment_1" name="comment" value="0" class="mr6">
+					<label for="comment_1">
+						我关注的人
+					</label>
+				</dd>
+				<dd class="mt20 line_dot">&nbsp;</dd>
+				<dt class="mt20">
+					<strong>以下用户可以给我发送站内消息</strong>
+				</dt>
+				<dd class="mt6">
+					<input type="radio" id="sendMessage_0" name="sendMessage_0" value="1" class="mr6" checked>
+					<label for="sendMessage_0">
+						所有人
+						<span class="c_666">(不包括你的黑名单用户)</span>
+					</label>
+				</dd>
+				<dd class="mt6">
+					<input type="radio" id="sendMessage_1" name="sendMessage_0" value="0" class="mr6">
+					<label for="sendMessage_1">
+						我关注的人
+					</label>
+				</dd>
+				<dd class="mt20 line_dot">&nbsp;</dd>
+				<dt class="mt9">
+					<strong>设置我的勋章显示状态</strong>
+				</dt>
+				<dd class="mt6">
+					<input type="radio" id="badge_1" name="badge" value="1" class="mr6" checked>
+					<label for="badge_1">
+						公开
+						<span class="c_666">(允许其他人查看我的勋章)</span>
+					</label>
+				</dd>
+				<dd class="mt6">
+					<input type="radio" id="badge_1" name="badge" value="0" class="mr6">
+					<label for="badge_1">
+						隐藏
+						<span class="c_666">(仅在我的勋章页面显示)</span>
+					</label>
+				</dd>
+				<dd class="mt20 line_dot">&nbsp;</dd>
+			</dl>
+			<p class="mt20">
+				<input type="submit" value="保 存" class="btn_blue" id="btn_save">
+			</p>
+		</form>
+	</div>
+</block>
+<block name="js">
+	<script>
+		$("#nav").children().eq(3).addClass("on");
+		$("#nav").children().children().addClass("a4");
+		
+		$("#setsider").children().eq(0).addClass("on");
+	</script>
+</block>

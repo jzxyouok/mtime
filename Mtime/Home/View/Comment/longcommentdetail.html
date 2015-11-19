@@ -1,0 +1,406 @@
+<html>
+	<head>
+		<title>{$row['comment_title']} - 《{$row['movie_name']}》影评- Mtime时光网</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/header.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/longcommentdetail.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/footer.css">
+		<script src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+		<script src="__PUBLIC__/Home/js/header.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<include file="Public/header" />
+			
+			<div class="db_mediaout">
+				<div class="sharp">&nbsp;</div>
+				<div class="db_mediainner">
+					<p class="db_position">
+						您当前的位置：
+						<a href="__MODULE__/Index/index">Mtime时光网</a>
+						<span class="mlr10">></span>
+						<a href="__MODULE__/Movie/movieindex/id/{$row['movie_id']}">{$row['movie_name']}</a>
+						<span class="mlr10">></span>
+						<a href="__MODULE__/Moviedetial/movielongcomment/id/{$row['movie_id']}">影评</a>
+						<span class="mlr10">></span>
+						{$row['comment_title']}
+					</p>
+					<h2 class="px38 mt30 c_000">
+						{$row['comment_title']}
+					</h2>
+					<div class="db_commentbox clearfix">
+						<a title="{$row['movie_name']}/{$row['movie_ename']}({$row['movie_start']|date='Y',###})" target="_blank" href="__MODULE__/Movie/movieindex/id/{$row['movie_id']}">
+							<img width="96" height="128" class="movieimg" alt="{$row['movie_name']}" src="__PUBLIC__/{$row['movie_pic']}">
+						</a>
+						<div class="fr tr">
+							<p class="mt15">
+								评
+								<a href="__MODULE__/Movie/movieindex/id/{$row['movie_id']}" target="_blank">{$row['movie_name']}</a>
+							</p>
+							<p class="mt3">{$row['comment_time']|date="Y-m-d H:i",###}</p>
+						</div>
+						<div class="pic_58">
+							<a href="javascript:;" target="_blank">
+								<img width="48" height="48" alt="{$row['member_nickname']}" src="__PUBLIC__/{$row['member_pic']}">
+							</a>
+							<p class="pt3">
+								<a target="_blank" href="javascript:;">{$row['member_nickname']}</a>
+							</p>
+						</div>
+					</div>
+					<div class="db_mediacont db_commentcont">
+						<span class="quto">&nbsp;</span>
+						{$row['comment_text']|htmlspecialchars_decode}
+						<div id="reviewRegion" class="db_goodbox">
+							<a class="com_good" href="javascript:;">
+								<i title="赞"></i>
+								赞<span id="zs">{$row['comment_zs']}</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="db_usercomment clearfix" style="margin-top: 60px;">
+				<div class="db_comment" id="commentRegion">
+					<h3>
+						会员评论 
+						<span id="totalCountRegion">
+							(<a href="javascript:;" id="totalComments">{$renum}</a>)
+						</span>
+					</h3>
+					<div class="db_comment_box">
+						<span class="db_bg"></span>
+						<div class="db_comment_area">
+							<div class="db_comment_user" id="userArea">
+								<empty name="_SESSION['member_login']">
+									<img src="__PUBLIC__/Home/images/nm.gif" width="48" height="48">
+									<p class="mt5">匿名</p>
+								<else />
+									<img src="__PUBLIC__/{$_SESSION['member_pic']}" width="48" height="48">
+									<p class="mt5">{$_SESSION['member_nickname']}</p>
+								</empty>
+								
+							</div>
+							<div class="db_comment_areabox" id="commentBoxArea">
+								<textarea id="commentConTextArea" class="c_a5"></textarea>
+								<div class="mt6 clearfix">
+									<div class="mt9">
+										<p class="mb12" id="vArea">
+											验证码：
+											<input type="text" style="width:120px;" id="vText" class="c_a5" placeholder="点击获取验证码" onkeyup="this.value=this.value.toUpperCase()" maxlength="4" name="plcode">
+											<span id="vimgArea">
+												<img src="__CONTROLLER__/Plcode" width="120" height="60" class="v_m mr10 ml10" onclick="this.src='__CONTROLLER__/Plcode/'+Math.random()" id="yzm" style="display:none;">
+											</span>
+										</p>
+										<p>
+											<a class="btn_dblue" href="javascript:void(0);" id="longcom">发表</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="db_comment_list">
+						<dl id="commentList">
+							<volist name="rerows" id="rerow">
+							<dd>
+								<div class="user_box">
+									<a href="javascript:;">
+										<img src="__PUBLIC__/{$rerow['member_pic']}" width="48" height="48">
+									</a>
+									<p class="mt5">
+										<a href="javascript:;">{$rerow['member_nickname']}</a>
+									</p>
+								</div>
+								<div class="user_cont">
+									
+									<div class="user_conter">
+										<p class="px14 lh18">{$rerow['recomment_text']}</p>
+										<p class="mt12">
+											{$rerow['recomment_time']|date="Y-m-d H:i",###}
+											<span class="mlr15">|</span>
+											<a href="javascript:;" class="hfqu">回复</a>
+											(<a class="my_replycount" href="javascript:;">{$rerow['replaynum']}</a>)
+										</p>
+										<div class="plqy" style="display:none;">
+											<ul class="my_replies">
+												<volist name="rerow['replaycom']" id="replay">
+													<li>
+														<div class="user_box">
+															<img width="32" height="32" src="__PUBLIC__/{$replay['member_pic']}">
+														</div>
+														<p class="px14 mr5">
+															<a href="javascript:;">{$replay['member_nickname']}</a>
+														</p>
+														<p class="px14 lh18 mt3 mr5">{$replay['recomment_text']}</p>
+														<p class="mt3 mr5">
+															{$replay['recomment_time']|date="Y-m-d H:i",###}
+														</p>
+													</li>
+												</volist>
+												
+											</ul>
+											<div class="db_comment_areabox">
+												<textarea class="c_a5" placeholder="请输入简短评论..." id="textrecom" style="color:#333;"></textarea>
+												<div style="display:none;">{$rerow['recomment_id']}</div>
+												<div class="mt6 clearfix">
+													<div class="mt9">
+														<p class="mb12 xsyzm">
+															验证码：
+															<input type="text" style="width:120px;"  class="c_a5 dpltext" placeholder="点击获取验证码" onkeyup="this.value=this.value.toUpperCase()" maxlength="4" name="dplcode">
+															<span id="imgArea">
+																<img src="__CONTROLLER__/Dplcode" width="120" height="60" class="v_m mr10 ml10 dplyzm" onclick="this.src='__CONTROLLER__/Dplcode/'+Math.random()" style="display:none;">
+															</span>
+														</p>
+														<p>
+															<a class="btn_dblue recom" href="javascript:void(0);">发表</a>
+															<a method="cancel" href="javascript:;" class="btn_dgray plqx">取消</a>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>									
+									</div>
+									
+								</div>
+							</dd>
+							</volist>
+							<dt>
+								<a href="__CONTROLLER__/morelongcomment/comid/{$row['comment_id']}">
+									更多 
+									<em>{$renum}</em>
+									 条评论 
+									 <i class="gt"></i>
+								</a>
+							</dt>
+						</dl>
+						<div id="pageRegion" class="mt30 pb30"></div>
+					</div>
+				</div>
+				<div class="db_hotcomment">
+					<dl>
+						<dt>该片热门影评：</dt>
+						<volist name="comrows" id="comrow">
+						<dd>
+							<p class="px14 lh18">
+								<a href="__CONTROLLER__/longcommentdetail/comid/{$comrow['comment_id']}" target="_blank">{$comrow['comment_title']}</a>
+							</p>
+							<p class="c_a5 mt5">
+								<?php
+									echo msubstr(preg_replace('/\s+(\&nbsp\;)*/','',strip_tags(htmlspecialchars_decode($comrow['comment_text']))),0,20,'utf-8');
+								?>
+							</p>
+							<p class="tr mt15">
+								<a class="c_333 mr12" href="javascript:;">{$comrow['member_nickname']}</a>
+								评分
+								<span class="db_point px14 ml10">{$comrow['comgrade_grade']}.0</span>
+							</p>
+						</dd>
+						</volist>
+						
+						<dt class="px14 mt20 tr">
+							<a href="__MODULE__/Moviedetial/movielongcomment/id/{$row['movie_id']}">
+								更多 
+								<span class="px24">{$comnum}</span>
+								 条评论 
+								 <i class="gt"></i>
+							</a>
+						</dt>
+					</dl>
+				</div>
+			</div>
+			
+			<include file="Public/footer" />
+			
+			<div class="my_layer w295" style="position: fixed; top: 200px; left: 515px; z-index: 111;display:none;" id="tishidl">
+				<a id="tiplogin" class="i_pop_close tiplogin" title="关闭" href="javascript:void(0)">&nbsp;</a>
+				<div class="inner w295">
+					<div class="popmid">
+						<div class="tc mt25 mb30 px20 lh15">请先登录！</div>
+						<div class="tc pb12 pt15">
+							<a href="javascript:;" class="btn_blue mr15 tiplogin">确定</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="my_layer w295" style="position: fixed; top: 200px; left: 515px; z-index: 111;display:none;" id="comtext">
+				<a  class="i_pop_close comtext" title="关闭" href="javascript:void(0)">&nbsp;</a>
+				<div class="inner w295">
+					<div class="popmid">
+						<div class="tc mt25 mb30 px20 lh15">评论内容不能为空！</div>
+						<div class="tc pb12 pt15">
+							<a href="javascript:;" class="btn_blue mr15 comtext">确定</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="my_layer w295" style="position: fixed; top: 200px; left: 515px; z-index: 111;display:none;" id="comsuccess">
+				<a  class="i_pop_close comsuccess" title="关闭" href="javascript:void(0)">&nbsp;</a>
+				<div class="inner w295">
+					<div class="popmid">
+						<div class="tc mt25 mb30 px20 lh15">评论成功！</div>
+						<div class="tc pb12 pt15">
+							<a href="javascript:;" class="btn_blue mr15 comsuccess">确定</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="my_layer w295" style="position: fixed; top: 200px; left: 515px; z-index: 111;display:none;" id="comyzm">
+				<a  class="i_pop_close comyzm" title="关闭" href="javascript:void(0)">&nbsp;</a>
+				<div class="inner w295">
+					<div class="popmid">
+						<div class="tc mt25 mb30 px20 lh15">输入的验证码错误！</div>
+						<div class="tc pb12 pt15">
+							<a href="javascript:;" class="btn_blue mr15 comyzm">确定</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="overlay" style="opacity: 0.6; zoom: 1; z-index: 110; position: fixed; margin: 0px; padding: 0px; top: 0px; left: 0px; width: 100%; height: 100%; background: rgb(0, 0, 0);display:none;"></div>
+			
+		</div>
+	</body>
+	<script>
+		$(".plqy").data("idx","0");
+		$("#vText").click(function(){
+			$("#yzm").show();
+		});
+		$(".xsyzm").click(function(){
+			$(this).children().children().show();
+		});
+		$(".hfqu").click(function(){
+			var i = $(this).parent().next().data("idx");
+			if(i==0){
+				$(this).parent().next().show();
+				$(this).parent().next().data("idx","1");
+			}
+			if(i==1){
+				$(this).parent().next().hide();
+				$(this).parent().next().data("idx","0");
+				$(this).parent().next().children(".db_comment_areabox").children().eq(1).children().children().children("#imgArea").children() .hide();
+			}
+		});
+		
+		$(".plqx").click(function(){
+			$(this).parent().parent().parent().parent().parent().hide();
+			$(this).parent().parent().parent().parent().parent().data("idx","0");
+			$(this).parent().prev().children("#imgArea").children().hide();
+		});
+		
+		$("#reviewRegion").click(function(){
+			var val = parseInt($("#zs").html())+1;
+			id = {$row[comment_id]};
+			$.ajax({
+				'type':'get',
+				'url':"__CONTROLLER__/updatedz",
+				'data':{'comment_zs':val,'comment_id':id},
+				'async':false,
+				'success':function(d){
+					if(d=='1'){
+						$("#zs").html(val);
+					}
+				}
+			});
+		});
+		
+		$("#longcom").click(function(){
+			var textcom = $("#commentConTextArea").val();
+			var yzm = $("#vText").val();
+			var dl={$_SESSION['member_login']?"1":"0"};
+			var cid = {$row['comment_id']};
+			
+			if(dl==1){
+				if(!!textcom){
+					$.ajax({
+						'type':'get',
+						'url':"__MODULE__/Comment/relongcomment",
+						'data':{'recomment_text':textcom,'recomment_cid':cid,'plcode':yzm},
+						'async':false,
+						'success':function(a){		
+							if(a==1){
+								$("#comsuccess").show();	
+								$("#overlay").show();
+								$("#commentConTextArea").val("");
+								$("#vText").val("");
+							}else{
+								$("#comyzm").show();	
+								$("#overlay").show();
+							}
+						}
+					});
+				}else{
+					$("#comtext").show();
+					$("#overlay").show();
+				}
+			}else{
+				$("#tishidl").show();
+				$("#overlay").show();
+			}
+		});
+		
+		$(".tiplogin").click(function(){
+			$("#tishidl").hide();
+			$("#overlay").hide();
+		});
+		
+		$(".comtext").click(function(){
+			$("#comtext").hide();
+			$("#overlay").hide();
+		});
+		
+		$(".comsuccess").click(function(){
+			$("#comsuccess").hide();
+			$("#overlay").hide();
+		});
+		
+		$(".comyzm").click(function(){
+			$("#comyzm").hide();
+			$("#overlay").hide();
+		});
+		
+		$(".recom").click(function(){
+			obj = $(this);
+			var textcom = $(this).parent().parent().parent().prev().prev().val();
+			var yzm = $(this).parent().prev().children(".dpltext").val();
+			var dl={$_SESSION['member_login']?"1":"0"};
+			var pid = $(this).parent().parent().parent().prev().text();
+			
+			if(dl==1){
+				if(!!textcom){
+					$.ajax({
+						'type':'get',
+						'url':"__MODULE__/Comment/relongcomment_replay",
+						'data':{'recomment_text':textcom,'recomment_pid':pid,'dplcode':yzm},
+						'async':false,
+						'success':function(a){		
+							if(a==1){
+								$("#comsuccess").show();	
+								$("#overlay").show();
+								obj.parent().parent().parent().prev().prev().val("");
+								obj.parent().prev().children(".dpltext").val("");
+								var str = "<li><div class='user_box'><img width='32' height='32' src='__PUBLIC__/{$_SESSION['member_pic']}'></div><p class='px14 mr5'><a href='javascript:;'>{$_SESSION['member_nickname']}</a></p><p class='px14 lh18 mt3 mr5'>"+textcom+"</p><p class='mt3 mr5'>{$Think.NOW_TIME|date='Y-m-d H:i',###}</p></li>";
+								
+								obj.parent().parent().parent().parent().prev().prepend(str);
+							}else{
+								$("#comyzm").show();	
+								$("#overlay").show();
+							}
+						}
+					});
+				}else{
+					$("#comtext").show();
+					$("#overlay").show();
+				}
+			}else{
+				$("#tishidl").show();
+				$("#overlay").show();
+			}
+		});
+		
+	</script>
+</html>

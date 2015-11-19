@@ -1,0 +1,74 @@
+<extend name="Public:public" />
+<block name="title">添加影院热映场次</block>
+
+<block name="content">
+	<div class="container">
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<p style="font-size:16px;">添加影院热映场次</p>
+			</div>
+			<div class="panel-body">
+				<p><span style="color:#31708F;">查看影院热映电影</span></p>
+				<form action="__URL__/cinemaczlist" method="get" class="form-horizontal">
+					<div class="form-group">
+						<label class="col-md-2">影院名称:</label>
+						<div class="col-md-4">
+							<select name="cz_cid" class="form-control">
+								<option value="0">---请选择---</option>
+								<foreach name="r" item="m">
+									<option value="{$m['cinema_id']}">{$m['cinema_name']}</option>
+								</foreach>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-2">日期:</label>
+						<div class="col-md-4">
+							<input type="date" name="cz_time" value="" class="form-control">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-1 col-md-offset-2">
+							<input type="submit" class="btn btn-info" name="sub" value="选择">
+						</div>
+					</div>
+				</form>
+			</div>
+			<table class="table table-hover table-striped table-bordered">
+				<tr class="success">
+					<th>场次ID</th>
+					<th>影片名称</th>
+					<th>日期</th>
+					<th>开场时间</th>
+					<th>语言</th>
+					<th>效果</th>
+					<th>影厅</th>
+					<th>票价</th>
+					<th>删除</th>
+				</tr>
+				<foreach name="rows" item="row">
+					<tr>
+						<td>{$row['cz_id']}</td>
+						<td>{$row['movie_name']}</td>
+						<td>{$row['cz_time']|date="Y-m-d",###}</td>
+						<td>{$row['cz_start']|date="H:i",###}</td>
+						<td>{$row['cz_language']}</td>
+						<td>
+							<switch name="row['cz_tx']">
+								<case value="0">2D</case>
+								<case value="1">3D</case>
+								<case value="2">4D</case>
+								<case value="3">5D</case>
+							</switch>
+						</td>
+						<td>{$row['cz_yt']}</td>
+						<td>{$row['cz_money']}</td>
+						<td>
+							<a href="__CONTROLLER__/deletecz/id/{$row['cz_id']}/cid/{$row['cz_cid']}/time/{$row['cz_time']}" onclick="javascript:return confirm('你确定删除？');">删除</a>
+						</td>
+					</tr>
+				</foreach>
+			</table>
+		</div>			
+	</div>
+</block>

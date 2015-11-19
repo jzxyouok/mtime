@@ -1,0 +1,135 @@
+<extend name="Public:moviedetail" />
+<block name="title">{$mrow['movie_name']} 视频 预告片 – Mtime时光网</block>
+<block name="css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/movievideodetail.css">
+</block>
+<block name="name"><a href="__MODULE__/Movie/movieindex/id/{$mrow['movie_id']}">{$mrow['movie_name']}</a></block>
+<block name="time">{$mrow['movie_start']|date="Y",###}</block>
+<block name="ename"><a href="__MODULE__/Movie/movieindex/id/{$mrow['movie_id']}">{$mrow['movie_ename']}</a></block>
+<block name="nav">
+	<div class="db_nav db_secnav">
+		<dl id="movieNavigationRegion">
+			<dd>
+				<a href="__MODULE__/Movie/movieindex/id/{$mrow['movie_id']}">
+					影片首页
+				</a>
+			</dd>
+			<dd>
+				<a href="__MODULE__/Moviedetial/movievideo/id/{$mrow['movie_id']}">
+					<span>{$vnum}</span>
+					 个视频
+				</a>
+			</dd>
+			<dd>
+				<a href="__MODULE__/Moviedetial/movieposter/id/{$mrow['movie_id']}">
+					<span>{$pnum}</span>
+					张图片
+				</a>
+			</dd>
+			<dd>
+				<a href="#">
+					<span>{$anum}</span>
+					 位演职员
+				</a>
+			</dd>
+			<dd>
+				<a href="__MODULE__/Moviedetial/movielongcomment/id/{$mrow['movie_id']}">
+					<span>{$cnum}</span>
+					 条影评
+				</a>
+			</dd>
+			<dd>
+				<a href="#">
+					<span>48</span>
+					 条新闻
+				</a>
+			</dd>
+			<dt class="more on" id="detailMenuRegion">
+				<a href="javascript:;">
+					更多
+					<em id="detailMenuRegionLabel">&nbsp;</em>
+				</a>
+				<dl class="db_nav_sel" id="detailSubMenuRegion">
+					<dd>
+						<a href="__MODULE__/Moviedetial/movieabstract/id/{$mrow['movie_id']}">剧情</a>
+					</dd>
+					<dd>
+						<a href="#">角色介绍</a>
+					</dd>
+					<dd>
+						<a href="__MODULE__/Moviedetial/moviesecret/id/{$mrow['movie_id']}">幕后揭秘</a>
+					</dd>
+					<dd>
+						<a href="#">获奖记录</a>
+					</dd>
+					<dd>
+						<a href="#">更多资料</a>
+					</dd>
+				</dl>
+			</dt>
+		</dl>
+	</div>
+</block>
+<block name="content">
+	<div class="db_videobox">
+		<volist name="vrows" id="vrow" offset="0" length="1">
+			<img src="__PUBLIC__/{$vrow['video_pic']}" width="100%" height="563px">
+			<a href="javascript:;" class="db_video_icon" title="播放视频">
+				<i></i>
+			</a>
+			<div class="db_video_first">
+				<h2>
+					<a href="__MODULE__/Movie/movievideo/vid/{$vrow['video_id']}">{$vrow['video_name']}</a>
+				</h2>
+			</div>
+		</volist>
+		<div class="db_video_4">
+			<dl>
+				<volist name="vrows" id="vrow">
+					<dd class="on">
+						<a href="__MODULE__/Movie/movievideo/vid/{$vrow['video_id']}">
+							<img src="__PUBLIC__/{$vrow['video_pic']}" width="104" height="59">
+							<p>{$vrow['video_name']}</p>
+						</a>
+					</dd>
+				</volist>
+			</dl>
+		</div>
+	</div>
+	<div class="db_videocont">
+		<div class="db_videomodout">
+			<h4>预告片</h4>
+			<ul style="margin-top:15px;">
+				<volist name="vrows" id="vrow">
+					<li>
+						<a href="__MODULE__/Movie/movievideo/vid/{$vrow['video_id']}" class="db_avideo">
+							<img src="__PUBLIC__/{$vrow['video_pic']}" alt="{$vrow['video_name']}" height="132px">
+							<em></em>
+							<b></b>
+							<i>{$vrow['video_time']}</i>
+							<span>{$vrow['video_name']}</span>
+						</a>
+					</li>
+				</volist>
+			</ul>
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+</block>
+<block name="js">
+	<script>
+		$(".db_video_icon").hover(
+			function(){
+				$(this).css({"opacity":"1"});
+			},
+			function(){
+				$(this).css({"opacity":"0.6"});
+			}
+		);
+		
+		$(".db_video_4 dd").mouseenter(function(){
+			$(this).siblings().removeClass("on");
+			$(this).addClass("on");
+		});
+	</script>
+</block>

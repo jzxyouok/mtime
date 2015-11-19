@@ -1,0 +1,207 @@
+<!--头部-->
+			<div id="topbar">
+				<div class="topline"></div>
+				<div class="menubar">
+					<div class="menubg">
+						<div class="menuid">
+							<h1 class="mtimelogo">
+								<a href="#" title="Mtime时光网">Mtime时光网</a>
+							</h1>
+							<div class="navsearch">
+								<div class="menuicon" title="导航" id="dh">
+									<div class="menupop navpop" style="display:none;" id="navlist">
+										<ul>
+											<li>
+												<a href="#">
+													<span class="ico_n_index"></span>
+													首页
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ico_n_news"></span>
+													新闻
+												</a>
+											</li>
+											<li>
+												<a href="__MODULE__/Index/index">
+													<span class="ico_n_ticket"></span>
+													影院
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ico_n_mall"></span>
+													商城
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ico_n_bbs"></span>
+													社区
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ico_n_find"></span>
+													发现
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+			
+								<div class="topsearch">
+									<div class="selctsearch">
+										<strong>全部</strong>
+										<i></i>
+										<span>|</span>
+									</div>
+									<div class="selectshow">
+										<ul>
+											<li>全部</li>
+											<li>电影</li>
+											<li>影人</li>
+											<li><a href="__MODULE__/Index/index">影院</a></li>
+											<li>商品</li>
+										</ul>
+									</div>
+									<input type="text" class="text" value="" placeholder="搜索电影、影人、影院、商品">
+									<input type="button" class="button">
+								</div>
+							</div>
+							<div class="userbar">
+								<div class="gwc">
+									<span class="ico_shop"></span>
+									<div class="m_shopcart">
+										<p class="tips">您的购物车还是空的，赶快选购哦。</p>
+									</div>
+								</div>
+								<div class="loginbox">
+									
+									<span class="logintxt">
+										<if condition="$_SESSION['member_login'] eq 1">
+											{$_SESSION['member_nickname']}
+										<else />
+											请登录
+										</if>
+									</span>
+									<span class="loginpic">
+										<if condition="$_SESSION['member_login'] eq 1">
+											<img src="__PUBLIC__/{$_SESSION['member_pic']}" width='27' height='27'>										
+										<else />
+											<span class="ico_user"></span>
+										</if>
+										
+									</span>
+									
+								</div>
+								<div class="citybox">
+									<span class="currcity">我在：长治</span>
+									<span class="ico_city"></span>
+								</div>
+								
+								<div class="loginpop">
+								<if condition="$_SESSION['member_login'] eq 1">
+									<div class="my_name">
+										<a href="" class="my_pic">
+											<img src="__PUBLIC__/{$_SESSION['member_pic']}" width="96" height="96">
+										</a>
+										<dl>
+											<dt>
+												<a href="#">{$_SESSION['member_nickname']}</a>
+											</dt>
+											<dd>
+												我的经验值:
+												<a href="" id="topMenuXpContainer">50</a>
+											</dd>
+										</dl>
+										<div class="my_btns">
+											<a class="btn_login" href="#">我的时光</a>
+											<a class="btn_login" href="#">会员俱乐部</a>
+										</div>
+									</div>
+									<ul class="loginexit">
+										<li>
+											订单：
+											<a href="#">电影票订单</a>
+											<em>|</em>
+											<a href="#" class="p_r">
+												商品订单
+												<i class="i_new"></i>
+											</a>
+										</li>
+										
+										<li>我的：
+											<a href="#">博客</a>
+											<em>|</em>
+											<a href="#">群组</a>
+											<em>|</em>
+											<a href="#">电影</a>
+											<em>|</em>
+											<a href="#">收藏</a>
+										</li>
+										
+										<li>游戏：
+											<a href="#">卡片大富翁</a>
+											<em>|</em>
+											<a href="#">猜电影</a>
+										</li>
+										
+										<li>
+											<a href="__MODULE__/User/do_layout" class="btn_exit">退出</a>
+											<a href="__MODULE__/Profile/basic">修改资料</a>
+											<em>|</em>
+											<a href="__MODULE__/Profile/password">密码</a></li>
+									</ul>
+								<else />
+									<form action="__MODULE__/User/do_login" method="post">
+										<dl class="logintool">
+											<dt>为爱电影的人</dt>
+											<dd class="userlogin">
+												<ul>
+													<li>
+														<label class="name">用户名：</label>
+														<input type="text" value="" placeholder="输入电子邮箱地址" name="email" class="tip">
+														<span class="ico_false"></span>
+													</li>
+													<li>
+														<label class="password">输入密码：</label>
+														<input type="password" value="" placeholder="输入密码" name="pass" class="tip">
+														<span class="ico_false"></span>
+													</li>
+												</ul>
+												<p class="usertip">
+													<a href="#" target="_blank" style="float:right;">忘记密码</a>
+													<span class="ico_m_check" id="zddl"></span>
+													下次自动登录
+												</p>
+												<div class="btn">
+													<input type="submit" value="登录" class="btn_login">
+													<input type="button" value="成为会员" class="btn_regist">
+												</div>
+												<script>
+													$(".btn_regist").click(function(){
+														window.location.href="{:U('User/register')}";
+													});
+												</script>
+											</dd>
+										</dl>
+										<dl class="otherlogin">
+											<dt>使用第三方登录</dt>
+											<dd style="margin-left:42px;">
+												<a href="http://passport.mtime.com/unitelogin/dispatch/weibo/web/" title="新浪" class="o_sina"></a>
+												<a href="http://passport.mtime.com/unitelogin/dispatch/qq/web/" title="QQ" class="o_qq"></a>
+											</dd>
+										</dl>
+									</form>
+								</if>
+								
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--头部 end-->
